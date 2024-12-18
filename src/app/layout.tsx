@@ -1,8 +1,23 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Inika, Caveat_Brush, Jockey_One } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
 
-const inter = Inter({ subsets: ["latin"] });
+const inika = Inika({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const caveat_brush = Caveat_Brush({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-caveat-brush",
+});
+
+const jockey_one = Jockey_One({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-jockey-one",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -16,7 +31,9 @@ type LayoutProps = {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={`${inika.className} ${caveat_brush.variable} ${jockey_one.variable}`}
+      >
         <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
       </body>
     </html>
