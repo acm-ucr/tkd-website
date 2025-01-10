@@ -11,7 +11,7 @@
 
 ## Figma
 
-[Taekwondo at UCR Club's Website Figma Design File]([https://www.figma.com/](https://www.figma.com/design/xYf4Uwnb4asZQLMCjA8JZi/UCR-TKD?node-id=0-1&t=vGgkZPoi4IMT9L5q-1))
+[Taekwondo at UCR Club's Website Figma Design File](https://www.figma.com/design/xYf4Uwnb4asZQLMCjA8JZi/UCR-TKD?node-id=0-1&t=vGgkZPoi4IMT9L5q-1)
 
 ## Node.js
 
