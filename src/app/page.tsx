@@ -1,13 +1,10 @@
-import Landing from "@/components/home/Landing";
-import SparringGear from "@/components/home/SparringGear";
-import Signup from "@/components/home/Signup";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <div className="">
-      <Landing />
-      <Signup />
-      <SparringGear />
+    <div className="flex h-screen w-screen items-center justify-center">
+      {/* Home */}
+      <Footer />
     </div>
   );
 };
