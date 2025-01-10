@@ -1,8 +1,6 @@
 const Events = () => {
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
-      Events
-    </div>
+    <div className="flex h-screen w-screen flex-col items-center justify-center"></div>
   );
 };
 
