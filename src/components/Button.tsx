@@ -17,13 +17,13 @@ const Button = ({
   //dyanmic props to bg colors and border colors
   const bgVariant = {
     grey: "bg-grey-100",
-    red: "bg-tkd-red-100 hover:bg-red-400",
-    blue: "bg-tkd-blue-200 hover:bg-blue-500",
+    red: "bg-tkd-red-100 hover:bg-opacity-90",
+    blue: "bg-tkd-blue-200 hover:bg-opacity-90",
   };
   const borderVariant = {
     grey: "border-grey-100",
-    red: "border-tkd-red-200 hover:border-red-700",
-    blue: "border-tkd-blue-300 hover:border-blue-800",
+    red: "border-tkd-red-200 hover:border-opacity-90",
+    blue: "border-tkd-blue-300 hover:border-opacity-90",
   };
 
   //fall back to default colors if no provided colors
