@@ -6,7 +6,7 @@ const Landing = () => {
   return (
     <div className="relative">
       <Image
-        className="w-screen h-screen brightness-50"
+        className="h-screen w-screen brightness-50"
         src={BackgroundImage}
         alt="background landing page"
       />
