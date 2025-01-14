@@ -4,7 +4,7 @@ const AdditionalInfo = () => {
   return (
     <div className="w-screen">
       <Image
-        src="/background.webp"
+        src="/about/background.webp"
         width={1700}
         height={1080}
         className="max-h-full w-screen"
