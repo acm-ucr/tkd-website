@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
 
         {/* The line in the center */}
-        <div className="absolute h-[50%] w-[.12%] bg-white"></div>
+        <div className="absolute h-[40%] w-[.12%] bg-white"></div>
 
         {/* right side of the line */}
         <div className="w-[30%]">
