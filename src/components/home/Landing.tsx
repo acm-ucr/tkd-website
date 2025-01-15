@@ -1,5 +1,5 @@
 import React from "react";
-import BackgroundImage from "@/public/landing/postcss.config.webp";
+import BackgroundImage from "@/../public/home/postcss.config.webp";
 import Image from "next/image";
 
 const Landing = () => {
