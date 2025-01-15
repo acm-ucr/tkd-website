@@ -12,7 +12,7 @@ interface BoardMembersProps {
 
 const BoardMembers = ({ members }: BoardMembersProps) => {
   return (
-    <div className="flex flex-wrap justify-center gap-20">
+    <div className="flex h-screen w-screen flex-wrap justify-center gap-20 p-10">
       {members.map((member) => (
         <BoardMemberCard key={member.id} member={member} />
       ))}
