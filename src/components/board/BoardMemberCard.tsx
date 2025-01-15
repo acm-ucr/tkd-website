@@ -1,7 +1,16 @@
 import Image from "next/image";
+export interface Member {
+  url: string;
+  position: string;
+  name: string;
+  id: number;
+}
+interface BoardMemberCardProps {
+  member: Member;
+}
 
-const BoardMemberCard = ({ members }) => {
-  const renderBoard = members.map((member) => (
+const BoardMemberCard = ({ member }: BoardMemberCardProps) => {
+  return (
     <div key={member.id} className="relative">
       <div className="absolute bottom-4 right-4 z-[2] h-72 w-60 border-[1px] border-white"></div>
       <div className="relative z-[1] h-72 w-60">
@@ -17,10 +26,6 @@ const BoardMemberCard = ({ members }) => {
         <p>{member.position}</p>
       </div>
     </div>
-  ));
-
-  return (
-    <div className="flex flex-wrap justify-center gap-20">{renderBoard}</div>
   );
 };
 
