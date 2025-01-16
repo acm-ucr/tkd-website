@@ -41,7 +41,7 @@ const Footer = () => {
             className="flex h-[18%] w-[18%] flex-col items-center justify-items-center"
           >
             <div className="relative flex items-center justify-center rounded-full bg-white p-[45%]">
-              <SiDiscord className="absolute h-[54%] w-auto text-tkd-blue-300" />
+              <SiDiscord className="absolute h-[60%] w-auto text-tkd-blue-300" />
             </div>
             <p className="my-[20%] text-white hover:underline">discord</p>
           </Link>
