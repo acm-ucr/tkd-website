@@ -2,8 +2,7 @@ import Mission from "@/components/about/Mission";
 
 const About = () => {
   return (
-    <div>
-      About
+    <div className="flex h-screen w-screen items-center justify-center">
       <Mission />
     </div>
   );
