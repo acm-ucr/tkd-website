@@ -12,7 +12,11 @@
     "prepare": "husky install"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@icons-pack/react-simple-icons": "^10.2.0",
+=======
+    "@icons-pack/react-simple-icons": "^10.0.0",
+>>>>>>> a55824f (Icon and some unit change)
     "@tanstack/react-query": "~5.53.3",
     "framer-motion": "^12.0.6",
     "lucide-react": "^0.417.0",

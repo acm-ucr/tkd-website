@@ -5,8 +5,8 @@ import discordicon from "/src/components/footerImages/discord-icon.png";
 import facebookicon from "/src/components/footerImages/facebook-icon.png";
 const Footer = () => {
   return (
-    <footer className="absolute bottom-0 w-full bg-[#313547]">
-      <div className="flex h-[580px] items-center justify-around">
+    <footer className="absolute bottom-0 h-auto w-full bg-tkd-blue-300">
+      <div className="flex items-center justify-around py-[6.5%]">
         {/* left side of line */}
         {/* Socials */}
         <div className="flex w-[530px] justify-around font-inika text-[22px]">
@@ -32,7 +32,8 @@ const Footer = () => {
               />
               <p className="my-5 text-white hover:underline">instagram</p>
             </div>
-          </a>
+            <p className="my-[20%] text-white hover:underline">facebook</p>
+          </Link>
 
           {/* discord */}
           <a href="discord.gg/ungzmJyVyY">
@@ -45,7 +46,19 @@ const Footer = () => {
               />
               <p className="my-5 text-white hover:underline">discord</p>
             </div>
-          </a>
+            <p className="my-[20%] text-white hover:underline">instagram</p>
+          </Link>
+
+          {/* Discord */}
+          <Link
+            href=""
+            className="flex h-[18%] w-[18%] flex-col items-center justify-items-center"
+          >
+            <div className="relative flex items-center justify-center rounded-full bg-white p-[45%]">
+              <SiDiscord className="absolute h-[54%] w-auto text-tkd-blue-300" />
+            </div>
+            <p className="my-[20%] text-white hover:underline">discord</p>
+          </Link>
         </div>
 
         {/* The line in the center */}
