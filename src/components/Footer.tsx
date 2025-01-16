@@ -1,49 +1,59 @@
 import Image from "next/image";
 import tkdicon from "/public/tkd-icon.webp";
-import { LiaFacebookF } from "react-icons/lia";
-import { IoLogoInstagram } from "react-icons/io";
-import { FaDiscord } from "react-icons/fa";
+import Link from "next/link";
+import { Facebook } from "lucide-react";
+import { Instagram } from "lucide-react";
+import { SiDiscord } from "@icons-pack/react-simple-icons";
 
 const Footer = () => {
   return (
-    <footer className="absolute bottom-0 w-full bg-[#313547]">
-      <div className="flex h-[580px] items-center justify-around">
+    <footer className="absolute bottom-0 h-auto w-full bg-tkd-blue-300">
+      <div className="flex items-center justify-around py-[6.5%]">
         {/* left side of line */}
         {/* Socials */}
-        <div className="flex h-[25%] w-[28%] justify-around font-inika text-[22px]">
-          {/* facebook */}
-          <div className="justify-items-center">
-            <LiaFacebookF className="h-[69%] w-[100%] rounded-full bg-white p-5 text-[#313547]" />
-            <p className="my-[20%] text-white hover:underline">facebook</p>
-          </div>
 
-          {/* instagram */}
-          <a
-            className="flex"
-            href="https://www.instagram.com/tkdatucr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+        <div className="flex h-[25%] w-[30%] justify-around font-inika text-[1.375rem]">
+          {/* Facebook */}
+          <Link
+            href=""
+            className="flex h-[18%] w-[18%] flex-col items-center justify-items-center"
           >
-            <div className="justify-items-center">
-              <IoLogoInstagram className="h-[69%] w-[100%] rounded-full bg-white p-2 text-[#313547]" />
-              <p className="my-[20%] text-white hover:underline">instagram</p>
+            <div className="relative flex items-center justify-center rounded-full bg-white p-[45%]">
+              <Facebook className="absolute mr-[3%] h-[60%] w-auto text-tkd-blue-300" />
             </div>
-          </a>
+            <p className="my-[20%] text-white hover:underline">facebook</p>
+          </Link>
 
-          {/* discord */}
-          <a className="flex" href="discord.gg/ungzmJyVyY">
-            <div className="justify-items-center">
-              <FaDiscord className="h-[69%] w-[100%] rounded-full bg-white p-4 text-[#313547]" />
-              <p className="my-[20%] text-white hover:underline">discord</p>
+          {/* Instagram */}
+          <Link
+            href=""
+            className="flex h-[18%] w-[18%] flex-col items-center justify-items-center"
+          >
+            <div className="relative flex items-center justify-center rounded-full bg-white p-[45%]">
+              <Instagram className="absolute h-[60%] w-auto text-tkd-blue-300" />
             </div>
-          </a>
+            <p className="my-[20%] text-white hover:underline">instagram</p>
+          </Link>
+
+          {/* Discord */}
+          <Link
+            href=""
+            className="flex h-[18%] w-[18%] flex-col items-center justify-items-center"
+          >
+            <div className="relative flex items-center justify-center rounded-full bg-white p-[45%]">
+              <SiDiscord className="absolute h-[54%] w-auto text-tkd-blue-300" />
+            </div>
+            <p className="my-[20%] text-white hover:underline">discord</p>
+          </Link>
         </div>
 
         {/* The line in the center */}
         <div className="absolute h-[40%] w-[.12%] bg-white"></div>
 
         {/* right side of the line */}
-        <div className="w-[30%]">
+        <div className="w-[31%]">
           {/* Contact Information */}
-          <div className="mr-[50%] font-inika text-[26px] text-white">
+          <div className="mr-[50%] font-inika text-[1.625rem] text-white">
             <p className="mb-[2%] text-3xl font-[700]">Contact Information:</p>
             <p className="mb-[2%] font-[700]">Address:</p>
             <p>1100 University Ave</p>
@@ -57,7 +67,7 @@ const Footer = () => {
           <Image
             src={tkdicon}
             alt="Taekwondo Icon"
-            className="absolute bottom-7 right-7 h-[45%] w-[13%] rounded-full"
+            className="absolute bottom-7 right-7 h-auto w-[13%] rounded-full"
           />
         </div>
       </div>
