@@ -1,4 +1,4 @@
-import banner from "/Users/altametrics/tkd-website/src/public/home/landing.webp";
+import banner from "@/public/about/about_landing.webp";
 import Image from "next/image";
 
 const Landing = () => {
