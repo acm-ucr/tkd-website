@@ -7,12 +7,14 @@ const Button = ({
   link,
   borderColor = "grey", //defaults to "grey" border class if no colors provided
   bgColor = "grey", //defaults to "grey" bg class if no colors provided
+  size = "", //defaults to empty string if no size is provided
 }: {
   txt: string;
   target?: string;
   link: string;
   borderColor?: "red" | "blue" | "grey";
   bgColor?: "red" | "blue" | "grey";
+  size?: string;
 }) => {
   //dyanmic props to bg colors and border colors
   const bgVariant = {
@@ -34,7 +36,7 @@ const Button = ({
     <Link
       href={link}
       target={target}
-      className={`box-border flex items-center justify-center border-4 border-solid px-7 py-7 font-inika text-xl font-medium lg:text-3xl ${bgClass} ${borderClass} `}
+      className={`box-border flex items-center justify-center border-4 border-solid px-7 py-7 font-inika text-xl font-medium lg:text-3xl ${bgClass} ${borderClass} ${size}`}
     >
       <div className="relative inline-block whitespace-nowrap">
         <span className="flex justify-center text-white opacity-100">
