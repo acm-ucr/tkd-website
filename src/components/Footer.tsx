@@ -7,7 +7,7 @@ import { SiDiscord } from "@icons-pack/react-simple-icons";
 
 const Footer = () => {
   return (
-    <footer className="absolute bottom-0 h-auto w-full bg-tkd-blue-300">
+    <footer className="relative h-auto w-full bg-tkd-blue-300">
       <div className="flex items-center justify-around py-[6.5%]">
         {/* left side of line */}
         {/* Socials */}
