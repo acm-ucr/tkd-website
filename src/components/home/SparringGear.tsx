@@ -29,7 +29,7 @@ const SparringGear: React.FC<sparringGearProps> = ({ buttonTxt, link }) => {
         <br></br>
         <div className="absolute -bottom-[-5%] right-5 flex w-1/2 flex-col items-end space-y-4 md:text-2xl lg:right-20 lg:text-4xl">
           <div className="mx-10">Want a Jacket?</div>
-          <div className="">
+          <div>
             <Button
               txt="Purchase Jacket"
               link={link}
