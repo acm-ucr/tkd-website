@@ -5,6 +5,10 @@ const Mission = () => {
         <p className="m-2 mb-8 text-center font-inika text-4xl font-bold sm:text-5xl sm:leading-[95%]">
           OUR MISSION
         </p>
+    <div className="flex w-full flex-col items-center py-[6%]">
+      <p className="m-2 mb-8 text-center font-inika text-4xl font-bold sm:text-5xl sm:leading-[95%]">
+        OUR MISSION
+      </p>
 
         <p className="m-0 w-[80%] text-center font-inika text-xl sm:m-3 sm:w-[57%] sm:text-3xl sm:leading-[139%]">
           The mission of the Taekwondo Club is to provide training for those of
