@@ -1,13 +1,14 @@
 import Image from "next/image";
+import Background from "@/public/about/background.webp";
 
 const AdditionalInfo = () => {
   return (
-    <div className="w-screen">
+    <div className="relative">
       <Image
-        src="/about/background.webp"
+        src={Background}
         width={1700}
         height={1080}
-        className="max-h-full w-screen"
+        className="max-h-full w-screen brightness-[.60]"
         alt=" background image"
       />
       <p className="absolute left-[13%] top-[25%] font-inika text-4xl font-semibold text-white">
