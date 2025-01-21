@@ -1,16 +1,16 @@
-'use client';
-import React from 'react';
+"use client";
+import React from "react";
 
 const SignupButton = () => {
   const handleClick = () => {
-    window.location.href = 'https://youtube.com';
+    window.location.href = "https://youtube.com";
   };
 
   return (
     <div>
-      <button 
+      <button
         onClick={handleClick}
-        className="bg-blue-500 hover:bg-blue-800 text-white text-5xl font-inika py-6 px-10 border-4 border-black"
+        className="border-4 border-black bg-blue-500 px-10 py-6 font-inika text-5xl text-white hover:bg-blue-800"
       >
         Sign Up
       </button>

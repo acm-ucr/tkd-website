@@ -8,7 +8,7 @@ const Signup = () => {
       <div className="font-Inika pb-8 text-center text-5xl font-bold text-black">
         Interested in Becoming a Member?
       </div>
-      <div className="flex flex-row  justify-between">
+      <div className="flex flex-row justify-between">
         <div className="ml-12 mt-8 justify-between pl-12">
           <div className="font-Inika mb-10 pb-10 text-5xl leading-relaxed text-black">
             blahblahblahblahblahblahblahblah <br />
@@ -19,7 +19,7 @@ const Signup = () => {
             <SignUpButton />
           </div>
         </div>
-        <div className="pt-10 pr-10 mr-12">
+        <div className="mr-12 pr-10 pt-10">
           <Image src={Totoro} alt="Totoro in the rain" className="w-full" />
         </div>
       </div>
