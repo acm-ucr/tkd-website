@@ -20,7 +20,6 @@ const Signup = () => {
           </div>
         </div>
         <div className="ml-12 w-5/12 pl-10 pt-10">
-          {" "}
           <Image src={GroupPhoto} alt="group photo" className="rounded-lg" />
         </div>
       </div>
