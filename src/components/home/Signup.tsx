@@ -21,7 +21,6 @@ const Signup = () => {
         </div>
         <div className="ml-12 w-5/12 pl-10 pt-10">
           {" "}
-          {/* Added ml-auto to push the image to the right */}
           <Image src={GroupPhoto} alt="group photo" className="rounded-lg" />
         </div>
       </div>
