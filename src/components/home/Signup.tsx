@@ -8,9 +8,9 @@ const Signup = () => {
       <div className="font-Inika pb-8 text-center text-6xl font-bold text-black">
         Interested in Becoming a Member?
       </div>
-      <div className="flex flex-row justify-between items-center">
+      <div className="flex flex-row items-center justify-between">
         <div className="ml-5 mt-8 pl-12">
-          <div className="font-Inika pl-10 ml-10 mb-6 pb-12 text-5xl leading-relaxed text-black">
+          <div className="font-Inika mb-6 ml-10 pb-12 pl-10 text-5xl leading-relaxed text-black">
             blahblahblahblahblahblahblahblah <br />
             blahblahblah <br />
             blahblahblah
@@ -19,7 +19,9 @@ const Signup = () => {
             <SignUpButton />
           </div>
         </div>
-        <div className="ml-12 pl-10 pt-10 w-5/12 "> {/* Added ml-auto to push the image to the right */}
+        <div className="ml-12 w-5/12 pl-10 pt-10">
+          {" "}
+          {/* Added ml-auto to push the image to the right */}
           <Image src={GroupPhoto} alt="group photo" className="rounded-lg" />
         </div>
       </div>
