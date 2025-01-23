@@ -1,4 +1,4 @@
-import SignUpButton from "@/components/home/SignupButton";
+import SignUpButton from "@/components/Button";
 import Image from "next/image";
 import GroupPhoto from "@/../public/home/Signupemember.webp";
 
@@ -10,17 +10,24 @@ const Signup = () => {
       </div>
       <div className="flex flex-row items-center justify-between">
         <div className="ml-5 mt-8 pl-12">
-          <div className="font-Inika mb-6 ml-10 pb-12 pl-10 text-5xl leading-relaxed text-black">
+          <div className="font-Inika mb-6 pb-28 text-5xl pl-24 leading-relaxed text-black">
             blahblahblahblahblahblahblahblah <br />
             blahblahblah <br />
             blahblahblah
           </div>
           <div className="justify-self-center pl-16 pt-16">
-            <SignUpButton />
+            <SignUpButton
+            txt="Sign Up" 
+            link="/some-page" 
+            borderColor="blue" 
+            bgColor="blue" 
+            size="w-72 h-32"
+            textSize="text-5xl"
+             />
           </div>
         </div>
-        <div className="ml-12 w-5/12 pl-10 pt-10">
-          <Image src={GroupPhoto} alt="group photo" className="rounded-lg" />
+        <div className=" w-[46%] pl-12 pt-10">
+          <Image src={GroupPhoto} alt="group photo" className="rounded-xl" />
         </div>
       </div>
     </div>
