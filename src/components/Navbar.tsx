@@ -6,13 +6,13 @@ const Navbar = () => {
   return (
     <nav className="item-center fixed left-0 top-0 z-50 flex w-full justify-between bg-tkd-blue-300 p-4 text-white">
       <div className="flex items-center">
-      <Link href="/">
-        <Image
-          src={Logo}
-          alt="TKD Logo"
-          className="mr-2 h-10 w-10 rounded-full"
-        />
-      </Link>
+        <Link href="/">
+          <Image
+            src={Logo}
+            alt="TKD Logo"
+            className="mr-2 h-10 w-10 rounded-full"
+          />
+        </Link>
         <span className="title font-jockey-one text-2xl uppercase">TKD</span>
       </div>
       <ul className="flex space-x-6">
