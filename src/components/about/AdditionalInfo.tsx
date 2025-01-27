@@ -16,20 +16,18 @@ const AdditionalInfo = () => {
       </p>
 
       <div className="absolute right-[11%] top-[44%] h-[40%] w-[55%] bg-tkd-blue-200">
-        <div className=" relative -top-[9%] right-[3%] h-[100%] w-[100%] border-4 border-white bg-transparent flex justify-center">
-          <div className="text-white sm:text-cs md:text-base lg:text-xl justify-items-center relative top-[20%]">
-          <p className="font-semibold">
-            How often does your student organization meet?
-          </p>
-          <p className="font-medium">
-            Twice a week.
-          </p>
-          <p className="font-semibold">
-            What day and time does your student organization generally meet?
-          </p>
-          <p className="font-medium">
-            Mondays and Wednesdays from 9:30pm-10:50pm
-          </p>
+        <div className="relative -top-[9%] right-[3%] flex h-[100%] w-[100%] justify-center border-4 border-white bg-transparent">
+          <div className="sm:text-cs relative top-[20%] justify-items-center text-white md:text-base lg:text-xl">
+            <p className="font-semibold">
+              How often does your student organization meet?
+            </p>
+            <p className="font-medium">Twice a week.</p>
+            <p className="font-semibold">
+              What day and time does your student organization generally meet?
+            </p>
+            <p className="font-medium">
+              Mondays and Wednesdays from 9:30pm-10:50pm
+            </p>
           </div>
         </div>
       </div>
