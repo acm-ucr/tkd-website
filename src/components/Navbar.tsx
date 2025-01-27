@@ -12,8 +12,8 @@ const Navbar = () => {
             alt="TKD Logo"
             className="mr-2 h-10 w-10 rounded-full"
           />
+          <span className="title font-jockey-one text-2xl uppercase">TKD</span>
         </Link>
-        <span className="title font-jockey-one text-2xl uppercase">TKD</span>
       </div>
       <ul className="flex space-x-6">
         <li>
