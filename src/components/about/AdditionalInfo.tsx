@@ -1,13 +1,14 @@
 import Image from "next/image";
+import Background from "@/public/about/background.webp";
 
 const AdditionalInfo = () => {
   return (
-    <div className="relative w-full overflow-hidden">
+    <div className="relative">
       <Image
-        src="/about/background.webp"
+        src={Background}
         width={1700}
         height={1080}
-        className="h-auto w-full object-cover brightness-50"
+        className="max-h-full w-screen brightness-[.60]"
         alt=" background image"
       />
 
