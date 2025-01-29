@@ -11,10 +11,10 @@ const Landing = () => {
         alt="background landing page"
       />
       <div className="flex items-center justify-center text-white">
-        <div className="absolute left-[5%] top-[9%] font-caveat-brush text-9xl max-md:text-7xl">
+        <div className="absolute left-[5%] top-[9%] font-caveat-brush text-9xl max-lg:text-8xl max-md:text-7xl max-sm:left-16 max-sm:top-16 max-sm:text-4xl">
           TAEKWONDO @ UCR
         </div>
-        <div className="absolute bottom-[8%] right-[4%] font-inika text-5xl">
+        <div className="max-sm:text-md max-sm:text-md absolute bottom-[8%] right-[4%] font-inika text-5xl max-lg:text-3xl max-md:text-base max-sm:text-xs">
           Welcome to Taekwondo Club at UCR!
         </div>
       </div>
