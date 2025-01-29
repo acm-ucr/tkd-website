@@ -10,12 +10,12 @@ const Signup = () => {
       </div>
       <div className="flex flex-row items-center justify-between">
         <div className="mt-8">
-          <div className="font-Inika mb-6 text-5xl justify-self-center leading-relaxed text-black">
+          <div className="font-Inika mb-6 justify-self-center text-5xl leading-relaxed text-black">
             blahblahblahblahblahblahblahblah <br />
             blahblahblah <br />
             blahblahblah
           </div>
-          <div className="pt-16 justify-self-center">
+          <div className="justify-self-center pt-16">
             <SignUpButton
               txt="Sign Up"
               link="/some-page"
@@ -26,9 +26,9 @@ const Signup = () => {
             />
           </div>
         </div>
-        <Image 
-          src={GroupPhoto} 
-          alt="group photo" 
+        <Image
+          src={GroupPhoto}
+          alt="group photo"
           className="w-[46%] rounded-xl"
         />
       </div>
