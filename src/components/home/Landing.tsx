@@ -10,8 +10,8 @@ const Landing = () => {
         src={BackgroundImage}
         alt="background landing page"
       />
-      <div className="items-center justify-center text-white">
-        <div className="absolute left-[5%] top-[9%] font-caveat-brush text-9xl">
+      <div className="flex items-center justify-center text-white">
+        <div className="absolute left-[5%] top-[9%] font-caveat-brush text-9xl max-md:text-7xl">
           TAEKWONDO @ UCR
         </div>
         <div className="absolute bottom-[8%] right-[4%] font-inika text-5xl">
