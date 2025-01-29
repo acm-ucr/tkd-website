@@ -1,7 +1,11 @@
+import Landing from "@/components/home/Landing";
+import SparringGear from "@/components/home/SparringGear";
+
 const Home = () => {
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
-      Home
+    <div className="">
+      <Landing />
+      <SparringGear />
     </div>
   );
 };
