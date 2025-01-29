@@ -5,17 +5,17 @@ import GroupPhoto from "@/../public/home/Signupemember.webp";
 const Signup = () => {
   return (
     <div className="m-10 p-10">
-      <div className="font-Inika pb-8 text-center text-6xl font-bold text-black">
+      <div className="font-Inika pb-10 text-center text-6xl font-bold text-black">
         Interested in Becoming a Member?
       </div>
       <div className="flex flex-row items-center justify-between">
-        <div className="mt-8">
-          <div className="font-Inika mb-6 justify-self-center text-5xl leading-relaxed text-black">
+        <div className="ml-36 mt-8">
+          <div className="font-Inika mb-60 justify-self-center text-5xl leading-relaxed text-black">
             blahblahblahblahblahblahblahblah <br />
             blahblahblah <br />
             blahblahblah
           </div>
-          <div className="justify-self-center pt-16">
+          <div className="justify-self-center">
             <SignUpButton
               txt="Sign Up"
               link="/some-page"
@@ -29,7 +29,7 @@ const Signup = () => {
         <Image
           src={GroupPhoto}
           alt="group photo"
-          className="w-[46%] rounded-xl"
+          className="w-[46%] rounded-xl mt-10"
         />
       </div>
     </div>
