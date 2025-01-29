@@ -9,13 +9,13 @@ const Signup = () => {
         Interested in Becoming a Member?
       </div>
       <div className="flex flex-row items-center justify-between">
-        <div className="ml-5 mt-8 pl-12">
-          <div className="font-Inika mb-6 pb-28 pl-24 text-5xl leading-relaxed text-black">
+        <div className="mt-8">
+          <div className="font-Inika mb-6 text-5xl justify-self-center leading-relaxed text-black">
             blahblahblahblahblahblahblahblah <br />
             blahblahblah <br />
             blahblahblah
           </div>
-          <div className="justify-self-center pl-16 pt-16">
+          <div className="pt-16 justify-self-center">
             <SignUpButton
               txt="Sign Up"
               link="/some-page"
@@ -26,9 +26,11 @@ const Signup = () => {
             />
           </div>
         </div>
-        <div className="w-[46%] pl-12 pt-10">
-          <Image src={GroupPhoto} alt="group photo" className="rounded-xl" />
-        </div>
+        <Image 
+          src={GroupPhoto} 
+          alt="group photo" 
+          className="w-[46%] rounded-xl"
+        />
       </div>
     </div>
   );
