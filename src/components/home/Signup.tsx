@@ -29,7 +29,7 @@ const Signup = () => {
         <Image
           src={GroupPhoto}
           alt="group photo"
-          className="w-[46%] rounded-xl mt-10"
+          className="mt-10 w-[46%] rounded-xl"
         />
       </div>
     </div>
