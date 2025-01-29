@@ -5,13 +5,13 @@ const Landing = () => {
   return (
     <div className="flex h-screen w-screen">
       <div className="flex w-1/3 flex-col items-center justify-center bg-white p-4 text-center">
-        <p className="mb-4 font-caveat-brush text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
+        <p className="mb-4 font-inika text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
           MEET
         </p>
-        <p className="mb-4 font-caveat-brush text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
+        <p className="mb-4 font-inika text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
           THE
         </p>
-        <p className="mb-8 font-caveat-brush text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
+        <p className="mb-8 font-inika text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
           BOARD
         </p>
         <div className="mt-4">
