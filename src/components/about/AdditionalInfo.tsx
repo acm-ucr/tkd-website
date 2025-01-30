@@ -12,13 +12,13 @@ const AdditionalInfo = () => {
         alt=" background image"
       />
 
-      <p className="absolute left-[12%] top-[20%] font-inika font-semibold text-white sm:text-sm md:text-lg lg:text-4xl">
+      <p className="absolute left-[12%] top-[20%] font-inika text-lg font-semibold text-white sm:text-xl md:text-xl lg:text-4xl">
         Additional Information:
       </p>
 
-      <div className="absolute right-[11%] top-[44%] bg-tkd-blue-200 sm:h-[45%] sm:w-[55%] lg:h-[40%] lg:w-[55%]">
-        <div className="relative -top-[9%] right-[3%] flex justify-center border-4 border-white bg-transparent sm:h-[115%] lg:h-[100%] lg:w-[100%]">
-          <div className="relative top-[30%] justify-items-center text-white sm:text-[10px] md:text-[14px] lg:text-base">
+      <div className="absolute right-[11%] top-[44%] h-[45%] w-[70%] bg-tkd-blue-200 lg:h-[40%] lg:w-[55%]">
+        <div className="relative -top-[9%] right-[3%] flex h-[100%] w-[100%] justify-center border-4 border-white bg-transparent lg:h-[100%] lg:w-[100%]">
+          <div className="relative top-[30%] text-[8px] text-white sm:justify-items-center sm:text-[10px] md:text-[14px] lg:text-base">
             <p className="font-semibold">
               How often does your student organization meet?
             </p>
