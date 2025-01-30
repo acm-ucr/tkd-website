@@ -16,9 +16,9 @@ const AdditionalInfo = () => {
         Additional Information:
       </p>
 
-      <div className="absolute right-[11%] top-[44%] h-[40%] w-[55%] bg-tkd-blue-200">
-        <div className="relative -top-[9%] right-[3%] flex h-[100%] w-[100%] justify-center border-4 border-white bg-transparent">
-          <div className="sm:text-cs relative top-[20%] justify-items-center text-white md:text-base lg:text-xl">
+      <div className="absolute right-[11%] top-[44%] bg-tkd-blue-200 sm:h-[45%] sm:w-[55%] lg:h-[40%] lg:w-[55%]">
+        <div className="relative -top-[9%] right-[3%] flex justify-center border-4 border-white bg-transparent sm:h-[115%] lg:h-[100%] lg:w-[100%]">
+          <div className="relative top-[30%] justify-items-center text-white sm:text-[10px] md:text-[14px] lg:text-base">
             <p className="font-semibold">
               How often does your student organization meet?
             </p>
