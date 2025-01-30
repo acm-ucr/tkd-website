@@ -8,9 +8,9 @@ const Signup = () => {
       <div className="font-Inika pb-10 text-center text-6xl font-bold text-black">
         Interested in Becoming a Member?
       </div>
-      <div className="flex flex-row items-center justify-between">
-        <div className="ml-36 mt-8">
-          <div className="font-Inika mb-60 justify-self-center text-5xl leading-relaxed text-black">
+      <div className="flex flex-row items-center justify-around">
+        <div className="mt-8">
+          <div className="font-Inika mb-8 justify-self-center text-5xl leading-relaxed text-black">
             blahblahblahblahblahblahblahblah <br />
             blahblahblah <br />
             blahblahblah
