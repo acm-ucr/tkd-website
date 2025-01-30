@@ -11,7 +11,7 @@ const Signup = () => {
       <div className="flex flex-row items-center justify-around">
         <div className="mt-8">
           <div className="font-Inika mb-8 justify-self-center text-5xl leading-relaxed text-black">
-            blahblahblahblahblahblahblahblah <br />
+            blahblahblahblahblahblahblahblahh <br />
             blahblahblah <br />
             blahblahblah
           </div>
