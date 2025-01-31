@@ -59,7 +59,7 @@ const Button = ({
     <Link
       href={link}
       target={target}
-      className={`box-border flex items-center justify-center border-4 border-solid px-7 py-7 font-inika text-xl font-medium lg:text-3xl ${bgClass} ${borderClass} ${smClass} ${lgClass} ${mdClass} ${textSize} ${size} `}
+      className={`box-border flex items-center justify-center border-4 border-solid font-inika text-xl font-medium lg:text-3xl ${bgClass} ${borderClass} ${smClass} ${lgClass} ${mdClass} ${textSize} ${size} `}
     >
       <div className="relative inline-block whitespace-nowrap">
         <span className="flex justify-center text-white opacity-100">
