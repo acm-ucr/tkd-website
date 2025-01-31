@@ -10,6 +10,8 @@ const Button = ({
   smVariant = "small",
   lgVariant = "large",
   mdVariant = "medium",
+  size = "", //defaults to empty string if no size is provided
+  textSize = "text-xl lg:text-3xl",
 }: {
   txt: string;
   target?: string;
@@ -19,6 +21,8 @@ const Button = ({
   smVariant?: "small";
   lgVariant?: "large";
   mdVariant?: "medium";
+  size?: string;
+  textSize?: string;
 }) => {
   //dyanmic props to bg colors and border colors
   const bgVariant = {
