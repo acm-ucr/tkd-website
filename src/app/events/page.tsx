@@ -1,9 +1,5 @@
 const Events = () => {
-  return (
-    <div className="flex h-screen w-screen items-center justify-center">
-      Events
-    </div>
-  );
+  return <div className="">Events</div>;
 };
 
 export default Events;
