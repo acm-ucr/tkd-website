@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const NotFound = () => {
   return (
-    <div className="h-screen w-screen bg-cover bg-center">
+    <div className="relative h-screen w-screen overflow-hidden">
       <Image
         src="/404page-background.webp"
         width={3024}
@@ -12,12 +12,12 @@ const NotFound = () => {
         alt=" 404 background image"
       />
       <div className="absolute left-[50%] top-[50%] z-0 flex h-[55%] w-[60%] translate-x-[-50%] translate-y-[-50%] items-center justify-center bg-tkd-blue-100">
-        <div className="absolute -top-[7%] right-[3%] h-[100%] w-[100%] border-2 border-white bg-transparent">
-          <p className="absolute left-[50%] top-[-15%] translate-x-[-50%] translate-y-[-10%] font-caveat-brush text-[9.5vw] text-white">
+        <div className="absolute right-[3%] top-[-5%] h-[100%] w-[100%] border-2 border-white bg-transparent">
+          <p className="absolute left-[50%] top-[-15%] translate-x-[-50%] translate-y-[-10%] font-caveat-brush text-[550%] text-white sm:text-[630%] lg:text-[860%]">
             404
           </p>
         </div>
-        <p className="translate-y-[-11%] font-inika text-[6vw] text-white">
+        <p className="translate-y-[-11%] font-inika text-[200%] text-white sm:text-[350%] lg:text-[550%]">
           PAGE NOT FOUND
         </p>
       </div>
@@ -28,7 +28,7 @@ const NotFound = () => {
           borderColor="red"
           bgColor="red"
           size="w-[100%] h-[100%]"
-          textSize="text-[3vw]"
+          textSize="text-[100%] sm:text-[170%] lg:text-[250%]"
         />
       </div>
     </div>
