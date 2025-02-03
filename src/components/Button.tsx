@@ -37,7 +37,7 @@ const Button = ({
   };
 
   const screenSmVariant = {
-    small: "sm:border-1  sm:px-1 sm:py-1 sm:text-sm  ",
+    small: "sm:border-1  sm:px-1/6 sm:py-1/12 sm:text-xs  ",
   };
 
   const screenLgVariant = {

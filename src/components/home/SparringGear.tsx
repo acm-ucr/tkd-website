@@ -11,7 +11,9 @@ const SparringGear = () => {
         className="w-screen brightness-50"
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center space-y-1 lg:space-y-20">
-        <div className="text-2xl md:text-4xl">Need Sparring Gear</div>
+        <div className="text-xl md:text-3xl lg:text-6xl">
+          Need Sparring Gear
+        </div>
         <div className="">
           <Button
             txt="Need Sparring Gear"
@@ -24,8 +26,9 @@ const SparringGear = () => {
           />
         </div>
         <br></br>
+        <br></br>
         <div className="absolute -bottom-[-5%] right-5 flex w-1/2 flex-col items-end sm:space-y-2 md:text-2xl lg:right-20 lg:space-y-4 lg:text-4xl">
-          <div className="sm:mx-5 sm:text-2xl md:mx-0 md:text-3xl lg:mx-10">
+          <div className="sm:mx-5 sm:text-xl md:mx-0 md:text-3xl lg:-mx-8 lg:text-5xl">
             Want a Jacket?
           </div>
           <div>
