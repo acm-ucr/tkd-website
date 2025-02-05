@@ -1,10 +1,11 @@
 import Logo from "@/../public/logo.webp";
 import Link from "next/link";
 import Image from "next/image";
+import { AlignJustify } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <nav className="item-center fixed left-0 top-0 z-50 flex w-full justify-between bg-tkd-blue-300 p-3 px-5 text-white">
+    <nav className="item-center fixed left-0 top-0 z-50 flex w-full items-center justify-between bg-tkd-blue-300 p-3 px-5 text-white">
       <div className="flex items-center">
         <Link href="/" className="flex">
           <Image
@@ -17,7 +18,7 @@ const Navbar = () => {
           </span>
         </Link>
       </div>
-      <ul className="flex items-center space-x-6">
+      <ul className="flex items-center space-x-6 max-md:hidden">
         <li>
           <Link href="/about" className="font-jockey-one text-4xl uppercase">
             About
@@ -39,6 +40,9 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+      <li className="none list-none sm:block md:hidden">
+        <AlignJustify size={50} />
+      </li>
     </nav>
   );
 };
