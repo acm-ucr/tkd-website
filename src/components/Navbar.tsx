@@ -62,42 +62,20 @@ const Navbar: React.FC<NavProps> = ({ items }) => {
         </div>
         {open ? (
           <div className="absolute right-0 bg-tkd-blue-300 text-center">
-            <li className="border-b-[1px] border-b-white px-5 py-2">
-              <Link
-                onClick={handleDropDown}
-                href="/about"
-                className="font-jockey-one text-4xl uppercase"
+            {items.map((item) => (
+              <li
+                key={item.id}
+                className="border-b-[1px] border-t-white px-5 py-2"
               >
-                About
-              </Link>
-            </li>
-            <li className="border-b-[1px] border-b-white px-5 py-2">
-              <Link
-                onClick={handleDropDown}
-                href="/events"
-                className="font-jockey-one text-4xl uppercase"
-              >
-                Events
-              </Link>
-            </li>
-            <li className="border-b-[1px] border-b-white px-5 py-2">
-              <Link
-                onClick={handleDropDown}
-                href="/board"
-                className="font-jockey-one text-4xl uppercase"
-              >
-                Board
-              </Link>
-            </li>
-            <li className="px-5 py-2">
-              <Link
-                onClick={handleDropDown}
-                href="/gallery"
-                className="font-jockey-one text-4xl uppercase"
-              >
-                Gallery
-              </Link>
-            </li>
+                <Link
+                  onClick={handleDropDown}
+                  href={item.url}
+                  className="font-jockey-one text-4xl uppercase"
+                >
+                  {item.name}
+                </Link>
+              </li>
+            ))}
           </div>
         ) : (
           <div></div>
