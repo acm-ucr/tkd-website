@@ -54,10 +54,8 @@ const Footer = () => {
         {/* right side of the line */}
         <div className="w-[31%]">
           {/* Contact Information */}
-          <div className="mr-[50%] w-[100%] text-white sm:text-xs lg:text-base xl:text-2xl">
-            <p className="mb-[2%] font-[700] sm:text-sm lg:text-lg xl:text-3xl">
-              Contact Information:
-            </p>
+          <div className="mr-[50%] w-full overflow-hidden font-inika text-[1.625rem] text-white">
+            <p className="mb-[2%] text-3xl font-[700]">Contact Information:</p>
             <p className="mb-[2%] font-[700]">Address:</p>
             <p>1100 University Ave</p>
             <p>Riverside, CA 92507</p>
