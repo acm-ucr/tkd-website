@@ -7,6 +7,9 @@ const Button = ({
   link,
   borderColor = "grey", //defaults to "grey" border class if no colors provided
   bgColor = "grey", //defaults to "grey" bg class if no colors provided
+  // smVariant = "small",
+  // lgVariant = "large",
+  // mdVariant = "medium",
   size = "", //defaults to empty string if no size is provided
   textSize = "text-xl lg:text-3xl",
 }: {
@@ -15,6 +18,9 @@ const Button = ({
   link: string;
   borderColor?: "red" | "blue" | "grey";
   bgColor?: "red" | "blue" | "grey";
+  smVariant?: "small";
+  lgVariant?: "large";
+  mdVariant?: "medium";
   size?: string;
   textSize?: string;
 }) => {
@@ -30,15 +36,30 @@ const Button = ({
     blue: "border-tkd-blue-300 hover:border-opacity-90",
   };
 
+  // const screenSmVariant = {
+  //   small: "sm:border-1  sm:px-1/6 sm:py-1/12 sm:text-xs  ",
+  // };
+
+  // const screenLgVariant = {
+  //   large: "lg:px-7 lg:py-7 lg:text-3xl",
+  // };
+
+  // const screenMdVariant = {
+  //   medium: "md:px-5 md:py-5 md:text-2xl md:border-3",
+  // };
+
   //fall back to default colors if no provided colors
   const bgClass = bgVariant[bgColor];
   const borderClass = borderVariant[borderColor];
+  // const smClass = screenSmVariant[smVariant];
+  // const lgClass = screenLgVariant[lgVariant];
+  // const mdClass = screenMdVariant[mdVariant];
 
   return (
     <Link
       href={link}
       target={target}
-      className={`box-border flex items-center justify-center border-4 border-solid px-7 py-7 font-inika font-medium ${textSize} ${bgClass} ${borderClass} ${size}`}
+      className={`box-border flex items-center justify-center border-4 border-solid px-[34%] py-[15%] font-inika font-medium ${textSize} ${bgClass} ${borderClass} ${size}`}
     >
       <div className="relative inline-block whitespace-nowrap">
         <span className="flex justify-center text-white opacity-100">
