@@ -13,13 +13,13 @@ const Signup = () => {
           <div className="mb-4 break-words font-inika text-black md:mb-8 md:text-5xl md:leading-relaxed">
             blahblahblahblahblahblahblahblahh blahblahblah blahblahblah
           </div>
-          <div className="flex justify-self-center">
+          <div className="flex justify-self-center py-[8%] sm: justify-center">
             <SignUpButton
               txt="Sign Up"
               link="/some-page"
               borderColor="blue"
               bgColor="blue"
-              textSize="text-sm md:text-5xl"
+              textSize="text-lg md:text-5xl"
             />
           </div>
         </div>
