@@ -69,6 +69,7 @@ const Navbar = () => {
           <div className="absolute right-0 bg-tkd-blue-300 text-center">
             <li className="border-b-[1px] border-b-white px-5 py-2">
               <Link
+                onClick={handleDropDown}
                 href="/about"
                 className="font-jockey-one text-4xl uppercase"
               >
@@ -77,6 +78,7 @@ const Navbar = () => {
             </li>
             <li className="border-b-[1px] border-b-white px-5 py-2">
               <Link
+                onClick={handleDropDown}
                 href="/events"
                 className="font-jockey-one text-4xl uppercase"
               >
@@ -85,6 +87,7 @@ const Navbar = () => {
             </li>
             <li className="border-b-[1px] border-b-white px-5 py-2">
               <Link
+                onClick={handleDropDown}
                 href="/board"
                 className="font-jockey-one text-4xl uppercase"
               >
@@ -93,6 +96,7 @@ const Navbar = () => {
             </li>
             <li className="px-5 py-2">
               <Link
+                onClick={handleDropDown}
                 href="/gallery"
                 className="font-jockey-one text-4xl uppercase"
               >
