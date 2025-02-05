@@ -11,8 +11,12 @@ const Navbar = () => {
 
   console.log(open);
 
-  if (!open) {
-    setOpen(true);
+  function handleDropDown() {
+    if (!open) {
+      setOpen(true);
+    } else {
+      setOpen(false);
+    }
   }
   // else{
   //   setOpen(false);
@@ -55,34 +59,50 @@ const Navbar = () => {
         </li>
       </ul>
       <li className="none list-none sm:block md:hidden">
-        <div className="flex justify-end bg-tkd-blue-300">
+        <div
+          onClick={handleDropDown}
+          className="flex cursor-pointer justify-end bg-tkd-blue-300"
+        >
           <AlignJustify size={50} />
         </div>
-        <div className="absolute right-0 bg-tkd-blue-300 text-center">
-          <li className="border-b-[1px] border-b-white px-5 py-2">
-            <Link href="/about" className="font-jockey-one text-4xl uppercase">
-              About
-            </Link>
-          </li>
-          <li className="border-b-[1px] border-b-white px-5 py-2">
-            <Link href="/events" className="font-jockey-one text-4xl uppercase">
-              Events
-            </Link>
-          </li>
-          <li className="border-b-[1px] border-b-white px-5 py-2">
-            <Link href="/board" className="font-jockey-one text-4xl uppercase">
-              Board
-            </Link>
-          </li>
-          <li className="px-5 py-2">
-            <Link
-              href="/gallery"
-              className="font-jockey-one text-4xl uppercase"
-            >
-              Gallery
-            </Link>
-          </li>
-        </div>
+        {open ? (
+          <div className="absolute right-0 bg-tkd-blue-300 text-center">
+            <li className="border-b-[1px] border-b-white px-5 py-2">
+              <Link
+                href="/about"
+                className="font-jockey-one text-4xl uppercase"
+              >
+                About
+              </Link>
+            </li>
+            <li className="border-b-[1px] border-b-white px-5 py-2">
+              <Link
+                href="/events"
+                className="font-jockey-one text-4xl uppercase"
+              >
+                Events
+              </Link>
+            </li>
+            <li className="border-b-[1px] border-b-white px-5 py-2">
+              <Link
+                href="/board"
+                className="font-jockey-one text-4xl uppercase"
+              >
+                Board
+              </Link>
+            </li>
+            <li className="px-5 py-2">
+              <Link
+                href="/gallery"
+                className="font-jockey-one text-4xl uppercase"
+              >
+                Gallery
+              </Link>
+            </li>
+          </div>
+        ) : (
+          <div></div>
+        )}
       </li>
     </nav>
   );
