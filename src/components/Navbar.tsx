@@ -6,10 +6,18 @@ import Image from "next/image";
 import { AlignJustify } from "lucide-react";
 import { useState } from "react";
 
-const Navbar = () => {
-  const [open, setOpen] = useState(false);
+interface NavItem {
+  url: string;
+  name: string;
+  id: number;
+}
 
-  console.log(open);
+interface NavProps {
+  items: NavItem[];
+}
+
+const Navbar: React.FC<NavProps> = ({ items }) => {
+  const [open, setOpen] = useState(false);
 
   function handleDropDown() {
     if (!open) {
@@ -18,9 +26,6 @@ const Navbar = () => {
       setOpen(false);
     }
   }
-  // else{
-  //   setOpen(false);
-  // }
 
   return (
     <nav className="item-center fixed left-0 top-0 z-50 flex w-full items-center justify-between bg-tkd-blue-300 p-3 px-5 text-white">
@@ -37,26 +42,16 @@ const Navbar = () => {
         </Link>
       </div>
       <ul className="flex items-center space-x-6 max-md:hidden">
-        <li>
-          <Link href="/about" className="font-jockey-one text-4xl uppercase">
-            About
-          </Link>
-        </li>
-        <li>
-          <Link href="/events" className="font-jockey-one text-4xl uppercase">
-            Events
-          </Link>
-        </li>
-        <li>
-          <Link href="/board" className="font-jockey-one text-4xl uppercase">
-            Board
-          </Link>
-        </li>
-        <li>
-          <Link href="/gallery" className="font-jockey-one text-4xl uppercase">
-            Gallery
-          </Link>
-        </li>
+        {items.map((item) => (
+          <li key={item.id}>
+            <Link
+              href={item.url}
+              className="font-jockey-one text-4xl uppercase"
+            >
+              {item.name}
+            </Link>
+          </li>
+        ))}
       </ul>
       <li className="none list-none sm:block md:hidden">
         <div
