@@ -1,5 +1,5 @@
 import Image from "next/image";
-import landing from "@/../public/events/fa665d32ed0d292b3794955d2c46a74a.webp";
+import landing from "@/../public/events/event-landing.webp";
 
 const Landing = () => {
   return (
