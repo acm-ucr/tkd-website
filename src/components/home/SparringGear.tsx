@@ -11,18 +11,19 @@ const SparringGear = () => {
         className="w-screen brightness-50"
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center space-y-1 lg:space-y-20">
-        <div className="text-xl md:text-3xl lg:text-6xl">
-          Need Sparring Gear
+        <div className="mb-4 text-center text-xl md:text-3xl lg:text-6xl">
+          Need Sparring Gear?
         </div>
-        <div className="">
+        <div>
           <Button
-            txt="Need Sparring Gear"
+            txt="Purchase Gear"
             link=""
             bgColor="red"
             borderColor="red"
             target="_blank"
             smVariant="small"
             lgVariant="large"
+            padding="px-[60%] py-[10%]"
           />
         </div>
         <br></br>
@@ -31,7 +32,7 @@ const SparringGear = () => {
           <div className="sm:mx-5 sm:text-xl md:mx-0 md:text-3xl lg:-mx-8 lg:text-5xl">
             Want a Jacket?
           </div>
-          <div>
+          <div className="relative max-sm:right-1">
             <Button
               txt="Purchase Jacket"
               link=""
@@ -40,6 +41,8 @@ const SparringGear = () => {
               target="_blank"
               smVariant="small"
               lgVariant="large"
+              textSize="max-sm:text-xs"
+              padding="px-[60%] py-[5%] max-sm:py-[2%] max-sm:px-[50%]"
             />
           </div>
         </div>
