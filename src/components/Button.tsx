@@ -24,7 +24,7 @@ const Button = ({
   mdVariant?: "medium";
   size?: string;
   textSize?: string;
-  padding: string;
+  padding?: string;
 }) => {
   //dyanmic props to bg colors and border colors
   const bgVariant = {
