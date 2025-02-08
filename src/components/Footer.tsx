@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="flex h-[25%] w-[30%] justify-around font-inika sm:text-xs lg:text-base xl:text-2xl">
           {/* Facebook */}
           <Link
-            href=""
+            href="https://www.facebook.com/tkducr/"
             className="flex h-auto flex-col items-center justify-items-center sm:w-[20%] lg:w-[20%] xl:w-[18%]"
           >
             <div className="relative flex items-center justify-center rounded-full bg-tkd-grey-100 p-[45%]">
@@ -27,7 +27,7 @@ const Footer = () => {
 
           {/* Instagram */}
           <Link
-            href=""
+            href="https://www.instagram.com/tkdatucr/#"
             className="flex h-auto flex-col items-center justify-items-center sm:w-[20%] lg:w-[20%] xl:w-[18%]"
           >
             <div className="relative flex items-center justify-center rounded-full bg-tkd-grey-100 p-[45%]">
@@ -38,7 +38,7 @@ const Footer = () => {
 
           {/* Discord */}
           <Link
-            href=""
+            href="https://www.discord.gg/ungzmJyVyY"
             className="flex h-auto flex-col items-center justify-items-center sm:w-[20%] lg:w-[20%] xl:w-[18%]"
           >
             <div className="relative flex items-center justify-center rounded-full bg-tkd-grey-100 p-[45%]">
