@@ -4,7 +4,7 @@ import { useRef } from "react";
 
 const Mission = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: false, margin: "-50px" });
 
   return (
     <motion.div
@@ -16,6 +16,7 @@ const Mission = () => {
         ease: "easeOut",
         type: "spring",
         stiffness: 120,
+        delay: 0.2,
       }}
       className="flex w-full flex-col items-center py-[6%]"
     >
