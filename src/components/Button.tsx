@@ -11,7 +11,8 @@ const Button = ({
   // lgVariant = "large",
   // mdVariant = "medium",
   size = "", //defaults to empty string if no size is provided
-  textSize = "text-xl lg:text-3xl",
+  textSize = "text-xl lg:text-3xl max-md:text-base",
+  padding = "px-[34%] py-[15%]",
 }: {
   txt: string;
   target?: string;
@@ -23,6 +24,7 @@ const Button = ({
   mdVariant?: "medium";
   size?: string;
   textSize?: string;
+  padding?: string;
 }) => {
   //dyanmic props to bg colors and border colors
   const bgVariant = {
@@ -59,7 +61,7 @@ const Button = ({
     <Link
       href={link}
       target={target}
-      className={`box-border flex items-center justify-center border-4 border-solid px-[34%] py-[15%] font-inika font-medium ${textSize} ${bgClass} ${borderClass} ${size}`}
+      className={`box-border flex items-center justify-center border-2 border-solid ${padding} font-inika font-medium ${textSize} ${bgClass} ${borderClass} ${size}`}
     >
       <div className="relative inline-block whitespace-nowrap">
         <span className="flex justify-center text-white opacity-100">
