@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const NotFound = () => {
   return (
-    <div className="relative flex w-screen flex-col items-center justify-center overflow-hidden">
+    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden">
       <Image
-        src="/404page-background.webp"
-        width={3024}
-        height={1776}
+        src="/taekwondo-404-background.webp"
+        width={2048}
+        height={1536}
         className="min-h-screen w-screen object-cover"
         alt=" 404 background image"
       />
