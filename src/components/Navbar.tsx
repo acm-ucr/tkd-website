@@ -30,7 +30,11 @@ const Navbar: React.FC<NavProps> = ({ items }) => {
   return (
     <nav className="item-center fixed left-0 top-0 z-50 flex w-full select-none items-center justify-between bg-tkd-blue-300 p-3 px-5 text-white">
       <div className="flex items-center">
-        <Link href="/" className="flex">
+        <Link href="/" className="flex" onClick={
+          ()=>{
+            setOpen(false);
+          }
+        }>
           <Image
             src={Logo}
             alt="TKD Logo"
@@ -65,7 +69,7 @@ const Navbar: React.FC<NavProps> = ({ items }) => {
             {items.map((item) => (
               <li
                 key={item.id}
-                className="border-b-[1px] border-b-white last:border-none px-5 py-2"
+                className="border-b-[1px] border-b-white px-5 py-2 last:border-none"
               >
                 <Link
                   onClick={handleDropDown}
