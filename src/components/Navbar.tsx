@@ -34,9 +34,9 @@ const Navbar: React.FC<NavProps> = ({ items }) => {
           <Image
             src={Logo}
             alt="TKD Logo"
-            className="mr-7 h-20 w-20 rounded-full"
+            className="mr-7 h-20 w-20 rounded-full max-md:mr-4 max-md:h-10 max-md:w-10"
           />
-          <span className="title flex items-center font-jockey-one text-4xl uppercase">
+          <span className="title flex items-center font-jockey-one text-4xl uppercase max-md:text-3xl">
             TKD
           </span>
         </Link>
@@ -58,7 +58,7 @@ const Navbar: React.FC<NavProps> = ({ items }) => {
           onClick={handleDropDown}
           className="flex cursor-pointer justify-end bg-tkd-blue-300"
         >
-          <AlignJustify size={50} />
+          <AlignJustify className="h-10 w-10" />
         </div>
         {open ? (
           <div className="absolute right-0 bg-tkd-blue-300 text-center">
@@ -70,7 +70,7 @@ const Navbar: React.FC<NavProps> = ({ items }) => {
                 <Link
                   onClick={handleDropDown}
                   href={item.url}
-                  className="font-jockey-one text-4xl uppercase"
+                  className="font-jockey-one text-2xl uppercase"
                 >
                   {item.name}
                 </Link>
