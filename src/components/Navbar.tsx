@@ -30,11 +30,13 @@ const Navbar: React.FC<NavProps> = ({ items }) => {
   return (
     <nav className="item-center fixed left-0 top-0 z-50 flex w-full select-none items-center justify-between bg-tkd-blue-300 p-3 px-5 text-white">
       <div className="flex items-center">
-        <Link href="/" className="flex" onClick={
-          ()=>{
+        <Link
+          href="/"
+          className="flex"
+          onClick={() => {
             setOpen(false);
-          }
-        }>
+          }}
+        >
           <Image
             src={Logo}
             alt="TKD Logo"
