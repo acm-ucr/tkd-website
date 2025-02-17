@@ -65,7 +65,7 @@ const Navbar: React.FC<NavProps> = ({ items }) => {
             {items.map((item) => (
               <li
                 key={item.id}
-                className="border-b-[1px] border-t-white px-5 py-2"
+                className="border-b-[1px] border-b-white last:border-none px-5 py-2"
               >
                 <Link
                   onClick={handleDropDown}
