@@ -48,6 +48,8 @@ const Signup = () => {
               borderColor="blue"
               bgColor="blue"
               textSize="sm:text-lg lg:text-xl xl:text-xl"
+              size="h-[50%] w-[150%]"
+              padding="py-[12.7%] px-[10%]"
             />
           </div>
           <div className="sm: absolute -bottom-24 left-80 flex justify-center justify-self-center py-[2%] lg:py-[4%]">
@@ -57,6 +59,8 @@ const Signup = () => {
               borderColor="blue"
               bgColor="blue"
               textSize="sm:text-lg lg:text-xl xl:text-xl"
+              size="h-[50%] w-[150%]"
+              padding="py-[10%] px-[10%]"
             />
           </div>
         </div>
