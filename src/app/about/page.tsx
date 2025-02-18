@@ -1,7 +1,11 @@
+import Mission from "@/components/about/Mission";
+import AdditionalInfo from "@/components/about/AdditionalInfo";
+
 const About = () => {
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
-      About
+    <div className="">
+      <Mission />
+      <AdditionalInfo />
     </div>
   );
 };
