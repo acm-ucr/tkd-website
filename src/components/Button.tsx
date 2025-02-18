@@ -12,7 +12,7 @@ const Button = ({
   // mdVariant = "medium",
   size = "", //defaults to empty string if no size is provided
   textSize = "text-xl lg:text-3xl max-md:text-base",
-  padding = "px-[34%] py-[15%]",
+  padding = "",
 }: {
   txt: string;
   target?: string;
