@@ -2,6 +2,8 @@ import "./globals.css";
 import { Inika, Caveat_Brush, Jockey_One } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import { NavData } from "@/data/NavData";
 
 const inika = Inika({
   subsets: ["latin"],
@@ -38,6 +40,8 @@ export default function RootLayout({ children }: LayoutProps) {
         className={`${inika.className} ${caveat_brush.variable} ${jockey_one.variable}`}
       >
         <ReactQueryClientProvider>
+          <Navbar items={NavData} />
+          <div className="m-24"></div>
           {children}
           <Footer />
         </ReactQueryClientProvider>
