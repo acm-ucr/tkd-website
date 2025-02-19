@@ -1,7 +1,20 @@
+"use client";
 import Image from "next/image";
 import { ArrowDown } from "lucide-react";
+import React from "react";
 
 const Landing = () => {
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    const headerHeight = 56;
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop - headerHeight,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <div className="flex h-screen w-screen">
       <div className="flex w-1/3 flex-col items-center justify-center bg-white p-4 text-center">
@@ -14,7 +27,10 @@ const Landing = () => {
         <p className="mb-8 font-inika text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
           BOARD
         </p>
-        <div className="mt-4">
+        <div
+          className="mt-4 cursor-pointer"
+          onClick={() => scrollToSection("board")}
+        >
           <ArrowDown size={80} />
         </div>
       </div>
