@@ -44,7 +44,7 @@ const Landing = () => {
             borderColor="red"
             target="_blank"
             textSize="text-5xl"
-            padding="px-[69.8%] py-[10%]"
+            padding="px-[70.5%] py-[10%]"
           />
         </div>
 
