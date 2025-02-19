@@ -17,35 +17,47 @@ const Landing = () => {
         </p>
       </div>
 
-      <div className="absolute left-[80%] top-[15%] h-[10px] w-[20%]">
-        <Button
-          txt="EVENT 1"
-          link=""
-          bgColor="red"
-          borderColor="red"
-          target="_blank"
-          textSize="text-3xl"
-        />
-        <div className="font ml-[7%] mt-[4%] text-3xl">
-          <p>Event stusdfsdgdsgff</p>
-          <p>Tteast</p>
+      <div>
+        <div className="absolute right-[5.7%] top-[15%] w-[14%]">
+          <Button
+            txt="EVENT 1"
+            link=""
+            bgColor="red"
+            borderColor="red"
+            target="_blank"
+            textSize="text-5xl"
+            padding="px-[69.8%] py-[10%]"
+          />
         </div>
+      
+        <div className="absolute z-20 left-[81%] top-[27%] text-3xl w-[18%] break-words">
+          <p>asfafsasfaasdasdsdasdasdasdasd</p>
+        </div>
+
+
       </div>
 
-      <div className="absolute left-[65%] top-[55%] z-0 h-[10px] w-[20%]">
+
+      <div>
+      <div className="absolute left-[65%] top-[55%] w-[14%]">
         <Button
           txt="EVENT 2"
           link=""
           bgColor="red"
           borderColor="red"
           target="_blank"
-          textSize="text-3xl"
+          textSize="text-5xl"
+          padding="px-[69.8%] py-[10%]"
         />
-        <div className="font ml-[7%] mt-[4%] text-3xl">
-          <p>Event stusdfsdgdsgff</p>
-          <p>Tteast</p>
-        </div>
+
       </div>
+
+        <div className="absolute z-20 left-[65.5%] top-[67%] text-3xl w-[18%] break-words">
+          <p>asfafsasfasdasdasdaasdasdsadsdasd</p>
+        </div>
+
+      </div>
+
 
       <div className="absolute left-[82%] top-[85%]">
         <p className="mb-[15%] ml-[-35%] w-[100%] text-3xl">More Events</p>
