@@ -1,5 +1,10 @@
+import Landing from "@/components/events/Landing";
+
+
 const Events = () => {
-  return <div className="">Events</div>;
+  return (
+    <Landing />
+  );
 };
 
 export default Events;
