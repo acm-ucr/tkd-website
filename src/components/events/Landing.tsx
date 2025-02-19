@@ -53,8 +53,8 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className="absolute left-[82%] top-[85%]">
-        <p className="mb-[15%] ml-[-35%] w-[100%] text-3xl">More Events</p>
+      <div className="absolute left-[81.5%] top-[85%]">
+        <p className="mb-[10%] ml-[-34%] w-[100%] text-3xl">More Events</p>
         <MoveDown size={55} strokeWidth={1} />
       </div>
     </div>
