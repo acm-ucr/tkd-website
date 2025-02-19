@@ -1,5 +1,5 @@
 import Image from "next/image";
-import tkdicon from "/src/components/footerImages/tkd-icon.png";
+import tkdicon from "/src/cogimponents/footerImages/tkd-icon.png";
 import instaicon from "/src/components/footerImages/instagram-icon.png";
 import discordicon from "/src/components/footerImages/discord-icon.png";
 import facebookicon from "/src/components/footerImages/facebook-icon.png";
