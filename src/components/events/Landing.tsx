@@ -29,35 +29,29 @@ const Landing = () => {
             padding="px-[69.8%] py-[10%]"
           />
         </div>
-      
-        <div className="absolute z-20 left-[81%] top-[27%] text-3xl w-[18%] break-words">
+
+        <div className="absolute left-[81%] top-[27%] z-20 w-[18%] break-words text-3xl">
           <p>asfafsasfaasdasdsdasdasdasdasd</p>
         </div>
-
-
       </div>
-
 
       <div>
-      <div className="absolute left-[65%] top-[55%] w-[14%]">
-        <Button
-          txt="EVENT 2"
-          link=""
-          bgColor="red"
-          borderColor="red"
-          target="_blank"
-          textSize="text-5xl"
-          padding="px-[69.8%] py-[10%]"
-        />
-
-      </div>
-
-        <div className="absolute z-20 left-[65.5%] top-[67%] text-3xl w-[18%] break-words">
-          <p>asfafsasfasdasdasdaasdasdsadsdasd</p>
+        <div className="absolute left-[65%] top-[55%] w-[14%]">
+          <Button
+            txt="EVENT 2"
+            link=""
+            bgColor="red"
+            borderColor="red"
+            target="_blank"
+            textSize="text-5xl"
+            padding="px-[69.8%] py-[10%]"
+          />
         </div>
 
+        <div className="absolute left-[65.5%] top-[67%] z-20 w-[18%] break-words text-3xl">
+          <p>asfafsasfasdasdasdaasdasdsadsdasd</p>
+        </div>
       </div>
-
 
       <div className="absolute left-[82%] top-[85%]">
         <p className="mb-[15%] ml-[-35%] w-[100%] text-3xl">More Events</p>
