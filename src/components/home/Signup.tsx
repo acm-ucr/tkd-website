@@ -5,7 +5,7 @@ import GroupPhoto from "@/../public/home/Signupemember.webp";
 
 const Signup = () => {
   return (
-    <div className="relative mx-4 my-6 md:mx-[8%] md:my-[6%]">
+    <div className="mx-4 my-6 md:mx-[8%] md:my-[6%]">
       <div className="mb-4 text-center font-inika text-2xl font-bold text-black md:mb-[5%] md:text-6xl">
         Interested in Becoming a Member?
       </div>
@@ -41,27 +41,27 @@ const Signup = () => {
               <li>Fill out any information and complete all steps!</li>
             </ul>
           </div>
-          <div className="sm: absolute -bottom-24 left-10 flex justify-center justify-self-center py-[2%] lg:py-[4%]">
-            <HighlanderLinkButton
-              txt="Higlander Link"
-              link="https://highlanderlink.ucr.edu/organization/tkd"
-              borderColor="blue"
-              bgColor="blue"
-              textSize="sm:text-lg lg:text-xl xl:text-xl"
-              size="h-[50%] w-[150%]"
-              padding="py-[12.7%] px-[10%]"
-            />
-          </div>
-          <div className="sm: absolute -bottom-24 left-80 flex justify-center justify-self-center py-[2%] lg:py-[4%]">
-            <DoSportsEasyButton
-              txt="DoSportsEasy Form"
-              link="https://recreation.ucr.edu/competitive-sports/sport-clubs"
-              borderColor="blue"
-              bgColor="blue"
-              textSize="sm:text-lg lg:text-xl xl:text-xl"
-              size="h-[50%] w-[150%]"
-              padding="py-[10%] px-[10%]"
-            />
+          <div className="flex flex-row gap-16">
+            <div className="sm: flex justify-center justify-self-center py-[2%] lg:py-[4%]">
+              <HighlanderLinkButton
+                txt="Higlander Link"
+                link="https://highlanderlink.ucr.edu/organization/tkd"
+                borderColor="blue"
+                bgColor="blue"
+                textSize="sm:text-lg lg:text-xl xl:text-xl"
+                padding="py-[10%] px-[10%]"
+              />
+            </div>
+            <div className="sm: flex justify-center justify-self-center py-[2%] lg:py-[4%]">
+              <DoSportsEasyButton
+                txt="DoSportsEasy Form"
+                link="https://recreation.ucr.edu/competitive-sports/sport-clubs"
+                borderColor="blue"
+                bgColor="blue"
+                textSize="sm:text-lg lg:text-xl xl:text-xl"
+                padding="py-[10%] px-[10%]"
+              />
+            </div>
           </div>
         </div>
         <Image
