@@ -9,9 +9,9 @@ const Signup = () => {
       <div className="mb-4 text-center font-inika text-2xl font-bold text-black md:mb-[5%] md:text-6xl">
         Interested in Becoming a Member?
       </div>
-      <div className="flex flex-col items-center gap-4 md:flex-row md:gap-[5%] md:justify-self-center">
+      <div className="sm: ml-7 flex flex-col items-center gap-5 md:flex-row md:gap-[5%] md:justify-self-center">
         <div className="w-full md:w-[50%]">
-          <div className="mb-6 break-words font-inika text-black sm:mb-9 sm:text-xl md:leading-relaxed lg:mb-12 lg:text-xl xl:text-2xl">
+          <div className="mb-6 break-words font-inika text-black sm:mb-9 sm:text-lg md:leading-relaxed lg:mb-12 lg:text-xl xl:text-2xl">
             <p className="font-bold underline underline-offset-1">
               {" "}
               Practice Times:
