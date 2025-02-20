@@ -6,34 +6,46 @@ const Mission = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false, margin: "-50px" });
 
+  // Animation Variants
+  const containerVariants = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30, scale: 0.95 },
+    show: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut",
+      },
+    },
+  };
+
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 50, scale: 0.9 }}
-      animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}}
-      transition={{
-        duration: 1,
-        ease: "easeOut",
-        type: "spring",
-        stiffness: 120,
-        delay: 0.2,
-      }}
+      variants={containerVariants}
+      initial="hidden"
+      animate={isInView ? "show" : "hidden"}
       className="flex w-full flex-col items-center py-[6%]"
-      
     >
       <motion.p
-        initial={{ opacity: 0, y: 20 }}
-        animate={isInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
+        variants={itemVariants}
         className="m-2 mb-8 text-center font-inika text-4xl font-bold sm:text-5xl sm:leading-[95%]"
       >
         OUR MISSION
       </motion.p>
 
       <motion.p
-        initial={{ opacity: 0, y: 20 }}
-        animate={isInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ delay: 0.6, duration: 1, ease: "easeOut" }}
+        variants={itemVariants}
         className="m-0 w-[80%] text-center font-inika text-xl sm:m-3 sm:w-[57%] sm:text-3xl sm:leading-[139%]"
       >
         The mission of the Taekwondo Club is to provide training for those of
