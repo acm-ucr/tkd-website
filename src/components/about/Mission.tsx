@@ -19,6 +19,7 @@ const Mission = () => {
         delay: 0.2,
       }}
       className="flex w-full flex-col items-center py-[6%]"
+      
     >
       <motion.p
         initial={{ opacity: 0, y: 20 }}
