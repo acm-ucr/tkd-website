@@ -3,6 +3,7 @@ import tkdicon from "/src/cogimponents/footerImages/tkd-icon.png";
 import instaicon from "/src/components/footerImages/instagram-icon.png";
 import discordicon from "/src/components/footerImages/discord-icon.png";
 import facebookicon from "/src/components/footerImages/facebook-icon.png";
+import React from "react";
 const Footer = () => {
   return (
     <footer className="absolute bottom-0 h-auto w-full bg-tkd-blue-300">
