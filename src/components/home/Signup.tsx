@@ -41,7 +41,7 @@ const Signup = () => {
               <li>Fill out any information and complete all steps!</li>
             </ul>
           </div>
-          <div className="flex flex-row gap-16">
+          <div className="sm: flex flex-row justify-center gap-16">
             <div className="sm: flex justify-center justify-self-center py-[2%] lg:py-[4%]">
               <HighlanderLinkButton
                 txt="Higlander Link"
