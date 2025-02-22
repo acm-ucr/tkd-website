@@ -46,7 +46,7 @@ const BoardMemberCard = ({ member }: BoardMemberCardProps) => {
       <motion.div
         variants={{
           hidden: { opacity: 0 },
-          visiblle: { opacity: 1, transition: { duration: 1, delay: 2 } },
+          visible: { opacity: 1, transition: { duration: 1, delay: 2 } },
         }}
         className="absolute -bottom-5 left-8 z-[3] h-fit w-56 overflow-hidden text-wrap rounded-md bg-tkd-blue-100 px-5 py-1 text-center font-inika max-md:left-4 max-md:w-44 max-sm:left-2 max-sm:w-36"
       >
