@@ -1,9 +1,7 @@
+import Landing from "@/components/events/Landing";
+
 const Events = () => {
-  return (
-    <div className="flex h-screen w-screen items-center justify-center">
-      Events
-    </div>
-  );
+  return <Landing />;
 };
 
 export default Events;

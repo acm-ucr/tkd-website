@@ -11,24 +11,26 @@ const AdditionalInfo = () => {
         className="max-h-full w-screen brightness-[.60]"
         alt=" background image"
       />
-      <p className="absolute left-[13%] top-[25%] font-inika text-4xl font-semibold text-white">
+
+      <p className="absolute left-[12%] top-[20%] font-inika text-lg font-semibold text-white sm:text-xl md:text-xl lg:text-4xl">
         Additional Information:
       </p>
-      <div className="right-[20%] top-[40%] h-[40%] w-[54%] border-2 border-white bg-transparent"></div>
-      <div className="absolute right-[11%] top-[45%] h-[35%] w-[55%] bg-tkd-blue-200">
-        <div className="absolute -top-[9%] right-[2%] h-[100%] w-[100%] border-4 border-white bg-transparent"></div>
-        <p className="relative top-3 flex justify-center text-2xl font-semibold text-white">
-          How often does your student organization meet?
-        </p>
-        <p className="relative top-3 flex justify-center text-2xl font-medium text-white">
-          Twice a week.
-        </p>
-        <p className="relative top-10 flex justify-center text-2xl font-semibold text-white">
-          What day and time does your student organization generally meet?
-        </p>
-        <p className="relative top-10 flex justify-center text-2xl font-medium text-white">
-          Mondays and Wednesdays from 9:30pm-10:50pm
-        </p>
+
+      <div className="absolute right-[11%] top-[44%] h-[45%] w-[70%] bg-tkd-blue-200 lg:h-[40%] lg:w-[55%]">
+        <div className="relative -top-[9%] right-[3%] flex h-[100%] w-[100%] justify-center border-2 border-white bg-transparent md:border-4 lg:h-[100%] lg:w-[100%] lg:border-4">
+          <div className="relative top-[30%] text-[8px] text-white sm:justify-items-center sm:text-[10px] md:text-[14px] lg:text-base">
+            <p className="font-semibold">
+              How often does your student organization meet?
+            </p>
+            <p className="font-medium">Twice a week.</p>
+            <p className="font-semibold">
+              What day and time does your student organization generally meet?
+            </p>
+            <p className="font-medium">
+              Mondays and Wednesdays from 9:30pm-10:50pm
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

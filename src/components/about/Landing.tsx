@@ -1,31 +1,23 @@
-import banner from "@/public/home/landing.webp";
-import Image from "next/image";
 
+import Image from "next/image";
+import Background from "@/public/about/about_landing.webp";
 const Landing = () => {
   return (
-    <div className="relative flex items-center justify-center text-white">
+    <div className="relative">
       <Image
-        className="h-[600px] w-screen object-cover brightness-75"
-        src={banner}
-        alt="About Us Banner"
+        src={Background}
+        className="h-[990px] w-screen overflow-hidden object-cover"
+        alt="Landing background image"
       />
-      <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <h1 className="animate-fade-in font-caveat-brush text-5xl font-bold md:text-6xl lg:text-7xl">
-          ABOUT US
-        </h1>
-        <p
-          className="animate-fade-up mt-6 text-center font-inika text-xl opacity-0 md:text-2xl lg:text-3xl"
-          style={{
-            width: "760px",
-            height: "124px",
-            top: "717px",
-            left: "725px",
-          }}
-        >
-          Come join us! Our practices are Mondays and Wednesdays from 9:30 PM -
-          10:50 PM.
-        </p>
-      </div>
+
+      <h1 className="absolute left-[13%] top-[2%] z-10 font-caveat-brush text-9xl font-extrabold uppercase text-white">
+        About Us
+      </h1>
+
+      <p className="absolute bottom-4 right-4 z-10 text-center text-5xl font-medium text-white">
+        Come join us! Our practices are Mondays and <br />
+        Wednesdays from 9:30 PM - 10:50 PM.
+      </p>
     </div>
   );
 };
