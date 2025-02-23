@@ -1,3 +1,5 @@
+
+"use client";
 import Mission from "@/components/about/Mission";
 import AdditionalInfo from "@/components/about/AdditionalInfo";
 
