@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { ArrowDown } from "lucide-react";
 import React from "react";
-import LandingImg from "@/../public/board/boardLanding.webp";
+// import LandingImg from "@/../public/board/boardLanding.webp";
 
 const Landing = () => {
   const scrollToSection = (sectionId: string) => {
@@ -21,7 +21,7 @@ const Landing = () => {
       <div className="m-0 flex w-screen flex-col p-0 lg:hidden">
         <div className="relative w-full">
           <Image
-            src={LandingImg}
+            src="/board/boardLanding.webp"
             alt="board group image"
             width={1920}
             height={1080}
@@ -78,7 +78,7 @@ const Landing = () => {
         <div className="relative w-2/3">
           <div className="absolute inset-0 h-full w-full">
             <Image
-              src={LandingImg}
+              src="/board/boardLanding.webp"
               alt="board group image"
               fill
               style={{ objectFit: "cover" }}
