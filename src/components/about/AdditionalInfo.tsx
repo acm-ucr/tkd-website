@@ -1,11 +1,11 @@
 import Image from "next/image";
-import Background from "@/public/about/background.webp";
+// import Background from "@/../public/about/AdditionalInfo.webp";
 
 const AdditionalInfo = () => {
   return (
     <div className="relative">
       <Image
-        src={Background}
+        src="/about/AdditionalInfo.webp"
         width={1700}
         height={1080}
         className="max-h-full w-screen brightness-[.60]"

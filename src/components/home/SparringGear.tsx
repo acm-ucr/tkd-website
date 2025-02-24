@@ -1,12 +1,12 @@
 import Button from "@/components/Button";
-import gearPhoto from "@/public/home/sparringGear.webp";
+// import gearPhoto from "@/../public/home/SparringGear.webp";
 import Image from "next/image";
 
 const SparringGear = () => {
   return (
     <div className="relative w-fit justify-items-center font-bold text-white md:text-3xl lg:text-7xl">
       <Image
-        src={gearPhoto}
+        src="/home/SparringGear.webp"
         alt="sparringGearPhoto"
         className="w-screen brightness-50"
       />
