@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { ArrowDown } from "lucide-react";
 import React from "react";
+import LandingImg from "@/../public/board/boardGroupImage.webp";
 
 const Landing = () => {
   const scrollToSection = (sectionId: string) => {
@@ -17,24 +18,24 @@ const Landing = () => {
 
   return (
     <>
-      <div className="m-0 flex h-screen w-screen flex-col p-0 lg:hidden">
+      <div className="m-0 flex w-screen flex-col p-0 lg:hidden">
         <div className="relative w-full">
           <Image
-            src="/board/boardGroupImage.webp"
+            src={LandingImg}
             alt="board group image"
             width={1920}
             height={1080}
             className="h-auto w-full object-cover brightness-50"
           />
           <div className="absolute inset-0 flex items-center justify-center">
-            <p className="font-caveat-brush text-2xl text-white sm:text-3xl md:text-4xl">
+            <p className="font-caveat-brush text-5xl text-white sm:text-7xl md:text-8xl">
               BOARD
             </p>
           </div>
         </div>
-        <div className="flex w-full items-center justify-center bg-white py-4">
+        <div className="flex w-full items-center justify-center bg-white py-[4%] lg:py-0">
           <div className="flex items-center">
-            <p className="font-inika text-2xl sm:text-3xl md:text-4xl">
+            <p className="font-inika text-3xl sm:text-5xl md:text-6xl">
               MEET THE BOARD
             </p>
             <div
@@ -48,7 +49,7 @@ const Landing = () => {
                 <ArrowDown size={40} />
               </span>
               <span className="hidden md:block">
-                <ArrowDown size={50} />
+                <ArrowDown size={60} />
               </span>
             </div>
           </div>
