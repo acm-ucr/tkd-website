@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Background from "@/public/about/AdditionalInfo.webp";
+import Background from "@/../public/about/AdditionalInfo.webp";
 
 const AdditionalInfo = () => {
   return (

@@ -1,5 +1,5 @@
 import Button from "@/components/Button";
-import gearPhoto from "@/public/home/SparringGear.webp";
+import gearPhoto from "@/../public/home/SparringGear.webp";
 import Image from "next/image";
 
 const SparringGear = () => {
