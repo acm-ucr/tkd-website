@@ -16,8 +16,8 @@ const BoardMembers = ({ members }: BoardMembersProps) => {
       id="board"
       className="flex flex-wrap justify-center gap-20 px-8 py-[8%] max-sm:px-5"
     >
-      {members.map((member) => (
-        <BoardMemberCard key={member.id} member={member} />
+      {members.map((member, id) => (
+        <BoardMemberCard key={id} member={member} />
       ))}
     </div>
   );
