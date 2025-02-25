@@ -5,20 +5,48 @@ import { MoveDown } from "lucide-react";
 
 const Landing = () => {
   return (
-    <div className="relative flex justify-between font-inika">
-      <div>
-        <Image
-          src={landingEvent}
-          alt="Landing image"
-          className="relative z-10 w-[65%]"
-        />
-        <p className="absolute left-[25%] top-[40%] z-20 justify-center font-caveat-brush text-9xl text-white">
+    <div className="relative flex flex-col font-inika">
+      <div className="relative w-full lg:w-[65%]">
+        <Image src={landingEvent} alt="Landing image" className="z-10 w-full" />
+        <p className="absolute left-1/2 top-[40%] z-20 -translate-x-1/2 font-caveat-brush text-4xl text-white md:text-6xl lg:text-9xl">
           EVENTS
         </p>
       </div>
 
-      <div>
-        <div className="absolute right-[5.7%] top-[15%] w-[14%]">
+      <div className="mt-4 h-60 px-8 lg:hidden">
+        <div className="absolute left-8 w-[45%]">
+          <div className="w-fit">
+            <Button
+              txt="EVENT 1"
+              link=""
+              bgColor="red"
+              borderColor="red"
+              target="_blank"
+              textSize="text-2xl"
+              padding="px-6 py-1"
+            />
+          </div>
+          <p className="mt-2 line-clamp-2 text-xl">Event 1 description.</p>
+        </div>
+
+        <div className="absolute bottom-0 right-8 flex w-[45%] flex-col items-end text-right">
+          <div className="w-fit">
+            <Button
+              txt="EVENT 2"
+              link=""
+              bgColor="red"
+              borderColor="red"
+              target="_blank"
+              textSize="text-2xl"
+              padding="px-6 py-1"
+            />
+          </div>
+          <p className="mt-2 line-clamp-2 text-xl">Event 2 description.</p>
+        </div>
+      </div>
+
+      <div className="hidden lg:block">
+        <div className="absolute right-[5.7%] top-[9%] z-30 w-[14%]">
           <Button
             txt="EVENT 1"
             link=""
@@ -29,14 +57,10 @@ const Landing = () => {
             padding="px-[69.8%] py-[10%]"
           />
         </div>
-
-        <div className="absolute left-[81%] top-[27%] z-20 w-[18%] break-words text-3xl">
-          <p>asfafsasfaasdasdsdasdasdasdasd</p>
+        <div className="absolute left-[81%] top-[24%] z-30 w-[18%] break-words text-3xl">
+          <p>Event 1 description goes here.</p>
         </div>
-      </div>
-
-      <div>
-        <div className="absolute left-[65%] top-[55%] w-[14%]">
+        <div className="absolute left-[65%] top-[47%] z-30 w-[14%]">
           <Button
             txt="EVENT 2"
             link=""
@@ -47,14 +71,13 @@ const Landing = () => {
             padding="px-[70.5%] py-[10%]"
           />
         </div>
-
-        <div className="absolute left-[65.5%] top-[67%] z-20 w-[18%] break-words text-3xl">
-          <p>asfafsasfasdasdasdaasdasdsadsdasd</p>
+        <div className="absolute left-[65.5%] top-[62%] z-30 w-[18%] break-words text-3xl">
+          <p>Event 2 description goes here.</p>
         </div>
       </div>
 
-      <div className="absolute left-[81.5%] top-[85%]">
-        <p className="mb-[10%] ml-[-34%] w-[100%] text-3xl">More Events</p>
+      <div className="absolute left-[81.5%] top-[82%] hidden lg:block">
+        <p className="mb-[8%] ml-[-34%] w-[100%] text-3xl">More Events</p>
         <MoveDown size={55} strokeWidth={1} />
       </div>
     </div>
