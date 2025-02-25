@@ -82,8 +82,8 @@ const Footer = () => {
             href=""
             className="flex h-auto w-[16%] flex-col items-center justify-items-center"
           >
-            <div className="relative flex items-center justify-center rounded-full bg-tkd-grey-100 p-[27%]">
-              <Facebook className="absolute mr-[3%] h-[60%] w-auto text-tkd-blue-300" />
+            <div className=" flex items-center justify-center rounded-full bg-tkd-grey-100 p-[27%]">
+              <Facebook className=" mr-[3%] h-[60%] w-auto text-tkd-blue-300" />
             </div>
           </Link>
 
