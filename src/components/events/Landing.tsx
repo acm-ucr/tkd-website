@@ -26,7 +26,7 @@ const Landing = () => {
               padding="px-6 py-1"
             />
           </div>
-          <p className="mt-2 line-clamp-2 text-xl">Event 1 description.</p>
+          <p className="mt-2 line-clamp-2 text-xl">Event 1 descriptions.</p>
         </div>
 
         <div className="absolute bottom-0 right-8 flex w-[45%] flex-col items-end text-right">
