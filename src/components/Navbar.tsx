@@ -5,18 +5,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { AlignJustify } from "lucide-react";
 import { useState } from "react";
+import { items } from "@/data/NavData";
 
-interface NavItem {
-  url: string;
-  name: string;
-  id: number;
-}
-
-interface NavProps {
-  items: NavItem[];
-}
-
-const Navbar: React.FC<NavProps> = ({ items }) => {
+const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   function handleDropDown() {

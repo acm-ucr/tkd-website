@@ -1,4 +1,4 @@
-export const NavData = [
+export const items = [
   {
     url: "/about",
     name: "About",
