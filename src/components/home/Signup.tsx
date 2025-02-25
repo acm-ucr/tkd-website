@@ -17,8 +17,7 @@ const Signup = () => {
             <SignUpButton
               txt="Sign Up"
               link="/some-page"
-              borderColor="blue"
-              bgColor="blue"
+              customStyle="bg-tkd-blue-200 border-tkd-blue-300"
               textSize="sm:text-2xl lg:text-3xl xl:text-5xl"
             />
           </div>

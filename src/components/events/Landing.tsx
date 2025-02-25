@@ -22,8 +22,7 @@ const Landing = () => {
           <Button
             txt="EVENT 1"
             link=""
-            bgColor="red"
-            borderColor="red"
+            customStyle="bg-tkd-red-100 border-tkd-red-200"
             target="_blank"
             textSize="text-5xl"
             padding="px-[69.8%] py-[10%]"
@@ -40,8 +39,7 @@ const Landing = () => {
           <Button
             txt="EVENT 2"
             link=""
-            bgColor="red"
-            borderColor="red"
+            customStyle="bg-tkd-red-100 border-tkd-red-200"
             target="_blank"
             textSize="text-5xl"
             padding="px-[70.5%] py-[10%]"

@@ -5,18 +5,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { AlignJustify } from "lucide-react";
 import { useState } from "react";
+import { items } from "@/data/NavData";
 
-interface NavItem {
-  url: string;
-  name: string;
-  id: number;
-}
-
-interface NavProps {
-  items: NavItem[];
-}
-
-const Navbar: React.FC<NavProps> = ({ items }) => {
+const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   function handleDropDown() {
@@ -48,8 +39,8 @@ const Navbar: React.FC<NavProps> = ({ items }) => {
         </Link>
       </div>
       <ul className="flex items-center space-x-6 max-md:hidden">
-        {items.map((item) => (
-          <li key={item.id}>
+        {items.map((item, id) => (
+          <li key={id}>
             <Link
               href={item.url}
               className="font-jockey-one text-4xl uppercase"
@@ -68,9 +59,9 @@ const Navbar: React.FC<NavProps> = ({ items }) => {
         </div>
         {open ? (
           <div className="absolute right-0 bg-tkd-blue-300 text-center">
-            {items.map((item) => (
+            {items.map((item, id) => (
               <li
-                key={item.id}
+                key={id}
                 className="border-b-[1px] border-b-white px-5 py-2 last:border-none"
               >
                 <Link
