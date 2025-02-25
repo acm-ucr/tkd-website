@@ -1,4 +1,4 @@
-export const BoardData = [
+export const members = [
   {
     url: "/board/nick-nguyen.webp",
     position: "President",
