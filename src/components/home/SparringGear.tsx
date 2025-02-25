@@ -8,6 +8,8 @@ const SparringGear = () => {
       <Image
         src="/home/SparringGear.webp"
         alt="sparringGearPhoto"
+        width={500}
+        height={500}
         className="w-screen brightness-50"
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center space-y-1 lg:space-y-5">
