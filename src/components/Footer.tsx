@@ -55,11 +55,15 @@ const Footer = () => {
         <div className="w-[31%]">
           {/* Contact Information */}
           <div className="mr-[50%] w-full overflow-hidden font-inika text-[1.625rem] text-white">
-            <p className="mb-[2%] text-3xl font-[700]">Contact Information:</p>
+            <p className="mb-[2%] text-3xl font-bold">Contact Information:</p>
             <p className="mb-[2%] font-[700]">Address:</p>
-            <p>1100 University Ave</p>
-            <p>Riverside, CA 92507</p>
-            <p>United States</p>
+            <p>
+              1100 University Ave
+              <br />
+              Riverside, CA 92507
+              <br />
+              United States
+            </p>
             <p className="my-[2%] font-[700]">Contact Email:</p>
             <p>ucrtaekwondo@gmail.com</p>
           </div>
@@ -115,10 +119,14 @@ const Footer = () => {
         {/* Information */}
         <div className="mt-[4%] flex h-[50%] w-full items-center justify-center text-[0.65rem] text-white">
           <div>
-            <p className="mb-[2%] font-[700]">Contact Information:</p>
-            <p>900 University Ave</p>
-            <p>Riverside, CA 92507</p>
-            <p>United States</p>
+            <p className="mb-[2%] font-bold">Contact Information:</p>
+            <p>
+              1100 University Ave
+              <br />
+              Riverside, CA 92507
+              <br />
+              United States
+            </p>
           </div>
 
           <Image
