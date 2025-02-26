@@ -4,7 +4,7 @@ import Signup from "@/components/home/Signup";
 
 const Home = () => {
   return (
-    <div className="">
+    <div>
       <Landing />
       <Signup />
       <SparringGear />
