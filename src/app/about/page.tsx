@@ -3,10 +3,10 @@ import AdditionalInfo from "@/components/about/AdditionalInfo";
 
 const About = () => {
   return (
-    <div className="">
+    <>
       <Mission />
       <AdditionalInfo />
-    </div>
+    </>
   );
 };
 
