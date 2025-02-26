@@ -1,6 +1,9 @@
+"use client";
 import Button from "@/components/Button";
 // import gearPhoto from "@/../public/home/SparringGear.webp";
 import Image from "next/image";
+import { motion } from "motion/react";
+// import { text } from "stream/consumers";
 
 const SparringGear = () => {
   return (
@@ -40,7 +43,34 @@ const SparringGear = () => {
               textSize="lg:text-lg max-sm:text-[8px]"
               padding="px-[60%] py-[10%] max-sm:px-[55%] lg:px-6 lg:py-[8%]"
               customStyle="bg-tkd-red-100 border-tkd-red-200 sm:border-1 "
+           dev
             />
+          </motion.button>
+        </div>
+        <br></br>
+        <br></br>
+        <div className="absolute -bottom-[-5%] flex w-1/2 flex-col items-end max-lg:right-8 max-md:right-6 max-sm:right-1 sm:space-y-2 md:text-2xl lg:right-7 lg:space-y-4 lg:text-4xl">
+          <div className="relative max-sm:right-6 max-sm:text-[10px] sm:right-7 sm:mx-5 sm:text-xl md:mx-0 md:text-3xl lg:right-20 lg:-mx-8 lg:text-2xl">
+            Want a Jacket?
+          </div>
+          <div className="relative max-sm:right-5 sm:right-8 md:right-8">
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.5 }}
+              className="mb-4"
+            >
+              <Button
+                txt="Purchase Jacket"
+                link=""
+                bgColor="red"
+                borderColor="red"
+                target="_blank"
+                smVariant="small"
+                lgVariant="large"
+                textSize="lg:text-lg max-sm:text-[8px]"
+                padding="px-[60%] py-[5%] max-sm:px-[55%]"
+              />
+            </motion.button>
           </div>
         </div>
       </div>
