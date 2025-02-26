@@ -10,8 +10,6 @@ interface BoardMemberCardProps {
   member: Member;
 }
 
-// height was 72 width was 60
-
 const BoardMemberCard = ({ member }: BoardMemberCardProps) => {
   return (
     <motion.div

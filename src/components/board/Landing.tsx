@@ -3,7 +3,6 @@ import Image from "next/image";
 import { ArrowDown } from "lucide-react";
 import React from "react";
 import { motion } from "motion/react";
-// import LandingImg from "@/../public/board/boardLanding.webp";
 
 const Landing = () => {
   const scrollToSection = (sectionId: string) => {
