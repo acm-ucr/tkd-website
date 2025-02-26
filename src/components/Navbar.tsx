@@ -5,18 +5,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { AlignJustify } from "lucide-react";
 import { useState } from "react";
+import { items } from "@/data/NavData";
 
-interface NavItem {
-  url: string;
-  name: string;
-  id: number;
-}
-
-interface NavProps {
-  items: NavItem[];
-}
-
-const Navbar: React.FC<NavProps> = ({ items }) => {
+const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   function handleDropDown() {
@@ -28,22 +19,28 @@ const Navbar: React.FC<NavProps> = ({ items }) => {
   }
 
   return (
-    <nav className="item-center fixed left-0 top-0 z-50 flex w-full select-none items-center justify-between bg-tkd-blue-300 p-3 px-5 text-white">
+    <nav className="item-center fixed left-0 top-0 z-50 flex w-screen select-none items-center justify-between bg-tkd-blue-300 p-3 px-5 text-white">
       <div className="flex items-center">
-        <Link href="/" className="flex">
+        <Link
+          href="/"
+          className="flex"
+          onClick={() => {
+            setOpen(false);
+          }}
+        >
           <Image
             src={Logo}
             alt="TKD Logo"
-            className="mr-7 h-20 w-20 rounded-full"
+            className="mr-7 h-20 w-20 rounded-full max-md:mr-4 max-md:h-10 max-md:w-10"
           />
-          <span className="title flex items-center font-jockey-one text-4xl uppercase">
+          <span className="title flex items-center font-jockey-one text-4xl uppercase max-md:text-3xl max-sm:text-2xl">
             TKD
           </span>
         </Link>
       </div>
       <ul className="flex items-center space-x-6 max-md:hidden">
-        {items.map((item) => (
-          <li key={item.id}>
+        {items.map((item, id) => (
+          <li key={id}>
             <Link
               href={item.url}
               className="font-jockey-one text-4xl uppercase"
@@ -58,19 +55,19 @@ const Navbar: React.FC<NavProps> = ({ items }) => {
           onClick={handleDropDown}
           className="flex cursor-pointer justify-end bg-tkd-blue-300"
         >
-          <AlignJustify size={50} />
+          <AlignJustify className="h-10 w-10 max-sm:h-8 max-sm:w-8" />
         </div>
         {open ? (
           <div className="absolute right-0 bg-tkd-blue-300 text-center">
-            {items.map((item) => (
+            {items.map((item, id) => (
               <li
-                key={item.id}
-                className="border-b-[1px] border-t-white px-5 py-2"
+                key={id}
+                className="border-b-[1px] border-b-white px-5 py-2 last:border-none"
               >
                 <Link
                   onClick={handleDropDown}
                   href={item.url}
-                  className="font-jockey-one text-4xl uppercase"
+                  className="font-jockey-one text-2xl uppercase"
                 >
                   {item.name}
                 </Link>
