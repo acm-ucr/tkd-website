@@ -44,7 +44,7 @@ const SparringGear = () => {
           </div>
           <div className="relative max-sm:right-5 sm:right-8 md:right-8">
             <motion.button
-              whileHover={{ scale: 1.2 }}
+              whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.5 }}
               className="mb-4"
             >
