@@ -2,7 +2,7 @@
 import Button from "@/components/Button";
 import gearPhoto from "@/public/home/sparringGear.webp";
 import Image from "next/image";
-import { motion } from "motion/react"
+import { motion } from "motion/react";
 // import { text } from "stream/consumers";
 
 const SparringGear = () => {
@@ -19,21 +19,21 @@ const SparringGear = () => {
         </div>
         <div>
           <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.5 }}
-              className="mb-4"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.5 }}
+            className="mb-4"
           >
-          <Button
-            txt="Purchase Gear"
-            link=""
-            bgColor="red"
-            borderColor="red"
-            target="_blank"
-            smVariant="small"
-            lgVariant="large"
-            textSize="lg:text-3xl max-sm:text-xs"
-            padding="px-[60%] py-[10%] max-md:px-[55%] max-md:py-[5%] max-sm:py-[8%]"
-          />
+            <Button
+              txt="Purchase Gear"
+              link=""
+              bgColor="red"
+              borderColor="red"
+              target="_blank"
+              smVariant="small"
+              lgVariant="large"
+              textSize="lg:text-3xl max-sm:text-xs"
+              padding="px-[60%] py-[10%] max-md:px-[55%] max-md:py-[5%] max-sm:py-[8%]"
+            />
           </motion.button>
         </div>
         <br></br>
@@ -43,22 +43,22 @@ const SparringGear = () => {
             Want a Jacket?
           </div>
           <div className="relative max-sm:right-5 sm:right-8 md:right-8">
-          <motion.button
+            <motion.button
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.5 }}
               className="mb-4"
-          >
-            <Button
-              txt="Purchase Jacket"
-              link=""
-              bgColor="red"
-              borderColor="red"
-              target="_blank"
-              smVariant="small"
-              lgVariant="large"
-              textSize="lg:text-lg max-sm:text-[8px]"
-              padding="px-[60%] py-[5%] max-sm:px-[55%]"
-            />
+            >
+              <Button
+                txt="Purchase Jacket"
+                link=""
+                bgColor="red"
+                borderColor="red"
+                target="_blank"
+                smVariant="small"
+                lgVariant="large"
+                textSize="lg:text-lg max-sm:text-[8px]"
+                padding="px-[60%] py-[5%] max-sm:px-[55%]"
+              />
             </motion.button>
           </div>
         </div>
