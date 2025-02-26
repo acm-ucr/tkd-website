@@ -1,5 +1,4 @@
-import HighlanderLinkButton from "@/components/Button";
-import DoSportsEasyButton from "@/components/Button";
+import Button from "@/components/Button";
 import Image from "next/image";
 import GroupPhoto from "@/../public/home/Signupemember.webp";
 
@@ -43,23 +42,21 @@ const Signup = () => {
           </div>
           <div className="sm: flex flex-row justify-center gap-16">
             <div className="sm: flex justify-center justify-self-center py-[2%] lg:py-[4%]">
-              <HighlanderLinkButton
+              <Button
                 txt="Higlander Link"
                 link="https://highlanderlink.ucr.edu/organization/tkd"
-                borderColor="blue"
-                bgColor="blue"
                 textSize="sm:text-lg lg:text-xl xl:text-xl"
                 padding="py-[10%] px-[10%]"
+                customStyle="bg-tkd-blue-200 border-2 border-tkd-blue-300"
               />
             </div>
             <div className="sm: flex justify-center justify-self-center py-[2%] lg:py-[4%]">
-              <DoSportsEasyButton
+              <Button
                 txt="DoSportsEasy Form"
                 link="https://recreation.ucr.edu/competitive-sports/sport-clubs"
-                borderColor="blue"
-                bgColor="blue"
                 textSize="sm:text-lg lg:text-xl xl:text-xl"
                 padding="py-[10%] px-[10%]"
+                customStyle="bg-tkd-blue-200 border-2 border-tkd-blue-300"
               />
             </div>
           </div>
