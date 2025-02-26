@@ -5,18 +5,14 @@ export interface Member {
   url: string;
   position: string;
   name: string;
-  id: number;
 }
 interface BoardMemberCardProps {
   member: Member;
 }
 
-// height was 72 width was 60
-
 const BoardMemberCard = ({ member }: BoardMemberCardProps) => {
   return (
     <motion.div
-      key={member.id}
       className="relative"
       initial="hidden"
       whileInView="visible"

@@ -5,18 +5,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { AlignJustify } from "lucide-react";
 import { useState } from "react";
+import { items } from "@/data/NavData";
+import { AnimatePresence, motion } from "motion/react";
 
-interface NavItem {
-  url: string;
-  name: string;
-  id: number;
-}
-
-interface NavProps {
-  items: NavItem[];
-}
-
-const Navbar: React.FC<NavProps> = ({ items }) => {
+const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   function handleDropDown() {
@@ -42,14 +34,14 @@ const Navbar: React.FC<NavProps> = ({ items }) => {
             alt="TKD Logo"
             className="mr-7 h-20 w-20 rounded-full max-md:mr-4 max-md:h-10 max-md:w-10"
           />
-          <span className="title flex items-center font-jockey-one text-4xl uppercase max-md:text-3xl max-sm:text-2xl">
+          <span className="title flex items-center font-jockey-one text-4xl uppercase max-md:hidden max-md:text-3xl max-sm:text-2xl">
             TKD
           </span>
         </Link>
       </div>
       <ul className="flex items-center space-x-6 max-md:hidden">
-        {items.map((item) => (
-          <li key={item.id}>
+        {items.map((item, id) => (
+          <li key={id}>
             <Link
               href={item.url}
               className="font-jockey-one text-4xl uppercase"
@@ -66,26 +58,51 @@ const Navbar: React.FC<NavProps> = ({ items }) => {
         >
           <AlignJustify className="h-10 w-10 max-sm:h-8 max-sm:w-8" />
         </div>
-        {open ? (
-          <div className="absolute right-0 bg-tkd-blue-300 text-center">
-            {items.map((item) => (
-              <li
-                key={item.id}
-                className="border-b-[1px] border-b-white px-5 py-2 last:border-none"
-              >
-                <Link
-                  onClick={handleDropDown}
-                  href={item.url}
-                  className="font-jockey-one text-2xl uppercase"
-                >
-                  {item.name}
-                </Link>
-              </li>
-            ))}
-          </div>
-        ) : (
-          <div></div>
-        )}
+        <AnimatePresence>
+          {open ? (
+            <motion.div
+              key="open"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.7,
+                ease: "easeInOut",
+                type: "spring",
+              }}
+              exit={{ opacity: 0, y: -10 }}
+              className="absolute right-0 bg-tkd-blue-300 text-center"
+            >
+              <div className="absolute right-0 bg-tkd-blue-300 text-center">
+                {items.map((item, id) => (
+                  <li
+                    key={id}
+                    className="border-b-[1px] border-b-white px-5 py-2 last:border-none"
+                  >
+                    <Link
+                      onClick={handleDropDown}
+                      href={item.url}
+                      className="font-jockey-one text-2xl uppercase"
+                    >
+                      <motion.div
+                        whileHover={{
+                          scale: 1.2,
+                          transition: {
+                            duration: 0.3,
+                            type: "spring",
+                          },
+                        }}
+                      >
+                        {item.name}
+                      </motion.div>
+                    </Link>
+                  </li>
+                ))}
+              </div>
+            </motion.div>
+          ) : (
+            <div></div>
+          )}
+        </AnimatePresence>
       </li>
     </nav>
   );
