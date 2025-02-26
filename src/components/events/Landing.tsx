@@ -19,8 +19,7 @@ const Landing = () => {
             <Button
               txt="EVENT 1"
               link=""
-              borderColor="red"
-              bgColor="red"
+              customStyle="bg-tkd-red-100 border-tkd-red-200"
               target="_blank"
               textSize="text-2xl"
               padding="px-6 py-1"
@@ -29,13 +28,12 @@ const Landing = () => {
           <p className="mt-2 line-clamp-2 text-xl">Event 1 descriptions.</p>
         </div>
 
-        <div className="absolute bottom-0 right-8 flex w-[45%] flex-col items-end text-right">
+        <div className="absolute bottom-3 right-8 flex w-[45%] flex-col items-end text-right">
           <div className="w-fit">
             <Button
               txt="EVENT 2"
               link=""
-              borderColor="red"
-              bgColor="red"
+              customStyle="bg-tkd-red-100 border-tkd-red-200"
               target="_blank"
               textSize="text-2xl"
               padding="px-6 py-1"
@@ -50,8 +48,7 @@ const Landing = () => {
           <Button
             txt="EVENT 1"
             link=""
-            borderColor="red"
-            bgColor="red"
+            customStyle="bg-tkd-red-100 border-tkd-red-200"
             target="_blank"
             textSize="text-5xl"
             padding="px-[69.8%] py-[10%]"
@@ -64,8 +61,7 @@ const Landing = () => {
           <Button
             txt="EVENT 2"
             link=""
-            borderColor="red"
-            bgColor="red"
+            customStyle="bg-tkd-red-100 border-tkd-red-200"
             target="_blank"
             textSize="text-5xl"
             padding="px-[70.5%] py-[10%]"
