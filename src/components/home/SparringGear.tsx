@@ -1,6 +1,6 @@
 "use client";
 import Button from "@/components/Button";
-// import gearPhoto from "@/../public/home/SparringGear.webp";
+import gearPhoto from "@/public/home/sparringGear.webp";
 import Image from "next/image";
 import { motion } from "motion/react";
 // import { text } from "stream/consumers";
@@ -9,7 +9,7 @@ const SparringGear = () => {
   return (
     <div className="relative w-fit justify-items-center font-bold text-white md:text-3xl lg:text-7xl">
       <Image
-        src="/home/SparringGear.webp"
+        src={gearPhoto}
         alt="sparringGearPhoto"
         width={500}
         height={500}

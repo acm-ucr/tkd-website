@@ -1,6 +1,6 @@
 import Button from "@/components/Button";
 import Image from "next/image";
-import GroupPhoto from "@/../public/home/Signupemember.webp";
+import GroupPhoto from "@/public/home/Signupemember.webp";
 
 const Signup = () => {
   return (

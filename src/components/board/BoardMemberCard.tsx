@@ -1,8 +1,9 @@
 "use client";
 import Image from "next/image";
 import { motion } from "motion/react";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 export interface Member {
-  url: string;
+  url: StaticImport;
   position: string;
   name: string;
 }
