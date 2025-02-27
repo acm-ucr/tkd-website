@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import BackgroundImage from "@/../public/home/postcss.config.webp";
+import BackgroundImage from "@/public/home/home-landing.webp";
 import Image from "next/image";
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
