@@ -9,12 +9,12 @@ import chaeleKim from "@/public/Board/chaele-kim.webp";
 
 export const members = [
   {
-    url: eddiePark,
+    url: nickNguyen,
     position: "President",
     name: "Nick Nguyen",
   },
   {
-    url: ashleyChan,
+    url: leanaRiberal,
     position: "Vice President",
     name: "Leana Riberal",
   },
