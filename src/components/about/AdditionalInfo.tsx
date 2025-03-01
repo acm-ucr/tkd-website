@@ -6,10 +6,8 @@ const AdditionalInfo = () => {
     <div className="relative">
       <Image
         src={Background}
-        width={1700}
-        height={1080}
         className="max-h-full w-screen brightness-[.60]"
-        alt=" background image"
+        alt="background image"
       />
 
       <p className="absolute left-[12%] top-[20%] font-inika text-lg font-semibold text-white sm:text-xl md:text-xl lg:text-4xl">
