@@ -8,7 +8,7 @@ const Signup = () => {
       <div className="mb-4 text-center font-inika text-2xl font-bold text-black md:mb-[5%] md:text-6xl">
         Interested in Becoming a Member?
       </div>
-      <div className="sm: ml-7 flex flex-col items-center gap-5 md:flex-row md:gap-[5%] md:justify-self-center">
+      <div className="flex flex-col items-center gap-5 sm:ml-7 md:flex-row md:gap-[5%] md:justify-self-center">
         <div className="w-full md:w-[50%]">
           <div className="mb-6 break-words font-inika text-black sm:mb-9 sm:text-lg md:leading-relaxed lg:mb-12 lg:text-xl xl:text-2xl">
             <p className="font-bold underline underline-offset-1">
@@ -19,10 +19,10 @@ const Signup = () => {
               <li>Mondays and Wednesdays from 9:15pm-10:55pm</li>
               <li>Fridays from 6:00pm-6:55pm</li>
             </ul>
+            <br />
             <p className="font-bold underline underline-offset-1">
               Before You Come To Practice:
             </p>
-
             <ul className="list-disc">
               <li>Fill Out DoSportsEasy:</li>
             </ul>
@@ -40,8 +40,8 @@ const Signup = () => {
               <li>Fill out any information and complete all steps!</li>
             </ul>
           </div>
-          <div className="sm: flex flex-row justify-center gap-16">
-            <div className="sm: flex justify-center justify-self-center py-[2%] lg:py-[4%]">
+          <div className="flex-row justify-center gap-16 sm:flex">
+            <div className="justify-center justify-self-center py-[2%] sm:flex lg:py-[4%]">
               <Button
                 txt="Higlander Link"
                 link="https://highlanderlink.ucr.edu/organization/tkd"

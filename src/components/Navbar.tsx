@@ -11,7 +11,6 @@ import { AnimatePresence, motion } from "motion/react";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
-  console.log(pathname);
 
   function handleDropDown() {
     if (!open) {
