@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="hidden items-center justify-around py-[6.5%] sm:visible md:flex">
         <div className="flex h-[25%] w-[30%] justify-around font-inika max-lg:gap-[2rem] sm:text-xs lg:text-base xl:text-2xl">
           <Link
-            href="https://www.facebook.com/tkducr/"
+            href="https://www.facebook.com/groups/592125317872837/"
             className="flex h-auto flex-col items-center justify-items-center sm:w-[20%] lg:w-[20%] xl:w-[18%]"
           >
             <div className="flex aspect-square items-center justify-center rounded-full bg-tkd-grey-100 p-[28%]">
@@ -22,7 +22,7 @@ const Footer = () => {
             <p className="my-[20%] text-white hover:underline">facebook</p>
           </Link>
           <Link
-            href="https://www.instagram.com/tkdatucr/#"
+            href="https://www.instagram.com/tkdatucr/"
             className="flex h-auto flex-col items-center justify-items-center sm:w-[20%] lg:w-[20%] xl:w-[18%]"
           >
             <div className="flex aspect-square items-center justify-center rounded-full bg-tkd-grey-100 p-[28%]">
@@ -32,7 +32,7 @@ const Footer = () => {
           </Link>
 
           <Link
-            href="https://www.discord.gg/ungzmJyVyY"
+            href="https://discord.gg/ungzmJyVyY"
             className="flex h-auto flex-col items-center justify-items-center sm:w-[20%] lg:w-[20%] xl:w-[18%]"
           >
             <div className="flex aspect-square items-center justify-center rounded-full bg-tkd-grey-100 p-[28%]">
@@ -70,7 +70,7 @@ const Footer = () => {
       <div className="visibile flex flex-col justify-center py-[7%] md:hidden">
         <div className="mb-[5%] flex w-full justify-center gap-2">
           <Link
-            href="/"
+            href="https://www.facebook.com/groups/592125317872837/"
             className="flex h-auto w-[16%] flex-col items-center justify-items-center"
           >
             <div className="flex aspect-square items-center justify-center rounded-full bg-tkd-grey-100 p-[16%]">
@@ -79,7 +79,7 @@ const Footer = () => {
           </Link>
 
           <Link
-            href="/"
+            href="https://www.instagram.com/tkdatucr/"
             className="mx-[-5%] flex h-auto w-[16%] flex-col items-center justify-items-center"
           >
             <div className="flex aspect-square items-center justify-center rounded-full bg-tkd-grey-100 p-[16%]">
@@ -88,7 +88,7 @@ const Footer = () => {
           </Link>
 
           <Link
-            href="/"
+            href="https://discord.gg/ungzmJyVyY"
             className="flex h-auto w-[16%] flex-col items-center justify-items-center"
           >
             <div className="flex aspect-square items-center justify-center rounded-full bg-tkd-grey-100 p-[16%]">
