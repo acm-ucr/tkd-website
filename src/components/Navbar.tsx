@@ -1,8 +1,8 @@
 "use client";
-
-import Logo from "@/../public/logo.webp";
+import Logo from "@/public/logo.webp";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { AlignJustify } from "lucide-react";
 import { useState } from "react";
 import { items } from "@/data/NavData";
@@ -10,6 +10,8 @@ import { AnimatePresence, motion } from "motion/react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+  console.log(pathname);
 
   function handleDropDown() {
     if (!open) {
@@ -44,7 +46,7 @@ const Navbar = () => {
           <li key={id}>
             <Link
               href={item.url}
-              className="font-jockey-one text-4xl uppercase"
+              className={`font-jockey-one text-4xl uppercase duration-200 hover:text-tkd-blue-100 ${pathname === item.url ? "text-tkd-blue-100" : "text-white"}`}
             >
               {item.name}
             </Link>
@@ -81,7 +83,7 @@ const Navbar = () => {
                     <Link
                       onClick={handleDropDown}
                       href={item.url}
-                      className="font-jockey-one text-2xl uppercase"
+                      className={`font-jockey-one text-2xl uppercase duration-200 hover:text-tkd-blue-100 ${pathname === item.url ? "text-tkd-blue-100" : "text-white"}`}
                     >
                       <motion.div
                         whileHover={{
