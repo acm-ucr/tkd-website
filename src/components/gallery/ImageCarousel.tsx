@@ -32,7 +32,7 @@ const ImageCarousel = ({
           image.src = img.src;
           image.onload = () => resolve();
           image.onerror = () => resolve();
-        })
+        }),
     );
     Promise.all(preloadImages).then(() => {
       setLoading(false);
@@ -91,7 +91,7 @@ const ImageCarouselContent = ({
 
   return (
     <div className="relative overflow-x-hidden">
-      <div className="max-w-screen-xl mx-auto relative h-[25rem]">
+      <div className="relative mx-auto h-[25rem] max-w-screen-xl">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentSlide}
@@ -99,7 +99,7 @@ const ImageCarouselContent = ({
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -50 }}
             transition={{ duration: 0.5 }}
-            className="absolute inset-0 grid grid-cols-2 md:grid-cols-3 gap-2"
+            className="absolute inset-0 grid grid-cols-2 gap-2 md:grid-cols-3"
           >
             {slideImages.map((img, index) => {
               const imageLoadingProps =
@@ -110,14 +110,14 @@ const ImageCarouselContent = ({
               return (
                 <div
                   key={`${currentSlide}-${index}`}
-                  className="relative w-full h-48 bg-gray-100"
+                  className="relative h-48 w-full bg-gray-100"
                 >
                   <FadeInImage
                     src={img.src}
                     alt={img.alt || `Image ${index}`}
                     fill
                     sizes="(max-width: 768px) 100vw, (min-width: 768px) 33vw"
-                    className="object-cover rounded-md"
+                    className="rounded-md object-cover"
                     placeholder="blur"
                     blurDataURL={defaultBlur}
                     {...imageLoadingProps}
@@ -143,14 +143,14 @@ const ImageCarouselContent = ({
         {nextSlideImages.map((img, index) => (
           <div
             key={`next-${nextSlideIndex}-${index}`}
-            className="relative w-full h-48 bg-gray-100"
+            className="relative h-48 w-full bg-gray-100"
           >
             <FadeInImage
               src={img.src}
               alt={img.alt || `Image ${index}`}
               fill
               sizes="(max-width: 768px) 100vw, (min-width: 768px) 33vw"
-              className="object-cover rounded-md"
+              className="rounded-md object-cover"
               placeholder="blur"
               blurDataURL={defaultBlur}
               loading="lazy"
@@ -168,16 +168,14 @@ type ImageCarouselContentProps = {
   slideDuration: number;
 };
 
-const FadeInImage = ({
-  ...props
-}: FadeInImageProps) => {
+const FadeInImage = ({ ...props }: FadeInImageProps) => {
   const [loaded, setLoaded] = useState(false);
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: loaded ? 1 : 0 }}
       transition={{ duration: 0.5 }}
-      className="relative w-full h-full"
+      className="relative h-full w-full"
     >
       <Image {...props} onLoadingComplete={() => setLoaded(true)} />
     </motion.div>
@@ -190,11 +188,8 @@ type FadeInImageProps = ImageProps & {
 
 const LoadingScreen = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-white">
-      <svg
-        className="animate-spin h-12 w-12 text-blue-500"
-        viewBox="0 0 24 24"
-      >
+    <div className="flex h-screen flex-col items-center justify-center bg-white">
+      <svg className="h-12 w-12 animate-spin text-blue-500" viewBox="0 0 24 24">
         <circle
           className="opacity-25"
           cx="12"

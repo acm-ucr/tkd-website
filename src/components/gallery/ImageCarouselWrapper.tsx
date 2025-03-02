@@ -1,5 +1,5 @@
-import ImageCarousel from '@/components/gallery/ImageCarousel';
-import carouselData from '@/data/CarouselData';
+import ImageCarousel from "@/components/gallery/ImageCarousel";
+import carouselData from "@/data/CarouselData";
 
 const ImageCarouselWrapper = () => {
   return (
@@ -7,6 +7,6 @@ const ImageCarouselWrapper = () => {
       <ImageCarousel images={carouselData} />
     </div>
   );
-}
+};
 
 export default ImageCarouselWrapper;
