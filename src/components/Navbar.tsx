@@ -21,7 +21,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="item-center fixed left-0 top-0 z-50 flex w-screen select-none items-center justify-between bg-tkd-blue-300 p-3 px-5 text-white">
+    <nav className="item-center fixed left-0 top-0 z-50 flex w-screen select-none items-center justify-between bg-tkd-blue-300 p-3 px-[2%] text-white">
       <div className="flex items-center">
         <Link
           href="/"
@@ -37,7 +37,7 @@ const Navbar = () => {
           />
         </Link>
       </div>
-      <ul className="flex items-center space-x-6 max-md:hidden">
+      <ul className="mr-[1%] flex items-center space-x-6 max-md:hidden">
         {items.map((item, id) => (
           <li key={id}>
             <Link
