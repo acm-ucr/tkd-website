@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ArrowDown } from "lucide-react";
 import React from "react";
 import { motion } from "motion/react";
+import BoardImage from "@/public/Board/boardLanding.webp";
 
 const Landing = () => {
   const scrollToSection = (sectionId: string) => {
@@ -18,7 +19,7 @@ const Landing = () => {
 
   return (
     <>
-      <div className="m-0 flex w-screen flex-col p-0 lg:hidden">
+      <div className="m-0 flex flex-col p-0 lg:hidden">
         <div className="relative w-full">
           <motion.div
             initial={{
@@ -36,7 +37,7 @@ const Landing = () => {
             }}
           >
             <Image
-              src="/board/boardLanding.webp"
+              src={BoardImage}
               alt="board group image"
               width={1920}
               height={1080}
@@ -112,7 +113,7 @@ const Landing = () => {
         <div className="flex-1 bg-white"></div>
       </div>
 
-      <div className="hidden h-screen w-screen lg:flex">
+      <div className="hidden h-screen lg:flex">
         <div className="flex w-1/3 flex-col items-center justify-center bg-white p-4 text-center">
           <motion.div
             initial={{
@@ -175,7 +176,7 @@ const Landing = () => {
               }}
             >
               <Image
-                src="/board/boardLanding.webp"
+                src={BoardImage}
                 alt="board group image"
                 fill
                 style={{ objectFit: "cover" }}

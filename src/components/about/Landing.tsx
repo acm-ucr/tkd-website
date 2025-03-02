@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Background from "@/public/about/about_landing.webp";
+
 const Landing = () => {
   return (
     <div className="relative">
