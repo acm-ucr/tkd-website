@@ -23,6 +23,8 @@ const jockey_one = Jockey_One({
 
 export const metadata = {
   title: "Taekwondo Club @ UCR",
+  description:
+    "Taekwondo @ UCR offers students the opportunity to develop their martial arts skills, learn more about the culture of taekwondo, engage in a supportive, community-oriented environment, while also providing chances to participate in Taekwondo events and competitions.",
   icons: {
     icon: "/favicon.ico",
   },
