@@ -2,13 +2,6 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 import { Member } from "@/types/board_members";
-// import { StaticImport } from "next/dist/shared/lib/get-img-props";
-
-// interface Member {
-//   url: StaticImport;
-//   position: string;
-//   name: string;
-// }
 
 const BoardMemberCard = ({ url, position, name }: Member) => {
   return (
