@@ -55,7 +55,7 @@ const Landing = () => {
           />
         </div>
         <div className="absolute left-[81%] top-[24%] z-30 w-[18%] break-words text-3xl">
-          <p>Event 1 description goes here.</p>
+          Event 1 description goes here.
         </div>
         <div className="absolute left-[65%] top-[47%] z-30 w-[14%]">
           <Button
@@ -68,7 +68,7 @@ const Landing = () => {
           />
         </div>
         <div className="absolute left-[65.5%] top-[62%] z-30 w-[18%] break-words text-3xl">
-          <p>Event 2 description goes here.</p>
+          Event 2 description goes here.
         </div>
       </div>
 
