@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ArrowDown } from "lucide-react";
 import React from "react";
 import { motion } from "motion/react";
+import BoardImage from "@/public/Board/boardLanding.webp";
 
 const Landing = () => {
   const scrollToSection = (sectionId: string) => {
@@ -36,7 +37,7 @@ const Landing = () => {
             }}
           >
             <Image
-              src="/board/boardLanding.webp"
+              src={BoardImage}
               alt="board group image"
               width={1920}
               height={1080}
@@ -175,7 +176,7 @@ const Landing = () => {
               }}
             >
               <Image
-                src="/board/boardLanding.webp"
+                src={BoardImage}
                 alt="board group image"
                 fill
                 style={{ objectFit: "cover" }}

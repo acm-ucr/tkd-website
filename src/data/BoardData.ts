@@ -1,50 +1,50 @@
-import Nick from "@/public/board/nick-nguyen.webp";
-import Leanna from "@/public/board/leanna-riberal.webp";
-import Eddie from "@/public/board/eddie-park.webp";
-import Ashley from "@/public/board/ashley-chan.webp";
-import Aaron from "@/public/board/aaron-choi.webp";
-import Liam from "@/public/board/liam-blanchard.webp";
-import Santiago from "@/public/board/santiago-trejo.webp";
-import Chaele from "@/public/board/chaele-kim.webp";
+import nickNguyen from "@/public/Board/nick-nguyen.webp";
+import leanaRiberal from "@/public/Board/leanna-riberal.webp";
+import eddiePark from "@/public/Board/eddie-park.webp";
+import ashleyChan from "@/public/Board/ashley-chan.webp";
+import aaronChoi from "@/public/Board/aaron-choi.webp";
+import liamBlanchard from "@/public/Board/liam-blanchard.webp";
+import santiagoTrejo from "@/public/Board/santiago-trejo.webp";
+import chaeleKim from "@/public/Board/chaele-kim.webp";
 
 export const members = [
   {
-    url: Nick.src,
+    url: nickNguyen,
     position: "President",
     name: "Nick Nguyen",
   },
   {
-    url: Leanna.src,
+    url: leanaRiberal,
     position: "Vice President",
     name: "Leana Riberal",
   },
   {
-    url: Eddie.src,
+    url: eddiePark,
     position: "Treasurer",
     name: "Eddie Park",
   },
   {
-    url: Ashley.src,
+    url: ashleyChan,
     position: "Secretary",
     name: "Ashley Chan",
   },
   {
-    url: Aaron.src,
+    url: aaronChoi,
     position: "Social Chair/Instructor",
     name: "Aaron Choi",
   },
   {
-    url: Liam.src,
+    url: liamBlanchard,
     position: "Coach/Instructor",
     name: "Liam Blanchard",
   },
   {
-    url: Santiago.src,
+    url: santiagoTrejo,
     position: "Coach/Instructor",
     name: "Santiago Trejo",
   },
   {
-    url: Chaele.src,
+    url: chaeleKim,
     position: "Coach/Instructor",
     name: "Chaele Kim",
   },
