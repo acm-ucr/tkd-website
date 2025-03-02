@@ -4,7 +4,7 @@ import Image from "next/image";
 import Button from "@/components/Button";
 import { MoveDown } from "lucide-react";
 import Calendar from "./Calendar";
-import { Link, Element } from "react-scroll";
+import { Link as Scroll, Element } from "react-scroll";
 
 const Landing = () => {
   return (
@@ -75,7 +75,7 @@ const Landing = () => {
         </div>
       </div>
 
-      <Link
+      <Scroll
         to="calandar"
         spy={true}
         smooth={true}
@@ -84,7 +84,7 @@ const Landing = () => {
       >
         <p className="mb-[8%] ml-[-34%] w-[100%] text-3xl">More Events</p>
         <MoveDown size={55} strokeWidth={1} />
-      </Link>
+      </Scroll>
 
       <Element name="calandar">
         <Calendar />
