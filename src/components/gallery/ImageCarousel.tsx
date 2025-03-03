@@ -3,13 +3,9 @@
 import React, { useEffect, useState, useMemo } from "react";
 import Image, { ImageProps } from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import { ImageType } from "@/types/image_type";
 
 const defaultBlur = "/gallery/placeholder.webp";
-
-export type ImageType = {
-  src: string;
-  alt?: string;
-};
 
 export type ImageCarouselProps = {
   images: ImageType[];
@@ -22,26 +18,7 @@ const ImageCarousel = ({
   itemsPerSlide = 6,
   slideDuration = 5000,
 }: ImageCarouselProps) => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const preloadImages = images.map(
-      (img) =>
-        new Promise<void>((resolve) => {
-          const image = new window.Image();
-          image.src = img.src;
-          image.onload = () => resolve();
-          image.onerror = () => resolve();
-        }),
-    );
-    Promise.all(preloadImages).then(() => {
-      setLoading(false);
-    });
-  }, [images]);
-
-  return loading ? (
-    <LoadingScreen />
-  ) : (
+  return (
     <ImageCarouselContent
       images={images}
       itemsPerSlide={itemsPerSlide}
