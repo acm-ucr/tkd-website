@@ -18,23 +18,14 @@ const SparringGear = () => {
           Need Sparring Gear?
         </div>
         <div>
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.5 }}
-            className="mb-4"
-          >
-            <Button
-              txt="Purchase Gear"
-              link=""
-              bgColor="red"
-              borderColor="red"
-              target="_blank"
-              smVariant="small"
-              lgVariant="large"
-              textSize="lg:text-3xl max-sm:text-xs"
-              padding="px-[60%] py-[10%] max-md:px-[55%] max-md:py-[5%] max-sm:py-[8%]"
-            />
-          </motion.button>
+          <Button
+            txt="Purchase Gear"
+            link="/"
+            target="_blank"
+            textSize="lg:text-3xl max-sm:text-xs"
+            padding="px-[60%] py-[10%] max-md:px-[55%] max-md:py-[5%] max-sm:py-[8%]"
+            customStyle="bg-tkd-red-100 border-tkd-red-200 sm:border-1 sm:px-1/6 sm:py-1/12 sm:text-xs lg:px-7 lg:py-7 lg:text-3xl"
+          />
         </div>
         <br></br>
         <br></br>
@@ -43,23 +34,14 @@ const SparringGear = () => {
             Want a Jacket?
           </div>
           <div className="relative max-sm:right-5 sm:right-8 md:right-8">
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.5 }}
-              className="mb-4"
-            >
-              <Button
-                txt="Purchase Jacket"
-                link=""
-                bgColor="red"
-                borderColor="red"
-                target="_blank"
-                smVariant="small"
-                lgVariant="large"
-                textSize="lg:text-lg max-sm:text-[8px]"
-                padding="px-[60%] py-[5%] max-sm:px-[55%]"
-              />
-            </motion.button>
+            <Button
+              txt="Purchase Jacket"
+              link="/"
+              target="_blank"
+              textSize="lg:text-lg max-sm:text-[8px]"
+              padding="px-[60%] py-[10%] max-sm:px-[55%] lg:px-6 lg:py-[8%]"
+              customStyle="bg-tkd-red-100 border-tkd-red-200 sm:border-1 "
+            />
           </div>
         </div>
       </div>
