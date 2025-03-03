@@ -29,7 +29,8 @@ const NotFound = () => {
             link="/"
             padding="px-[16%] py-[5%]"
             textSize="text-[4vw] sm:text-[3vw] md:text-[2.5vw] lg:text-[2.5vw]"
-            customStyle="bg-tkd-red-100 border-tkd-red-200"
+            borderColor="border-tkd-red-200"
+            bgColor="bg-tkd-red-100"
           />
         </div>
       </div>
