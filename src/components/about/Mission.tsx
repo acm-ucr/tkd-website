@@ -8,7 +8,8 @@ const Mission = () => {
       <motion.p
         className="m-2 mb-8 text-center font-inika text-4xl font-bold sm:text-5xl sm:leading-[95%]"
         initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 1, type: "spring", stiffness: 60 }}
       >
         OUR MISSION
@@ -17,7 +18,8 @@ const Mission = () => {
       <motion.p
         className="m-0 w-[80%] text-center font-inika text-xl sm:m-3 sm:w-[57%] sm:text-3xl sm:leading-[139%]"
         initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 1, delay: 0.3, type: "spring", stiffness: 80 }}
       >
         The mission of the Taekwondo Club is to provide training for those of
