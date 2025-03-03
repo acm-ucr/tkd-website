@@ -25,7 +25,8 @@ const AdditionalInfo = () => {
               What day and time does your student organization generally meet?
             </p>
             <p className="font-medium">
-              Mondays and Wednesdays from 9:30pm-10:50pm
+              Mondays and Wednesdays from 9:15pm-10:55pm, and Fridays from
+              6:00pm-6:55pm.
             </p>
           </div>
         </div>
