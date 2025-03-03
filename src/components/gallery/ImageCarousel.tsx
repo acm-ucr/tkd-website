@@ -3,13 +3,9 @@
 import React, { useEffect, useState, useMemo } from "react";
 import Image, { ImageProps } from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import { ImageType } from "@/types/image_type";
 
 const defaultBlur = "/gallery/placeholder.webp";
-
-export type ImageType = {
-  src: string;
-  alt?: string;
-};
 
 export type ImageCarouselProps = {
   images: ImageType[];
@@ -22,26 +18,7 @@ const ImageCarousel = ({
   itemsPerSlide = 6,
   slideDuration = 5000,
 }: ImageCarouselProps) => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const preloadImages = images.map(
-      (img) =>
-        new Promise<void>((resolve) => {
-          const image = new window.Image();
-          image.src = img.src;
-          image.onload = () => resolve();
-          image.onerror = () => resolve();
-        }),
-    );
-    Promise.all(preloadImages).then(() => {
-      setLoading(false);
-    });
-  }, [images]);
-
-  return loading ? (
-    <LoadingScreen />
-  ) : (
+  return (
     <ImageCarouselContent
       images={images}
       itemsPerSlide={itemsPerSlide}
@@ -184,29 +161,6 @@ const FadeInImage = ({ ...props }: FadeInImageProps) => {
 
 type FadeInImageProps = ImageProps & {
   alt: string;
-};
-
-const LoadingScreen = () => {
-  return (
-    <div className="flex h-screen flex-col items-center justify-center bg-white">
-      <svg className="h-12 w-12 animate-spin text-blue-500" viewBox="0 0 24 24">
-        <circle
-          className="opacity-25"
-          cx="12"
-          cy="12"
-          r="10"
-          stroke="currentColor"
-          strokeWidth="4"
-        />
-        <path
-          className="opacity-75"
-          fill="currentColor"
-          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
-        />
-      </svg>
-      <div className="mt-4 text-gray-600">Loading images...</div>
-    </div>
-  );
 };
 
 export default ImageCarousel;
