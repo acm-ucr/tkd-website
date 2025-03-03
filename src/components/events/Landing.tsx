@@ -1,7 +1,10 @@
+"use client";
 import landingEvent from "@/public/events/landingEvent.webp";
 import Image from "next/image";
 import Button from "@/components/Button";
 import { MoveDown } from "lucide-react";
+import Calendar from "./Calendar";
+import { Link as Scroll, Element } from "react-scroll";
 
 const Landing = () => {
   return (
@@ -55,7 +58,7 @@ const Landing = () => {
           />
         </div>
         <div className="absolute left-[81%] top-[24%] z-30 w-[18%] break-words text-3xl">
-          <p>Event 1 description goes here.</p>
+          Event 1 description goes here.
         </div>
         <div className="absolute left-[65%] top-[47%] z-30 w-[14%]">
           <Button
@@ -68,14 +71,24 @@ const Landing = () => {
           />
         </div>
         <div className="absolute left-[65.5%] top-[62%] z-30 w-[18%] break-words text-3xl">
-          <p>Event 2 description goes here.</p>
+          Event 2 description goes here.
         </div>
       </div>
 
-      <div className="absolute left-[81.5%] top-[82%] hidden lg:block">
+      <Scroll
+        to="calandar"
+        spy={true}
+        smooth={true}
+        offset={-100}
+        className="absolute left-[81.5%] top-[82%] hidden cursor-pointer lg:block"
+      >
         <p className="mb-[8%] ml-[-34%] w-[100%] text-3xl">More Events</p>
         <MoveDown size={55} strokeWidth={1} />
-      </div>
+      </Scroll>
+
+      <Element name="calandar">
+        <Calendar />
+      </Element>
     </div>
   );
 };

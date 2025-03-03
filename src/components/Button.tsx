@@ -6,7 +6,7 @@ const Button = ({
   target = "_self",
   link,
   textSize = "text-xl lg:text-3xl max-md:text-base",
-  padding,
+  padding = "",
   customStyle,
 }: {
   txt: string;

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Background from "@/public/about/about_landing.webp";
+
 const Landing = () => {
   return (
     <div className="relative">
@@ -9,9 +10,9 @@ const Landing = () => {
         alt="Landing background image"
       />
 
-      <h1 className="absolute left-[13%] top-[2%] z-10 font-caveat-brush text-9xl font-extrabold uppercase text-white">
+      <div className="absolute left-[13%] top-[2%] z-10 font-caveat-brush text-9xl font-extrabold uppercase text-white">
         About Us
-      </h1>
+      </div>
 
       <p className="absolute bottom-4 right-4 z-10 text-center text-5xl font-medium text-white">
         Come join us! Our practices are Mondays and <br />
