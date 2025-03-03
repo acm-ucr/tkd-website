@@ -48,22 +48,18 @@ const Signup = () => {
               <HighlanderLinkButton
                 txt="Higlander Link"
                 link="https://highlanderlink.ucr.edu/organization/tkd"
-                borderColor="border-2 border-tkd-blue-300"
-                bgColor="bg-tkd-blue-200"
                 textSize="sm:text-lg lg:text-xl xl:text-xl"
                 padding="py-[10%] px-[10%]"
-                customStyle="transition-transform duration-200 hover:scale-105 active:scale-95"
+                customStyle="border-2 border-tkd-blue-300 bg-tkd-blue-20 transition-transform duration-200 hover:scale-105 active:scale-95"
               />
             </div>
             <div className="sm: flex justify-center justify-self-center py-[2%] lg:py-[4%]">
               <DoSportsEasyButton
                 txt="DoSportsEasy Form"
                 link="https://recreation.ucr.edu/competitive-sports/sport-clubs"
-                borderColor="border-2 border-tkd-blue-300"
-                bgColor="bg-tkd-blue-200"
                 textSize="sm:text-lg lg:text-xl xl:text-xl"
                 padding="py-[10%] px-[10%]"
-                customStyle="transition-transform duration-200 hover:scale-105 active:scale-95"
+                customStyle="border-2 border-tkd-blue-300 bg-tkd-blue-200 transition-transform duration-200 hover:scale-105 active:scale-95"
               />
             </div>
           </div>

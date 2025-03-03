@@ -5,8 +5,6 @@ const Button = ({
   txt,
   target = "_self",
   link,
-  borderColor,
-  bgColor,
   textSize = "text-xl lg:text-3xl max-md:text-base",
   padding = "",
   customStyle,
@@ -14,8 +12,6 @@ const Button = ({
   txt: string;
   target?: string;
   link: string;
-  borderColor: string;
-  bgColor: string;
   textSize?: string;
   padding?: string;
   customStyle?: string;
@@ -24,7 +20,7 @@ const Button = ({
     <Link
       href={link}
       target={target}
-      className={`box-border flex items-center justify-center border-2 border-solid ${borderColor} ${bgColor} ${textSize} ${padding} font-inika font-medium ${customStyle}`}
+      className={`box-border flex items-center justify-center border-2 border-solid ${textSize} ${padding} font-inika font-medium ${customStyle}`}
     >
       <div className="relative inline-block whitespace-nowrap">
         <span className="flex justify-center text-white opacity-100">
