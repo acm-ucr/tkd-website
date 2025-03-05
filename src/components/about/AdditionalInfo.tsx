@@ -16,11 +16,14 @@ const AdditionalInfo = () => {
 
       <div className="absolute right-[11%] top-[44%] h-[45%] w-[70%] bg-tkd-blue-200 lg:h-[40%] lg:w-[55%]">
         <div className="relative -top-[9%] right-[3%] flex h-[100%] w-[100%] justify-center border-2 border-white bg-transparent md:border-4 lg:h-[100%] lg:w-[100%] lg:border-4">
-          <div className="relative top-[30%] text-[1.5vw] text-white sm:justify-items-center">
+          <div className="relative top-[26%] left-[3%] text-[1.3vw] text-white sm:justify-items-center">
             <p className="font-semibold">
               How often does your student organization meet?
             </p>
             <p className="font-medium">Twice a week.</p>
+            <p className="font-medium">
+            &nbsp;
+            </p>
             <p className="font-semibold">
               What day and time does your student organization generally meet?
             </p>
