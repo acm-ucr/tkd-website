@@ -19,7 +19,7 @@ const Landing = () => {
 
   return (
     <>
-      <div className="m-0 flex w-screen flex-col p-0 lg:hidden">
+      <div className="m-0 flex flex-col p-0 lg:hidden">
         <div className="relative w-full">
           <motion.div
             initial={{
@@ -113,7 +113,7 @@ const Landing = () => {
         <div className="flex-1 bg-white"></div>
       </div>
 
-      <div className="hidden h-screen w-screen lg:flex">
+      <div className="hidden h-screen lg:flex">
         <div className="flex w-1/3 flex-col items-center justify-center bg-white p-4 text-center">
           <motion.div
             initial={{
