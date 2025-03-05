@@ -6,7 +6,7 @@ const Landing = () => {
     <div className="relative flex flex-col justify-center text-[8vw]">
       <Image className="w-screen" src={landing} alt="Landing" />
       <div className="absolute inset-0 flex flex-col items-center font-caveat-brush text-white max-sm:top-[35%] sm:top-[35%] md:left-[50%] md:top-[6%]">
-        <p>Gallery</p>
+        Gallery
       </div>
     </div>
   );
