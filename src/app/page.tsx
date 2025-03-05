@@ -4,11 +4,11 @@ import Signup from "@/components/home/Signup";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Landing />
       <Signup />
       <SparringGear />
-    </div>
+    </>
   );
 };
 

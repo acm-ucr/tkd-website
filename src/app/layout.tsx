@@ -40,7 +40,7 @@ export default function RootLayout({ children }: LayoutProps) {
       >
         <ReactQueryClientProvider>
           <Navbar />
-          <div className="m-24" />
+          <div className="m-24 max-md:m-16" />
           {children}
           <Footer />
         </ReactQueryClientProvider>

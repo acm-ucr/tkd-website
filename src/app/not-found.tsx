@@ -1,15 +1,14 @@
 import Button from "@/components/Button";
 import Image from "next/image";
+import Background from "@/public/taekwondo-404-background.webp";
 
 const NotFound = () => {
   return (
     <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden">
       <Image
-        src="/taekwondo-404-background.webp"
-        width={2048}
-        height={1536}
+        src={Background}
         className="min-h-screen w-screen object-cover"
-        alt=" 404 background image"
+        alt="404 background image"
       />
 
       <div className="absolute left-[50%] top-[55%] z-0 flex translate-x-[-50%] translate-y-[-50%] flex-col items-center gap-7">
