@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import Image from "next/image";
 import Background from "@/public/about/about_landing.webp";
 import { motion } from "framer-motion";
@@ -7,7 +8,6 @@ import { motion } from "framer-motion";
 const Landing = () => {
   return (
     <div className="relative w-full">
-      {/* Image with blur-in animation */}
       <motion.div
         initial={{ filter: "blur(10px) brightness(0.5)" }}
         animate={{ filter: "blur(0px) brightness(0.5)" }}
@@ -20,7 +20,6 @@ const Landing = () => {
         />
       </motion.div>
 
-      {/* "About Us" text with fade-in animation */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -30,7 +29,6 @@ const Landing = () => {
         About Us
       </motion.div>
 
-      {/* Paragraph text with fade-in animation */}
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
