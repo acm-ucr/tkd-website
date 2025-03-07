@@ -154,7 +154,7 @@ const FadeInImage = ({ ...props }: FadeInImageProps) => {
       transition={{ duration: 0.5 }}
       className="relative h-full w-full"
     >
-      <Image {...props} onLoadingComplete={() => setLoaded(true)} />
+      <Image {...props} onLoad={() => setLoaded(true)} />
     </motion.div>
   );
 };
