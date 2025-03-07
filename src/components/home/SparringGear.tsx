@@ -8,8 +8,6 @@ import { useRef } from "react";
 const SparringGear = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
-  // triggerOnce: true,  // Only trigger once when the element comes into view
-  // threshold: 0.5,
   return (
     <div className="relative w-fit justify-items-center font-bold text-white md:text-3xl lg:text-7xl">
       <Image
@@ -37,8 +35,8 @@ const SparringGear = () => {
           <motion.button
             ref={ref}
             whileHover={{
-              scale: 1.2, // Scale the button on hover
-              transition: { duration: 0.3 }, // Faster transition for hover effect
+              scale: 1.2,
+              transition: { duration: 0.3 },
             }}
             whileTap={{ scale: 0.8 }}
             initial={{ opacity: 0 }}
@@ -79,16 +77,6 @@ const SparringGear = () => {
               Want a Jacket?
             </motion.div>
           </div>
-          {/* <div className="relative max-sm:right-5 sm:right-8 md:right-8">
-            <Button
-              txt="Purchase Jacket"
-              link="/"
-              target="_blank"
-              textSize="lg:text-lg max-sm:text-[8px]"
-              padding="px-[60%] py-[10%] max-sm:px-[55%] lg:px-6 lg:py-[8%]"
-              customStyle="bg-tkd-red-100 border-tkd-red-200 sm:border-1 "
-            />
-          </div> */}
         </div>
       </div>
     </div>
