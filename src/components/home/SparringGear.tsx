@@ -1,4 +1,4 @@
-"use client";
+"use client"; // animation
 import Button from "@/components/Button";
 import gearPhoto from "@/public/home/sparringGear.webp";
 import Image from "next/image";
