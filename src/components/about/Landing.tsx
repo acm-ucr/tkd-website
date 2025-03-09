@@ -35,8 +35,8 @@ const Landing = () => {
         transition={{ duration: 2 }}
         className="xs:right-3 xs:text-sm sm:text-md absolute bottom-4 right-2 z-10 max-w-[85%] text-right text-xs font-medium text-white sm:right-4 sm:max-w-[75%] md:bottom-4 md:right-4 md:max-w-none md:text-4xl"
       >
-        Come join us! Our practices are Mondays and <br />
-        Wednesdays from 9:30 PM - 10:50 PM.
+        Come join us!  <br />
+        See Below for our practice times!
       </motion.p>
     </div>
   );
