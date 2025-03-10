@@ -3,24 +3,26 @@ import Background from "@/public/about/AdditionalInfo.webp";
 
 const AdditionalInfo = () => {
   return (
-    <div className="relative">
+    <div className="relative h-max w-fit sm:h-full sm:w-full md:h-full md:w-full lg:h-full lg:w-full">
       <Image
         src={Background}
-        className="max-h-full w-screen brightness-[.60]"
         alt="background image"
+        objectFit="cover"
+        className="brightness-[.60]"
       />
 
-      <p className="absolute left-[12%] top-[20%] font-inika text-lg font-semibold text-white sm:text-xl md:text-xl lg:text-4xl">
+      <p className="absolute left-[12%] top-[4%] font-inika text-lg font-semibold text-white sm:text-xl md:text-2xl lg:text-4xl">
         Additional Information:
       </p>
 
-      <div className="absolute right-[11%] top-[44%] h-[45%] w-[70%] bg-tkd-blue-200 lg:h-[40%] lg:w-[55%]">
-        <div className="relative -top-[9%] right-[3%] flex h-[100%] w-[100%] justify-center border-2 border-white bg-transparent md:border-4 lg:h-[100%] lg:w-[100%] lg:border-4">
-          <div className="relative top-[30%] text-[8px] text-white sm:justify-items-center sm:text-[10px] md:text-[14px] lg:text-base">
+      <div className="absolute right-[1%] top-[30%] flex h-[60%] w-[95%] bg-tkd-blue-200 sm:h-[50%] sm:w-[60%] md:h-[45%] md:w-[60%] lg:h-[40%] lg:w-[55%]">
+        <div className="relative -top-[9%] right-[3%] flex h-[100%] w-[120%] justify-center border-2 border-white bg-transparent sm:h-[100%] sm:w-[100%] md:h-[100%] md:w-[100%] md:border-4 lg:h-[100%] lg:w-[100%] lg:border-4">
+          <div className="relative left-[2%] top-[26%] justify-items-center text-[2.35vw] text-white sm:text-[1.4vw] md:text-[1.3vw] lg:text-[1.3vw]">
             <p className="font-semibold">
               How often does your student organization meet?
             </p>
             <p className="font-medium">Twice a week.</p>
+            <p className="font-medium">&nbsp;</p>
             <p className="font-semibold">
               What day and time does your student organization generally meet?
             </p>
