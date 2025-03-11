@@ -136,26 +136,25 @@ const Landing = () => {
               BOARD
             </p>
           </motion.div>
-          <div
-            className="mt-4 cursor-pointer"
-            onClick={() => scrollToSection("board")}
+          <motion.div
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+            initial={{
+              opacity: 0,
+              x: 50,
+            }}
+            animate={{
+              opacity: 1,
+              x: 0,
+              transition: { duration: 1, delay: 1 },
+            }}
           >
-            <motion.div
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.9 }}
-              initial={{
-                opacity: 0,
-                x: 50,
-              }}
-              animate={{
-                opacity: 1,
-                x: 0,
-                transition: { duration: 1, delay: 1 },
-              }}
-            >
-              <ArrowDown size={80} />
-            </motion.div>
-          </div>
+            <ArrowDown
+              className="mt-4 cursor-pointer"
+              onClick={() => scrollToSection("board")}
+              size={80}
+            />
+          </motion.div>
         </div>
 
         <div className="relative w-2/3">
