@@ -46,6 +46,6 @@ export const members = [
   {
     url: chaeleKim,
     position: "Coach/Instructor",
-    name: "Chaele  Kim",
+    name: "Chaeie Kim",
   },
 ];
