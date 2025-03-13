@@ -58,7 +58,7 @@ const Day = ({ date, displayMonth, events, setCurrent }: DayProps) => {
         ) {
           return (
             <div
-              className="my-1 cursor-pointer text-ellipsis bg-fencing-border-blue bg-opacity-75 p-1 text-center text-white hover:bg-opacity-100"
+              className="bg-fencing-border-blue my-1 cursor-pointer text-ellipsis bg-opacity-75 p-1 text-center text-white hover:bg-opacity-100"
               key={index}
               onClick={() =>
                 setCurrent({ title, start, end, location, description })
@@ -91,7 +91,6 @@ function Calendar({
         "mb-10 rounded-none border-none bg-slate-900 p-3",
         className,
       )}
-      
       classNames={{
         months: "flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0",
         month:
@@ -113,11 +112,9 @@ function Calendar({
           "w-full p-0 aria-selected:opacity-100 rounded-none border",
         ),
         day_range_end: "day-range-end",
-        day_selected:
-          "bg-tkd-red-200",
+        day_selected: "bg-tkd-red-200",
         day_today: "bg-tkd-red-200 text-accent-foreground",
-        day_outside:
-          "day-outside",
+        day_outside: "day-outside",
         day_disabled: "text-white opacity-50",
         day_range_middle: "aria-selected:bg-accent aria-selected:text-white",
         day_hidden: "invisible",
@@ -146,7 +143,8 @@ function Calendar({
         ),
       }}
       formatters={{
-        formatWeekdayName: (day) => day?.toLocaleDateString('en-US', { weekday: 'short' }),
+        formatWeekdayName: (day) =>
+          day?.toLocaleDateString("en-US", { weekday: "short" }),
       }}
       {...props}
     />

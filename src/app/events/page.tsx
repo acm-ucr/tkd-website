@@ -86,7 +86,6 @@ const Events = () => {
         className="w-full"
         events={data}
         setCurrent={setCurrent}
-
       />
     </>
   );
