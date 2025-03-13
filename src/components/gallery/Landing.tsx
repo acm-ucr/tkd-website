@@ -34,7 +34,7 @@ const Landing = () => {
           animate={{
             opacity: 1,
             y: 0,
-            transition: { duration: 1, delay: 0.8 },
+            transition: { duration: 2, delay: 1 },
           }}
         >
           <p>Gallery</p>
