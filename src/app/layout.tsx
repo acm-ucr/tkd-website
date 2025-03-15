@@ -38,7 +38,7 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
       <body
-        className={`${inika.className} ${caveat_brush.variable} ${jockey_one.variable}`}
+        className={`h-screen bg-tkd-blue-300 ${inika.className} ${caveat_brush.variable} ${jockey_one.variable}`}
       >
         <ReactQueryClientProvider>
           <Navbar />
