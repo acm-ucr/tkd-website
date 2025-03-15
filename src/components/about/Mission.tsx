@@ -1,12 +1,12 @@
 "use client";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 
 const Mission = () => {
   return (
-    <div className="flex w-full flex-col items-center py-[6%]">
+    <div className="flex w-full flex-col items-center bg-white py-[10%]">
       <motion.p
-        className="m-2 mb-8 text-center font-inika text-4xl font-bold sm:text-5xl sm:leading-[95%]"
+        className="m-2 mb-[2%] text-center font-inika text-[4vw] font-bold"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
@@ -16,7 +16,7 @@ const Mission = () => {
       </motion.p>
 
       <motion.p
-        className="m-0 w-[80%] text-center font-inika text-xl sm:m-3 sm:w-[57%] sm:text-3xl sm:leading-[139%]"
+        className="m-0 w-[60%] text-center font-inika text-[2vw] sm:m-3 sm:w-[57%]"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
@@ -33,4 +33,5 @@ const Mission = () => {
   );
 };
 
-export default dynamic(() => Promise.resolve(Mission), { ssr: false });
+export default Mission;
+// export default dynamic(() => Promise.resolve(Mission), { ssr: false });

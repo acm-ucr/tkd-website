@@ -7,7 +7,7 @@ import GroupPhoto from "@/../public/home/Signupemember.webp";
 
 const Signup = () => {
   return (
-    <div className="mx-4 my-6 md:mx-[8%] md:my-[6%]">
+    <div className="bg-white px-4 py-6 md:px-[8%] md:py-[6%]">
       <div className="mb-4 text-center font-inika text-2xl font-bold text-black md:mb-[5%] md:text-6xl">
         Interested in Becoming a Member?
       </div>

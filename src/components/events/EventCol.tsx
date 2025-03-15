@@ -12,7 +12,7 @@ import { motion } from "motion/react";
 
 const EventCol = () => {
   return (
-    <div className="flex flex-col lg:w-[35%]">
+    <div className="flex flex-col bg-white lg:w-[35%]">
       {/* Mobile Event Cards */}
       <div className="mt-4 flex flex-col px-8 lg:hidden">
         <EventCard
