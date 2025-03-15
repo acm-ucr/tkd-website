@@ -16,7 +16,7 @@ export const members = [
   {
     url: leanaRiberal,
     position: "Vice President",
-    name: "Leana Riberal",
+    name: "Leanna Riberal",
   },
   {
     url: eddiePark,
@@ -46,6 +46,6 @@ export const members = [
   {
     url: chaeleKim,
     position: "Coach/Instructor",
-    name: "Chaele Kim",
+    name: "Chaeie Kim",
   },
 ];

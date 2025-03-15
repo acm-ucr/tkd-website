@@ -1,21 +1,20 @@
 "use client";
 import React from "react";
-import HighlanderLinkButton from "@/components/Button";
-import DoSportsEasyButton from "@/components/Button";
+import Button from "@/components/Button";
 import Image from "next/image";
 import GroupPhoto from "@/../public/home/Signupemember.webp";
 
 const Signup = () => {
   return (
-    <div className="mx-4 my-6 md:mx-[8%] md:my-[6%]">
-      <div className="mb-4 text-center font-inika text-2xl font-bold text-black md:mb-[5%] md:text-6xl">
+    <div className="bg-white px-[4%] py-6 md:py-[6%]">
+      <p className="mb-4 text-center font-inika text-2xl font-bold text-black md:mb-[5%] md:text-6xl">
         Interested in Becoming a Member?
-      </div>
-      <div className="sm: ml-7 flex flex-col items-center gap-5 md:flex-row md:gap-[5%] md:justify-self-center">
-        <div className="w-full md:w-[50%]">
-          <div className="mb-6 break-words font-inika text-black sm:mb-9 sm:text-lg md:leading-relaxed lg:mb-12 lg:text-xl xl:text-2xl">
+      </p>
+
+      <div className="flex flex-col items-center gap-5 lg:flex-row lg:justify-self-center">
+        <div className="w-fit lg:w-1/2">
+          <div className="break-words px-[5%] font-inika text-[3vw] text-black md:leading-relaxed lg:px-[10%] lg:text-[1.5vw]">
             <p className="font-bold underline underline-offset-1">
-              {" "}
               Practice Times:
             </p>
             <ul className="list-disc">
@@ -25,7 +24,6 @@ const Signup = () => {
             <p className="font-bold underline underline-offset-1">
               Before You Come To Practice:
             </p>
-
             <ul className="list-disc">
               <li>Fill Out DoSportsEasy:</li>
             </ul>
@@ -43,31 +41,30 @@ const Signup = () => {
               <li>Fill out any information and complete all steps!</li>
             </ul>
           </div>
-          <div className="sm: flex flex-row justify-center gap-16">
-            <div className="sm: flex justify-center justify-self-center py-[2%] lg:py-[4%]">
-              <HighlanderLinkButton
-                txt="Higlander Link"
-                link="https://highlanderlink.ucr.edu/organization/tkd"
-                textSize="sm:text-lg lg:text-xl xl:text-xl"
-                padding="py-[10%] px-[10%]"
-                customStyle="border-2 border-tkd-blue-300 bg-tkd-blue-200 transition-transform duration-200 hover:scale-105 active:scale-95"
-              />
-            </div>
-            <div className="sm: flex justify-center justify-self-center py-[2%] lg:py-[4%]">
-              <DoSportsEasyButton
-                txt="DoSportsEasy Form"
-                link="https://recreation.ucr.edu/competitive-sports/sport-clubs"
-                textSize="sm:text-lg lg:text-xl xl:text-xl"
-                padding="py-[10%] px-[10%]"
-                customStyle="border-2 border-tkd-blue-300 bg-tkd-blue-200 transition-transform duration-200 hover:scale-105 active:scale-95"
-              />
-            </div>
+
+          <div className="mb-[4%] mt-[8%] flex flex-row justify-center gap-[8%]">
+            <Button
+              txt="Higlander Link"
+              link="https://highlanderlink.ucr.edu/organization/tkd"
+              textSize="sm:text-lg lg:text-xl"
+              padding="p-[4%]"
+              customStyle="border-2 border-tkd-blue-300 bg-tkd-blue-200 transition-transform duration-200 hover:scale-105 active:scale-95"
+            />
+
+            <Button
+              txt="DoSportsEasy Form"
+              link="https://recreation.ucr.edu/competitive-sports/sport-clubs"
+              textSize="sm:text-lg lg:text-xl"
+              padding="p-[4%]"
+              customStyle="border-2 border-tkd-blue-300 bg-tkd-blue-200 transition-transform duration-200 hover:scale-105 active:scale-95"
+            />
           </div>
         </div>
+
         <Image
           src={GroupPhoto}
           alt="group photo"
-          className="w-screen rounded-lg md:w-[46%] md:rounded-xl"
+          className="w-[90%] rounded-lg lg:w-1/2 lg:rounded-xl"
         />
       </div>
     </div>

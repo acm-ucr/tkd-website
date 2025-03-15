@@ -15,16 +15,16 @@ const AdditionalInfo = () => {
       </p>
 
       <div className="absolute right-[11%] top-[44%] h-[45%] w-[70%] bg-tkd-blue-200 lg:h-[40%] lg:w-[55%]">
-        <div className="relative -top-[9%] right-[3%] flex h-[100%] w-[100%] justify-center border-2 border-white bg-transparent md:border-4 lg:h-[100%] lg:w-[100%] lg:border-4">
-          <div className="relative top-[30%] text-[1.5vw] text-white sm:justify-items-center">
+        <div className="relative -top-[9%] right-[2%] flex h-[100%] w-[100%] items-center justify-center border-2 border-white bg-transparent px-[5%] md:border-4">
+          <div className="mt-[1%] justify-items-center text-[0.5rem] text-white md:text-xl">
             <p className="font-semibold">
               How often does your student organization meet?
             </p>
-            <p className="font-medium">Twice a week.</p>
-            <p className="font-semibold">
+            <p className="mt-0.5 font-medium">Twice a week.</p>
+            <p className="mt-1 font-semibold md:mt-2 lg:mt-4">
               What day and time does your student organization generally meet?
             </p>
-            <p className="font-medium">
+            <p className="mt-0.5 font-medium">
               Mondays and Wednesdays from 9:15pm-10:55pm, and Fridays from
               6:00pm-6:55pm.
             </p>
