@@ -58,7 +58,7 @@ const Day = ({ date, displayMonth, events, setCurrent }: DayProps) => {
         ) {
           return (
             <div
-              className="bg-fencing-border-blue my-1 cursor-pointer text-ellipsis bg-opacity-75 p-1 text-center text-white hover:bg-opacity-100"
+              className="my-1 cursor-pointer text-ellipsis bg-tkd-red-200 bg-opacity-75 p-1 text-center text-white hover:bg-opacity-100"
               key={index}
               onClick={() =>
                 setCurrent({ title, start, end, location, description })
@@ -99,8 +99,8 @@ function Calendar({
         caption_label: "text-6xl text-white",
         nav: "space-x-1 flex items-center",
         nav_button: "h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100",
-        nav_button_previous: "absolute md:left-1/4 left-[20%]",
-        nav_button_next: "absolute md:right-1/4 right-[16%]",
+        nav_button_previous: "absolute md:left-1/8 left-[20%]",
+        nav_button_next: "absolute md:right-1/8 right-[16%]",
         table: "w-full border-collapse space-y-1 table-fixed",
         head_row: "flex",
         head_cell:
@@ -109,11 +109,11 @@ function Calendar({
         cell: "text-center font-inika md:text-2xl text-md min-w-[14.285714285%] overflow-clip text-ellipsis p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md [&:has([aria-selected].day-outside)]:bg-accent/50 [&:has([aria-selected])]:bg-tkd-blee first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20",
         day: cn(
           buttonVariants({ variant: "ghost" }),
-          "w-full p-0 aria-selected:opacity-100 rounded-none border",
+          "w-full p-0 aria-selected:opacity-100 border",
         ),
         day_range_end: "day-range-end",
         day_selected: "bg-tkd-red-200",
-        day_today: "bg-tkd-red-200 text-accent-foreground",
+        day_today: "bg-tkd-red-200",
         day_outside: "day-outside",
         day_disabled: "text-white opacity-50",
         day_range_middle: "aria-selected:bg-accent aria-selected:text-white",
