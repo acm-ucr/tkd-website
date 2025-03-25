@@ -1,4 +1,4 @@
-import BoardMembers from "@/components/board/BoardMembers";
+import BoardMembers from "@/components/board/Members";
 import Landing from "../../components/board/Landing";
 
 const Board = () => {
