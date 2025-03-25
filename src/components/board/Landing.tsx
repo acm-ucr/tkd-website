@@ -96,14 +96,8 @@ const Landing = () => {
                 className="ml-4 cursor-pointer"
                 onClick={() => scrollToSection("board")}
               >
-                <span className="block sm:hidden">
-                  <ArrowDown size={30} />
-                </span>
-                <span className="hidden sm:block md:hidden">
-                  <ArrowDown size={40} />
-                </span>
-                <span className="hidden md:block">
-                  <ArrowDown size={60} />
+                <span className="block">
+                  <ArrowDown className="h-16 w-16 md:h-40 md:w-40 lg:h-60 lg:w-60" />
                 </span>
               </div>
             </motion.div>

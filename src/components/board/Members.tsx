@@ -1,4 +1,4 @@
-import BoardMemberCard from "@/components/board/BoardMemberCard";
+import BoardMemberCard from "@/components/board/MemberCard";
 import { members } from "@/data/BoardData";
 
 const BoardMembers = () => {

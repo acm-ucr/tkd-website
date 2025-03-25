@@ -44,8 +44,6 @@ const Events = () => {
     },
   });
 
-  console.log(error, isPending);
-
   return (
     <>
       <Landing events={data?.slice(-2) || []} />
