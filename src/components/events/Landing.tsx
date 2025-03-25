@@ -4,7 +4,13 @@ import Image from "next/image";
 import EventCol from "@/components/events/EventCol";
 import { motion } from "motion/react";
 
-const Landing = () => {
+import { EventProps } from "@/types/calendar";
+
+type LandingProps = {
+  events: EventProps[];
+};
+
+const Landing = ({ events }: LandingProps) => {
   return (
     <div className="flex flex-col overflow-hidden font-inika lg:flex-row">
       <div className="relative w-full lg:w-[65%]">
@@ -45,7 +51,7 @@ const Landing = () => {
         </motion.div>
       </div>
 
-      <EventCol />
+      <EventCol events={events} />
     </div>
   );
 };
