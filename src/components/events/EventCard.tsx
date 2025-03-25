@@ -33,11 +33,11 @@ const EventCard: React.FC<EventCardProps> = ({
           customStyle="bg-tkd-red-100 border-tkd-red-200"
           target=""
           textSize="text-2xl lg:text-5xl"
-          padding="lg:py-[5%] px-6 py-2"
+          padding="lg:py-[5%] px-8 py-2"
         />
       </motion.div>
 
-      <motion.div
+      <motion.p
         initial={{
           opacity: 0,
           x: direction === "left" ? -50 : 50,
@@ -47,10 +47,10 @@ const EventCard: React.FC<EventCardProps> = ({
           x: 0,
           transition: { duration: 1, delay: 0.5 },
         }}
+        className={`m-[4%] text-xl lg:text-3xl`}
       >
-        <p className={`m-[4%] text-xl lg:text-3xl`}>{description}</p>{" "}
-        {/* text-xl */}
-      </motion.div>
+        {description}{" "}
+      </motion.p>
     </div>
   );
 };
