@@ -5,7 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { AlignJustify } from "lucide-react";
 import { useState } from "react";
-import { items } from "@/data/NavData";
+import { items } from "@/data/Nav";
 import { AnimatePresence, motion } from "motion/react";
 
 const Navbar = () => {

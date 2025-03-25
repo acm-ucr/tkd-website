@@ -1,5 +1,5 @@
 import BoardMemberCard from "@/components/board/MemberCard";
-import { members } from "@/data/BoardData";
+import { members } from "@/data/Board";
 
 const BoardMembers = () => {
   return (

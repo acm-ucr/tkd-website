@@ -17,7 +17,7 @@ import Landing from "@/components/events/Landing";
 const Events = () => {
   const [current, setCurrent] = useState<EventProps>({});
 
-  const { isPending, error, data } = useQuery<void, void, EventProps[]>({
+  const { data } = useQuery<void, void, EventProps[]>({
     queryKey: ["repoData"],
     queryFn: async () => {
       const response =

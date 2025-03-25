@@ -1,5 +1,5 @@
 import ImageCarousel from "@/components/gallery/ImageCarousel";
-import carouselData from "@/data/CarouselData";
+import carouselData from "@/data/Carousel";
 
 const ImageCarouselWrapper = () => {
   return (
