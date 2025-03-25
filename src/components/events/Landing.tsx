@@ -1,7 +1,7 @@
 "use client";
 import landingEvent from "@/public/events/landingEvent.webp";
 import Image from "next/image";
-import EventCol from "@/components/events/EventCol";
+import RightCol from "@/components/events/RightCol";
 import { motion } from "motion/react";
 
 import { EventProps } from "@/types/calendar";
@@ -51,7 +51,7 @@ const Landing = ({ events }: LandingProps) => {
         </motion.div>
       </div>
 
-      <EventCol events={events} />
+      <RightCol events={events} />
     </div>
   );
 };

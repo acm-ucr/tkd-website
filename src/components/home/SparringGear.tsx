@@ -8,8 +8,7 @@ import { useRef } from "react";
 const SparringGear = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
-  // triggerOnce: true,  // Only trigger once when the element comes into view
-  // threshold: 0.5,
+
   return (
     <div className="relative w-fit justify-items-center overflow-hidden font-bold text-white md:text-3xl lg:text-7xl">
       <Image
@@ -59,8 +58,8 @@ const SparringGear = () => {
           />
         </motion.div>
 
-        <br></br>
-        <br></br>
+        <br />
+        <br />
         <div className="absolute -bottom-[-5%] flex w-1/2 flex-col items-end max-lg:right-8 max-md:right-6 max-sm:right-1 sm:space-y-2 md:text-2xl lg:right-7 lg:space-y-4 lg:text-4xl">
           <motion.div
             className="relative max-sm:right-6 max-sm:text-[10px] sm:right-7 sm:mx-5 sm:text-xl md:mx-0 md:text-3xl lg:right-20 lg:-mx-8 lg:text-2xl"

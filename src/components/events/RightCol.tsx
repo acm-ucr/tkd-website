@@ -1,16 +1,16 @@
 "use client";
 import { MoveDown } from "lucide-react";
 import { Link as Scroll } from "react-scroll";
-import EventCard from "@/components/events/EventCard";
+import Card from "@/components/events/Card";
 import { motion } from "motion/react";
 
 import { EventProps } from "@/types/calendar";
 
-type EventColProps = {
+type RightColProps = {
   events: EventProps[];
 };
 
-const EventCol = ({ events }: EventColProps) => {
+const RightCol = ({ events }: RightColProps) => {
   return (
     <div className="relative flex flex-col bg-white lg:w-[35%]">
       {events.length === 0 ? (
@@ -22,25 +22,31 @@ const EventCol = ({ events }: EventColProps) => {
           {/* Mobile Event Cards */}
           <div className="mt-4 flex flex-col px-8 lg:hidden">
             {events.length === 1 ? (
-              <EventCard
+              <Card
                 direction="left"
                 customStyle=""
                 description={events[0]?.description || ""}
                 title={events[0]?.title || ""}
+                start_time={events[0]?.start || ""}
+                end_time={events[0]?.end || ""}
               />
             ) : (
               <>
-                <EventCard
+                <Card
                   direction="left"
                   customStyle=""
                   description={events[1]?.description || ""}
                   title={events[1]?.title || ""}
+                  start_time={events[1]?.start || ""}
+                  end_time={events[1]?.end || ""}
                 />
-                <EventCard
+                <Card
                   direction="right"
                   customStyle="text-right self-end"
                   description={events[0]?.description || ""}
                   title={events[0]?.title || ""}
+                  start_time={events[0]?.start || ""}
+                  end_time={events[0]?.end || ""}
                 />
               </>
             )}
@@ -49,25 +55,31 @@ const EventCol = ({ events }: EventColProps) => {
           {/* Desktop Event Cards */}
           <div className="my-[10%] hidden flex-col lg:flex">
             {events.length === 1 ? (
-              <EventCard
+              <Card
                 direction="left"
                 customStyle=""
                 description={events[0]?.description || ""}
                 title={events[0]?.title || ""}
+                start_time={events[0]?.start || ""}
+                end_time={events[0]?.end || ""}
               />
             ) : (
               <>
-                <EventCard
+                <Card
                   direction="left"
                   customStyle="mb-[4%]"
                   description={events[1]?.description || ""}
                   title={events[1]?.title || ""}
+                  start_time={events[1]?.start || ""}
+                  end_time={events[1]?.end || ""}
                 />
-                <EventCard
+                <Card
                   direction="right"
                   customStyle="text-right self-end"
                   description={events[0]?.description || ""}
                   title={events[0]?.title || ""}
+                  start_time={events[0]?.start || ""}
+                  end_time={events[0]?.end || ""}
                 />
               </>
             )}
@@ -122,4 +134,4 @@ const EventCol = ({ events }: EventColProps) => {
   );
 };
 
-export default EventCol;
+export default RightCol;
