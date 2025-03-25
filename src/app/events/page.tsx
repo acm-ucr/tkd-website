@@ -1,10 +1,7 @@
 "use client";
 
-import {
-  Calendar,
-  EventProps,
-  GoogleEventProps,
-} from "@/components/events/Calendar";
+import { Calendar } from "@/components/events/Calendar";
+import { EventProps, GoogleEventProps } from "@/types/calendar";
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 import {
@@ -14,11 +11,13 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/events/dialog";
+import { Element } from "react-scroll";
+import Landing from "@/components/events/Landing";
 
 const Events = () => {
   const [current, setCurrent] = useState<EventProps>({});
 
-  const { isPending, error, data } = useQuery({
+  const { isPending, error, data } = useQuery<void, void, EventProps[]>({
     queryKey: ["repoData"],
     queryFn: async () => {
       const response =
@@ -49,44 +48,60 @@ const Events = () => {
 
   return (
     <>
+      <Landing events={data?.slice(-2) || []} />
       {
         <Dialog
           open={Object.keys(current).length > 0}
           onOpenChange={() => setCurrent({})}
         >
-          <DialogContent>
+          <DialogContent className="bg-tkd-blue-300">
             <DialogHeader>
-              <DialogTitle>
-                <p className="text-xl">{current.title}</p>
-                <p className="text-base font-normal">
-                  {current.location} from{" "}
-                  {new Date(current.start as string).toLocaleTimeString(
-                    "en-US",
-                    {
-                      hour: "2-digit",
-                      minute: "2-digit",
-                    },
-                  )}{" "}
-                  to{" "}
-                  {new Date(current.end as string).toLocaleTimeString("en-US", {
-                    hour: "2-digit",
-                    minute: "2-digit",
-                  })}
-                </p>
+              <DialogTitle className="mb-[5%]">
+                <p className="text-2xl uppercase text-white">{current.title}</p>
+                <div className="mb-[5%] h-[3px] w-full bg-white" />
+                <div className="flex flex-row gap-[5%] text-white">
+                  {current.location && (
+                    <div className="flex w-fit items-center rounded-3xl bg-tkd-blue-100 px-[4%] py-[1%] text-base">
+                      {current.location}
+                    </div>
+                  )}
+                  <div className="flex w-fit items-center rounded-3xl bg-tkd-blue-200 px-[4%] py-[2%] text-base text-white">
+                    {new Date(current.start as string).toLocaleTimeString(
+                      "en-US",
+                      {
+                        hour: "2-digit",
+                        minute: "2-digit",
+                      },
+                    )}{" "}
+                    to{" "}
+                    {new Date(current.end as string).toLocaleTimeString(
+                      "en-US",
+                      {
+                        hour: "2-digit",
+                        minute: "2-digit",
+                      },
+                    )}
+                  </div>
+                </div>
               </DialogTitle>
-              <DialogDescription>{current.description}</DialogDescription>
+              {current.description && (
+                <DialogDescription className="rounded-lg bg-white px-[4%] py-[2%]">
+                  {current.description}
+                </DialogDescription>
+              )}
             </DialogHeader>
           </DialogContent>
         </Dialog>
       }
-
-      <Calendar
-        mode="single"
-        selected={new Date()}
-        className="w-full py-24"
-        events={data}
-        setCurrent={setCurrent}
-      />
+      <Element name="calendar">
+        <Calendar
+          mode="single"
+          selected={new Date()}
+          className="w-full py-24"
+          events={data || []}
+          setCurrent={setCurrent}
+        />
+      </Element>
     </>
   );
 };

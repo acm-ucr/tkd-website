@@ -10,17 +10,29 @@ const Landing = () => {
   const isInView = useInView(ref, { once: false });
 
   return (
-    <div className="relative">
-      <Image
-        className="relative w-screen brightness-50 max-md:bottom-8"
-        src={BackgroundImage}
-        alt="background landing page"
-      />
+    <div className="relative bg-white">
+      <motion.div
+        initial={{
+          opacity: 0,
+          filter: "blur(20px)",
+        }}
+        animate={{
+          opacity: 1,
+          filter: "blur(0px)",
+          transition: { duration: 2.5 },
+        }}
+      >
+        <Image
+          className="h-auto w-screen brightness-50"
+          src={BackgroundImage}
+          alt="background landing page"
+        />
+      </motion.div>
       <div className="items-center text-white">
-        <div className="absolute top-[9%] -mx-7 font-caveat-brush text-9xl max-lg:left-0 max-lg:text-8xl max-md:left-[13%] max-md:top-[25%] max-md:text-6xl max-sm:left-[15%] max-sm:text-[3rem] md:mx-16 lg:mx-8 lg:text-9xl">
+        <div className="absolute left-[4%] top-[4%] text-nowrap font-caveat-brush text-[8vw] max-md:left-1/2 max-md:top-1/2 max-md:-translate-x-1/2 max-md:-translate-y-1/2">
           <motion.div
             ref={ref}
-            initial={{ opacity: 0, x: 90 }}
+            initial={{ opacity: 0, x: 30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{
               duration: 0.75,
@@ -32,7 +44,7 @@ const Landing = () => {
             TAEKWONDO @ UCR
           </motion.div>
         </div>
-        <div className="max-sm:text-md absolute bottom-[8%] right-[4%] font-inika text-5xl max-lg:text-3xl max-md:bottom-[18%] max-md:text-base">
+        <div className="max-sm:text-md absolute bottom-[8%] right-[4%] font-inika text-5xl max-lg:text-3xl max-md:bottom-[8%] max-md:text-base">
           <motion.div
             initial={{ opacity: 0, x: -60 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}

@@ -3,7 +3,7 @@ import carouselData from "@/data/CarouselData";
 
 const ImageCarouselWrapper = () => {
   return (
-    <div className="py-4">
+    <div className="bg-white py-[5%]">
       <ImageCarousel images={carouselData} />
     </div>
   );
