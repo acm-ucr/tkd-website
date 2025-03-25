@@ -4,13 +4,13 @@ import { Link as Scroll } from "react-scroll";
 import EventCard from "@/components/events/EventCard";
 import { motion } from "motion/react";
 
-// type eventProps = {
-//   event: string;
-//   description: string;
-//   time: string;
-// };
+import { EventProps } from "@/types/calendar";
 
-const EventCol = () => {
+type EventColProps = {
+  events: EventProps[];
+};
+
+const EventCol = ({ events }: EventColProps) => {
   return (
     <div className="flex flex-col bg-white lg:w-[35%]">
       {/* Mobile Event Cards */}
@@ -18,14 +18,14 @@ const EventCol = () => {
         <EventCard
           direction="left"
           customStyle=""
-          description="Event 1 description goes here. Event 2 description goes here. Event 2 description goes here."
-          title="EVENT 1"
+          description={events[1]?.description || ""}
+          title={events[1]?.title || ""}
         />
         <EventCard
           direction="right"
           customStyle="text-right self-end"
-          description="Event 2 description goes here. Event 2 description goes here. Event 2 description goes here. Event 2 description goes here."
-          title="EVENT 2"
+          description={events[0]?.description || ""}
+          title={events[0]?.title || ""}
         />
       </div>
 
@@ -34,14 +34,14 @@ const EventCol = () => {
         <EventCard
           direction="right"
           customStyle="text-right self-end"
-          description="Event 1 description goes here. Event 2 description goes here. Event 2 description goes here."
-          title="EVENT 1"
+          description={events[1]?.description || ""}
+          title={events[1]?.title || ""}
         />
         <EventCard
           direction="left"
           customStyle="mt-[8%]"
-          description="Event 2 description goes here. Event 2 description goes here. Event 2 description goes here."
-          title="EVENT 2"
+          description={events[0]?.description || ""}
+          title={events[0]?.title || ""}
         />
       </div>
 
@@ -52,7 +52,7 @@ const EventCol = () => {
         offset={-100}
         className="hidden cursor-pointer flex-col items-center self-center lg:flex"
       >
-        <motion.div
+        <motion.p
           initial={{
             opacity: 0,
             x: -50,
@@ -62,9 +62,10 @@ const EventCol = () => {
             x: 0,
             transition: { duration: 1, delay: 0.6 },
           }}
+          className="text-3xl"
         >
-          <p className="text-3xl">More Events</p>
-        </motion.div>
+          More Events
+        </motion.p>
 
         <motion.div
           initial={{
@@ -88,16 +89,6 @@ const EventCol = () => {
         </motion.div>
       </Scroll>
     </div>
-
-    // <div className="space-y-6 md:w-1/4 lg:w-1/6">
-    //   <div className="w-full border-2 border-tkd-red-200 bg-tkd-red-100 py-2 text-center text-3xl text-white">
-    //     {event}
-    //   </div>
-    //   <div className="justify-items-end pr-5 text-xl">
-    //     <p>{description}</p>
-    //     <p>{time}</p>
-    //   </div>
-    // </div>
   );
 };
 
