@@ -54,14 +54,14 @@ const Events = () => {
           open={Object.keys(current).length > 0}
           onOpenChange={() => setCurrent({})}
         >
-          <DialogContent className="bg-tkd-blue-300">
+          <DialogContent className="bg-tkd-black">
             <DialogHeader>
               <DialogTitle className="mb-[5%]">
                 <p className="text-2xl uppercase text-white">{current.title}</p>
                 <div className="mb-[5%] h-[3px] w-full bg-white" />
                 <div className="flex flex-row gap-[5%] text-white">
                   {current.location && (
-                    <div className="flex w-fit items-center rounded-3xl bg-tkd-blue-100 px-[4%] py-[1%] text-base">
+                    <div className="flex w-fit items-center rounded-3xl bg-tkd-red-100 px-[4%] py-[1%] text-base">
                       {current.location}
                     </div>
                   )}

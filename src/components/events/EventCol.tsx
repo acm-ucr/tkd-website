@@ -12,45 +12,75 @@ type EventColProps = {
 
 const EventCol = ({ events }: EventColProps) => {
   return (
-    <div className="flex flex-col bg-white lg:w-[35%]">
-      {/* Mobile Event Cards */}
-      <div className="mt-4 flex flex-col px-8 lg:hidden">
-        <EventCard
-          direction="left"
-          customStyle=""
-          description={events[1]?.description || ""}
-          title={events[1]?.title || ""}
-        />
-        <EventCard
-          direction="right"
-          customStyle="text-right self-end"
-          description={events[0]?.description || ""}
-          title={events[0]?.title || ""}
-        />
-      </div>
+    <div className="relative flex flex-col bg-white lg:w-[35%]">
+      {events.length === 0 ? (
+        <p className="mx-auto my-[20%] w-3/4 text-center text-2xl xl:text-2xl">
+          No upcoming events right now. Check back soon!
+        </p>
+      ) : (
+        <>
+          {/* Mobile Event Cards */}
+          <div className="mt-4 flex flex-col px-8 lg:hidden">
+            {events.length === 1 ? (
+              <EventCard
+                direction="left"
+                customStyle=""
+                description={events[0]?.description || ""}
+                title={events[0]?.title || ""}
+              />
+            ) : (
+              <>
+                <EventCard
+                  direction="left"
+                  customStyle=""
+                  description={events[1]?.description || ""}
+                  title={events[1]?.title || ""}
+                />
+                <EventCard
+                  direction="right"
+                  customStyle="text-right self-end"
+                  description={events[0]?.description || ""}
+                  title={events[0]?.title || ""}
+                />
+              </>
+            )}
+          </div>
 
-      {/* Desktop Event Cards */}
-      <div className="my-[10%] hidden flex-col lg:flex">
-        <EventCard
-          direction="right"
-          customStyle="text-right self-end"
-          description={events[1]?.description || ""}
-          title={events[1]?.title || ""}
-        />
-        <EventCard
-          direction="left"
-          customStyle="mt-[8%]"
-          description={events[0]?.description || ""}
-          title={events[0]?.title || ""}
-        />
-      </div>
+          {/* Desktop Event Cards */}
+          <div className="my-[10%] hidden flex-col lg:flex">
+            {events.length === 1 ? (
+              <EventCard
+                direction="left"
+                customStyle=""
+                description={events[0]?.description || ""}
+                title={events[0]?.title || ""}
+              />
+            ) : (
+              <>
+                <EventCard
+                  direction="left"
+                  customStyle="mb-[4%]"
+                  description={events[1]?.description || ""}
+                  title={events[1]?.title || ""}
+                />
+                <EventCard
+                  direction="right"
+                  customStyle="text-right self-end"
+                  description={events[0]?.description || ""}
+                  title={events[0]?.title || ""}
+                />
+              </>
+            )}
+          </div>
+        </>
+      )}
 
       <Scroll
         to="calendar"
         spy={true}
         smooth={true}
         offset={-100}
-        className="hidden cursor-pointer flex-col items-center self-center lg:flex"
+        className="absolute bottom-[10%] hidden cursor-pointer flex-col items-center self-center lg:flex"
       >
         <motion.p
           initial={{
@@ -62,7 +92,7 @@ const EventCol = ({ events }: EventColProps) => {
             x: 0,
             transition: { duration: 1, delay: 0.6 },
           }}
-          className="text-3xl"
+          className="text-2xl xl:text-3xl"
         >
           More Events
         </motion.p>
