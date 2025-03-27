@@ -23,7 +23,7 @@ const SparringGear = () => {
           initial={{ opacity: 0, x: 90 }}
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{
-            duration: 0.75,
+            duration: 0.5,
             ease: "easeOut",
             delay: isInView ? 0.2 : 0,
             bounce: 0.3,
@@ -42,8 +42,7 @@ const SparringGear = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: isInView ? 1 : 0 }}
           transition={{
-            duration: 0.75,
-            delay: isInView ? 0.2 : 0,
+            duration: 0.5,
             bounce: 0.3,
           }}
           className="mb-4"
@@ -65,9 +64,8 @@ const SparringGear = () => {
             initial={{ opacity: 0, x: 90 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{
-              duration: 0.75,
+              duration: 0.5,
               ease: "easeOut",
-              delay: isInView ? 0.2 : 0,
               bounce: 0.3,
             }}
           >
@@ -84,7 +82,7 @@ const SparringGear = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: isInView ? 1 : 0 }}
             transition={{
-              duration: 0.75,
+              duration: 0.5,
               delay: isInView ? 0.2 : 0,
               bounce: 0.3,
             }}

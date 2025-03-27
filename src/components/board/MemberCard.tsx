@@ -14,7 +14,7 @@ const BoardMemberCard = ({ url, position, name }: Member) => {
       <motion.div
         variants={{
           hidden: { opacity: 0 },
-          visible: { opacity: 1, transition: { duration: 1, delay: 0.8 } },
+          visible: { opacity: 1, transition: { duration: 0.75, delay: 0.25 } },
         }}
         className="absolute bottom-4 right-4 z-[2] h-96 w-72 border-[1px] border-white max-md:h-72 max-md:w-56 max-sm:h-56 max-sm:w-44"
       />
@@ -30,7 +30,7 @@ const BoardMemberCard = ({ url, position, name }: Member) => {
       <motion.div
         variants={{
           hidden: { opacity: 0 },
-          visible: { opacity: 1, transition: { duration: 1, delay: 1.2 } },
+          visible: { opacity: 1, transition: { duration: 0.75, delay: 0.5 } },
         }}
         className="absolute -bottom-5 left-8 z-[3] h-fit w-56 overflow-hidden text-wrap rounded-md bg-tkd-blue-100 px-5 py-1 text-center font-inika max-md:left-4 max-md:w-44 max-sm:left-2 max-sm:w-36"
       >

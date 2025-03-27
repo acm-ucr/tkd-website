@@ -15,7 +15,7 @@ const Landing = () => {
         animate={{
           opacity: 1,
           filter: "blur(0px)",
-          transition: { duration: 2.5 },
+          transition: { duration: 1 },
         }}
         style={{
           width: "100%",
@@ -34,7 +34,7 @@ const Landing = () => {
           animate={{
             opacity: 1,
             y: 0,
-            transition: { duration: 2, delay: 1 },
+            transition: { duration: 0.5, delay: 1 },
           }}
         >
           <p>Gallery</p>
