@@ -8,62 +8,62 @@ import {
   SiDiscord,
 } from "@icons-pack/react-simple-icons";
 import { motion } from "motion/react";
+import { ReactNode } from "react";
+
+type IconCircleProps = {
+  children: ReactNode;
+  link: string;
+};
+
+const IconCircle = ({ children, link }: IconCircleProps) => {
+  return (
+    <Link
+      href={link}
+      target="_blank"
+      className="flex h-auto w-[16%] flex-col items-center justify-items-center md:h-full md:w-full"
+    >
+      <div className="flex aspect-square items-center justify-center rounded-full bg-tkd-grey-100 p-[28%]">
+        {children}
+      </div>
+    </Link>
+  );
+};
 
 const Footer = () => {
+  const icons = [
+    {
+      name: "facebook",
+      icon: <SiFacebook size={48} className="mr-[3%] text-tkd-blue-300" />,
+      link: "https://www.facebook.com/groups/592125317872837/",
+    },
+    {
+      name: "instagram",
+      icon: <SiInstagram size={48} className="text-tkd-blue-300" />,
+      link: "https://www.instagram.com/tkdatucr/",
+    },
+    {
+      name: "discord",
+      icon: <SiDiscord size={48} className="text-tkd-blue-300" />,
+      link: "https://discord.gg/ungzmJyVyY",
+    },
+  ];
+
   return (
     <footer className="relative h-auto w-full bg-tkd-blue-300 font-inika">
       <div className="hidden items-center justify-around py-[6.5%] sm:visible md:flex">
         <div className="flex h-[25%] w-[30%] justify-around font-inika max-lg:gap-[2rem] sm:text-xs lg:text-base xl:text-2xl">
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            transition={{ type: "spring", stiffness: 300 }}
-            className="flex h-auto flex-col items-center justify-items-center sm:w-[20%] lg:w-[20%] xl:w-[18%]"
-          >
-            <Link
-              href="https://www.facebook.com/groups/592125317872837/"
-              className="flex h-full w-full flex-col items-center justify-items-center"
+          {icons.map((icon, index) => (
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="flex h-auto flex-col items-center justify-items-center sm:w-[20%] lg:w-[20%] xl:w-[18%]"
+              key={index}
             >
-              <div className="flex aspect-square items-center justify-center rounded-full bg-tkd-grey-100 p-[28%]">
-                <SiFacebook size={48} className="mr-[3%] text-tkd-blue-300" />
-              </div>
-              <p className="my-[20%] text-white hover:underline">facebook</p>
-            </Link>
-          </motion.div>
-
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            transition={{ type: "spring", stiffness: 300 }}
-            className="flex h-auto flex-col items-center justify-items-center sm:w-[20%] lg:w-[20%] xl:w-[18%]"
-          >
-            <Link
-              href="https://www.instagram.com/tkdatucr/"
-              className="flex h-full w-full flex-col items-center justify-items-center"
-            >
-              <div className="flex aspect-square items-center justify-center rounded-full bg-tkd-grey-100 p-[28%]">
-                <SiInstagram size={48} className="text-tkd-blue-300" />
-              </div>
-              <p className="my-[20%] text-white hover:underline">instagram</p>
-            </Link>
-          </motion.div>
-
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            transition={{ type: "spring", stiffness: 300 }}
-            className="flex h-auto flex-col items-center justify-items-center sm:w-[20%] lg:w-[20%] xl:w-[18%]"
-          >
-            <Link
-              href="https://discord.gg/ungzmJyVyY"
-              className="flex h-full w-full flex-col items-center justify-items-center"
-            >
-              <div className="flex aspect-square items-center justify-center rounded-full bg-tkd-grey-100 p-[28%]">
-                <SiDiscord size={48} className="text-tkd-blue-300" />
-              </div>
-              <p className="my-[20%] text-white hover:underline">discord</p>
-            </Link>
-          </motion.div>
+              <IconCircle link={icon.link}>{icon.icon}</IconCircle>
+              <p className="my-[20%] text-white hover:underline">{icon.name}</p>
+            </motion.div>
+          ))}
         </div>
 
         <div className="absolute bg-white sm:h-[50%] sm:w-[.2%] lg:h-[40%] lg:w-[.12%]" />
@@ -93,32 +93,11 @@ const Footer = () => {
 
       <div className="visibile flex flex-col justify-center py-[7%] md:hidden">
         <div className="mb-[5%] flex w-full justify-center gap-2">
-          <Link
-            href="https://www.facebook.com/groups/592125317872837/"
-            className="flex h-auto w-[16%] flex-col items-center justify-items-center"
-          >
-            <div className="flex aspect-square items-center justify-center rounded-full bg-tkd-grey-100 p-[16%]">
-              <SiFacebook size={24} className="mr-[3%] text-tkd-blue-300" />
-            </div>
-          </Link>
-
-          <Link
-            href="https://www.instagram.com/tkdatucr/"
-            className="mx-[-5%] flex h-auto w-[16%] flex-col items-center justify-items-center"
-          >
-            <div className="flex aspect-square items-center justify-center rounded-full bg-tkd-grey-100 p-[16%]">
-              <SiInstagram size={24} className="text-tkd-blue-300" />
-            </div>
-          </Link>
-
-          <Link
-            href="https://discord.gg/ungzmJyVyY"
-            className="flex h-auto w-[16%] flex-col items-center justify-items-center"
-          >
-            <div className="flex aspect-square items-center justify-center rounded-full bg-tkd-grey-100 p-[16%]">
-              <SiDiscord size={24} className="text-tkd-blue-300" />
-            </div>
-          </Link>
+          {icons.map((icon, index) => (
+            <IconCircle link={icon.link} key={index}>
+              {icon.icon}
+            </IconCircle>
+          ))}
         </div>
 
         <div className="flex justify-center">
@@ -152,7 +131,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-  return <div>Footer</div>;
 };
 
 export default Footer;

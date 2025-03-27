@@ -1,11 +1,11 @@
 import Landing from "@/components/gallery/Landing";
-import ImageCarouselWrapper from "@/components/gallery/ImageCarouselWrapper";
+import ImageCarousel from "@/components/gallery/ImageCarousel";
 
 const Gallery = () => {
   return (
     <>
       <Landing />
-      <ImageCarouselWrapper />
+      <ImageCarousel />
     </>
   );
 };

@@ -21,7 +21,7 @@ const RightCol = ({ events }: RightColProps) => {
         <>
           {/* Mobile Event Cards */}
           <div className="mt-4 flex flex-col px-8 lg:hidden">
-            {events.length === 1 ? (
+            {/* {events.length === 1 ? (
               <Card
                 direction="left"
                 customStyle=""
@@ -49,12 +49,34 @@ const RightCol = ({ events }: RightColProps) => {
                   end_time={events[0]?.end || ""}
                 />
               </>
-            )}
+            )} */}
+            {events.map((event, index) => (
+              <Card
+                key={index}
+                direction={index === 0 ? "left" : "right"}
+                customStyle=""
+                description={events[1]?.description || ""}
+                title={events[1]?.title || ""}
+                start_time={events[1]?.start || ""}
+                end_time={events[1]?.end || ""}
+              />
+            ))}
           </div>
 
           {/* Desktop Event Cards */}
           <div className="my-[10%] hidden flex-col lg:flex">
-            {events.length === 1 ? (
+            {events.map((event, index) => (
+              <Card
+                key={index}
+                direction={index === 0 ? "left" : "right"}
+                customStyle=""
+                description={events[1]?.description || ""}
+                title={events[1]?.title || ""}
+                start_time={events[1]?.start || ""}
+                end_time={events[1]?.end || ""}
+              />
+            ))}
+            {/* {events.length === 1 ? (
               <Card
                 direction="left"
                 customStyle=""
@@ -82,7 +104,7 @@ const RightCol = ({ events }: RightColProps) => {
                   end_time={events[0]?.end || ""}
                 />
               </>
-            )}
+            )} */}
           </div>
         </>
       )}

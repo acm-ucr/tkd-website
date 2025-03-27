@@ -16,7 +16,7 @@ const AdditionalInfo = () => {
 
       <div className="absolute right-[11%] top-[44%] h-[45%] w-[70%] bg-tkd-blue-200 lg:h-[40%] lg:w-[55%]">
         <div className="relative -top-[9%] right-[2%] flex h-[100%] w-[100%] items-center justify-center border-2 border-white bg-transparent px-[5%] md:border-4">
-          <div className="mt-[1%] justify-items-center text-[0.5rem] text-white md:text-xl">
+          <div className="mt-[1%] justify-items-center text-[6px] text-white md:text-[0.9rem] xl:text-xl">
             <p className="font-semibold">
               How often does your student organization meet?
             </p>
