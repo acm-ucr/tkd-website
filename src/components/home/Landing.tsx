@@ -15,7 +15,7 @@ const Landing = () => {
         animate={{
           opacity: 1,
           filter: "blur(0px)",
-          transition: { duration: 1.5 },
+          transition: { duration: 1 },
         }}
       >
         <Image
@@ -30,9 +30,9 @@ const Landing = () => {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{
-              duration: 0.75,
+              duration: 0.5,
               ease: "easeOut",
-              delay: 1,
+              delay: 0.5,
               bounce: 0.3,
             }}
           >
@@ -44,9 +44,9 @@ const Landing = () => {
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{
-              duration: 0.75,
+              duration: 0.5,
               ease: "easeOut",
-              delay: 1.3,
+              delay: 0.5,
               bounce: 0.3,
             }}
           >
