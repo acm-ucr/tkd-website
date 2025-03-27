@@ -1,11 +1,11 @@
-import BoardMemberCard from "@/components/board/BoardMemberCard";
-import { members } from "@/data/BoardData";
+import MemberCard from "@/components/board/MemberCard";
+import { members } from "@/data/Board";
 
-const BoardMembers = () => {
+const Members = () => {
   return (
     <div className="flex flex-wrap justify-center gap-20 px-8 py-[8%] max-sm:px-5">
       {members.map((member, id) => (
-        <BoardMemberCard
+        <MemberCard
           key={id}
           url={member.url}
           position={member.position}
@@ -16,4 +16,4 @@ const BoardMembers = () => {
   );
 };
 
-export default BoardMembers;
+export default Members;

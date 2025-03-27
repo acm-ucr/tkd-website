@@ -8,8 +8,7 @@ import { useRef } from "react";
 const SparringGear = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
-  // triggerOnce: true,  // Only trigger once when the element comes into view
-  // threshold: 0.5,
+
   return (
     <div className="relative w-fit justify-items-center overflow-hidden font-bold text-white md:text-3xl lg:text-7xl">
       <Image
@@ -50,17 +49,15 @@ const SparringGear = () => {
           className="mb-4"
         >
           <Button
-            txt="Purchase Gear"
-            link="/"
-            target="_blank"
-            textSize="lg:text-3xl max-sm:text-xs"
-            padding="px-[60%] py-[10%] max-md:px-[55%] max-md:py-[5%] max-sm:py-[8%]"
-            customStyle="bg-tkd-red-100 border-tkd-red-200 sm:border-1 sm:px-1/6 sm:py-1/12 sm:text-xs lg:px-7 lg:py-7 lg:text-3xl"
-          />
+            className="sm:px-1/6 sm:py-1/12 sm:border-1 px-[60%] py-[10%] max-md:px-[55%] max-md:py-[5%] max-sm:py-[8%] max-sm:text-xs sm:text-xs lg:px-7 lg:py-7 lg:text-3xl"
+            variant="red"
+          >
+            Purchase Gear
+          </Button>
         </motion.div>
 
-        <br></br>
-        <br></br>
+        <br />
+        <br />
         <div className="absolute -bottom-[-5%] flex w-1/2 flex-col items-end max-lg:right-8 max-md:right-6 max-sm:right-1 sm:space-y-2 md:text-2xl lg:right-7 lg:space-y-4 lg:text-4xl">
           <motion.div
             className="relative max-sm:right-6 max-sm:text-[10px] sm:right-7 sm:mx-5 sm:text-xl md:mx-0 md:text-3xl lg:right-20 lg:-mx-8 lg:text-2xl"
@@ -94,13 +91,11 @@ const SparringGear = () => {
             className="relative mb-4 max-sm:right-5 sm:right-8 md:right-8"
           >
             <Button
-              txt="Purchase Jacket"
-              link="/"
-              target="_blank"
-              textSize="lg:text-lg max-sm:text-[8px]"
-              padding="px-[60%] py-[10%] max-sm:px-[55%] lg:px-6 lg:py-[8%]"
-              customStyle="bg-tkd-red-100 border-tkd-red-200 sm:border-1 "
-            />
+              className="sm:border-1 px-[60%] py-[10%] max-sm:px-[55%] max-sm:text-[8px] lg:px-6 lg:py-[8%] lg:text-lg"
+              variant="red"
+            >
+              Purchase Jacket
+            </Button>
           </motion.div>
         </div>
       </div>

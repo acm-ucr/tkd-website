@@ -1,16 +1,16 @@
 "use client";
 import { MoveDown } from "lucide-react";
 import { Link as Scroll } from "react-scroll";
-import EventCard from "@/components/events/EventCard";
+import Card from "@/components/events/Card";
 import { motion } from "motion/react";
 
 import { EventProps } from "@/types/calendar";
 
-type EventColProps = {
+type RightColProps = {
   events: EventProps[];
 };
 
-const EventCol = ({ events }: EventColProps) => {
+const RightCol = ({ events }: RightColProps) => {
   return (
     <div className="relative flex flex-col bg-white lg:w-[35%]">
       {events.length === 0 ? (
@@ -21,56 +21,32 @@ const EventCol = ({ events }: EventColProps) => {
         <>
           {/* Mobile Event Cards */}
           <div className="mt-4 flex flex-col px-8 lg:hidden">
-            {events.length === 1 ? (
-              <EventCard
-                direction="left"
-                customStyle=""
-                description={events[0]?.description || ""}
-                title={events[0]?.title || ""}
+            {events.map((event, index) => (
+              <Card
+                key={index}
+                direction={index === 0 ? "left" : "right"}
+                customStyle={index === 0 ? "" : "text-right self-end"}
+                description={event.description || ""}
+                title={event.title || ""}
+                start_time={event.start || ""}
+                end_time={event.end || ""}
               />
-            ) : (
-              <>
-                <EventCard
-                  direction="left"
-                  customStyle=""
-                  description={events[1]?.description || ""}
-                  title={events[1]?.title || ""}
-                />
-                <EventCard
-                  direction="right"
-                  customStyle="text-right self-end"
-                  description={events[0]?.description || ""}
-                  title={events[0]?.title || ""}
-                />
-              </>
-            )}
+            ))}
           </div>
 
           {/* Desktop Event Cards */}
           <div className="my-[10%] hidden flex-col lg:flex">
-            {events.length === 1 ? (
-              <EventCard
-                direction="left"
-                customStyle=""
-                description={events[0]?.description || ""}
-                title={events[0]?.title || ""}
+            {events.map((event, index) => (
+              <Card
+                key={index}
+                direction={index === 0 ? "left" : "right"}
+                customStyle={index === 0 ? "" : "text-right self-end"}
+                description={event.description || ""}
+                title={event.title || ""}
+                start_time={event.start || ""}
+                end_time={event.end || ""}
               />
-            ) : (
-              <>
-                <EventCard
-                  direction="left"
-                  customStyle="mb-[4%]"
-                  description={events[1]?.description || ""}
-                  title={events[1]?.title || ""}
-                />
-                <EventCard
-                  direction="right"
-                  customStyle="text-right self-end"
-                  description={events[0]?.description || ""}
-                  title={events[0]?.title || ""}
-                />
-              </>
-            )}
+            ))}
           </div>
         </>
       )}
@@ -122,4 +98,4 @@ const EventCol = ({ events }: EventColProps) => {
   );
 };
 
-export default EventCol;
+export default RightCol;

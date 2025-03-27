@@ -10,14 +10,14 @@ import {
   DialogDescription,
   DialogHeader,
   DialogTitle,
-} from "@/components/events/dialog";
+} from "@/ui/dialog";
 import { Element } from "react-scroll";
 import Landing from "@/components/events/Landing";
 
 const Events = () => {
   const [current, setCurrent] = useState<EventProps>({});
 
-  const { isPending, error, data } = useQuery<void, void, EventProps[]>({
+  const { data } = useQuery<void, void, EventProps[]>({
     queryKey: ["repoData"],
     queryFn: async () => {
       const response =
@@ -44,8 +44,6 @@ const Events = () => {
     },
   });
 
-  console.log(error, isPending);
-
   return (
     <>
       <Landing events={data?.slice(-2) || []} />
@@ -57,15 +55,15 @@ const Events = () => {
           <DialogContent className="bg-tkd-black">
             <DialogHeader>
               <DialogTitle className="mb-[5%]">
-                <p className="text-2xl uppercase text-white">{current.title}</p>
+                <p className="text-4xl uppercase text-white">{current.title}</p>
                 <div className="mb-[5%] h-[3px] w-full bg-white" />
                 <div className="flex flex-row gap-[5%] text-white">
                   {current.location && (
-                    <div className="flex w-fit items-center rounded-3xl bg-tkd-red-100 px-[4%] py-[1%] text-base">
+                    <div className="flex w-fit items-center rounded-lg bg-tkd-red-100 px-[6%] py-[3%] text-lg">
                       {current.location}
                     </div>
                   )}
-                  <div className="flex w-fit items-center rounded-3xl bg-tkd-blue-200 px-[4%] py-[2%] text-base text-white">
+                  <div className="flex w-fit items-center rounded-lg bg-tkd-blue-200 px-[6%] py-[3%] text-lg text-white">
                     {new Date(current.start as string).toLocaleTimeString(
                       "en-US",
                       {
@@ -85,7 +83,7 @@ const Events = () => {
                 </div>
               </DialogTitle>
               {current.description && (
-                <DialogDescription className="rounded-lg bg-white px-[4%] py-[2%]">
+                <DialogDescription className="rounded-lg bg-white px-[6%] py-[4%] text-lg">
                   {current.description}
                 </DialogDescription>
               )}

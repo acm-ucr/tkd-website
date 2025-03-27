@@ -4,26 +4,29 @@ import React, { useEffect, useState, useMemo } from "react";
 import Image, { ImageProps } from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ImageType } from "@/types/image_type";
+import carouselData from "@/data/Carousel";
 
 const defaultBlur = "/gallery/placeholder.webp";
 
 export type ImageCarouselProps = {
-  images: ImageType[];
+  // images: ImageType[];
   itemsPerSlide?: number; // # images per set
   slideDuration?: number; // ms
 };
 
 const ImageCarousel = ({
-  images,
+  // images,
   itemsPerSlide = 6,
   slideDuration = 5000,
 }: ImageCarouselProps) => {
   return (
-    <ImageCarouselContent
-      images={images}
-      itemsPerSlide={itemsPerSlide}
-      slideDuration={slideDuration}
-    />
+    <div className="bg-white py-[5%]">
+      <ImageCarouselContent
+        images={carouselData}
+        itemsPerSlide={itemsPerSlide}
+        slideDuration={slideDuration}
+      />
+    </div>
   );
 };
 

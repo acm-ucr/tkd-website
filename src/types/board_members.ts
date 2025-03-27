@@ -1,7 +1,7 @@
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import { StaticImageData } from "next/dist/shared/lib/get-img-props";
 
 export type Member = {
-  url: StaticImport;
+  url: StaticImageData;
   position: string;
   name: string;
 };

@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { DayPicker } from "react-day-picker";
 
 import { cn } from "@/lib/utils";
-import { buttonVariants } from "./button";
+import { buttonVariants } from "../../ui/button";
 
 import { EventProps, CalendarProps } from "@/types/calendar";
 
@@ -42,9 +42,6 @@ const Day = ({ date, displayMonth, events, setCurrent }: DayProps) => {
                 setCurrent({ title, start, end, location, description })
               }
             >
-              {/* {startDate.getHours() < 12
-                ? (startDate.getHours() % 12) + "am"
-                : (startDate.getHours() % 12) + "pm"}{" "} */}
               {title}
             </div>
           );
@@ -54,14 +51,14 @@ const Day = ({ date, displayMonth, events, setCurrent }: DayProps) => {
   );
 };
 
-function Calendar({
+const Calendar = ({
   className,
   classNames,
   showOutsideDays = true,
   events,
   setCurrent,
   ...props
-}: CalendarProps) {
+}: CalendarProps) => {
   return (
     <DayPicker
       showOutsideDays={showOutsideDays}
@@ -126,7 +123,7 @@ function Calendar({
       {...props}
     />
   );
-}
+};
 Calendar.displayName = "Calendar";
 
 export { Calendar };
