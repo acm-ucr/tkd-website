@@ -29,7 +29,7 @@ const Landing = () => {
             animate={{
               opacity: 1,
               filter: "blur(0px)",
-              transition: { duration: 2.5 },
+              transition: { duration: 1 },
             }}
             style={{
               width: "100%",
@@ -53,7 +53,7 @@ const Landing = () => {
               animate={{
                 opacity: 1,
                 y: 0,
-                transition: { duration: 1, delay: 0.8 },
+                transition: { duration: 0.5, delay: 0.8 },
               }}
             >
               <p className="font-caveat-brush text-5xl text-white sm:text-7xl md:text-8xl">
@@ -117,7 +117,7 @@ const Landing = () => {
             animate={{
               opacity: 1,
               x: 0,
-              transition: { duration: 1, delay: 1 },
+              transition: { duration: 0.5, delay: 1 },
             }}
           >
             <p className="mb-4 font-inika text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
@@ -140,7 +140,7 @@ const Landing = () => {
             animate={{
               opacity: 1,
               x: 0,
-              transition: { duration: 1, delay: 1 },
+              transition: { duration: 0.5, delay: 1 },
             }}
           >
             <ArrowDown
@@ -161,7 +161,7 @@ const Landing = () => {
               animate={{
                 opacity: 1,
                 filter: "blur(0px)",
-                transition: { duration: 2 },
+                transition: { duration: 1 },
               }}
               style={{
                 width: "100%",
@@ -186,7 +186,7 @@ const Landing = () => {
               animate={{
                 opacity: 1,
                 y: 0,
-                transition: { duration: 1, delay: 1.2 },
+                transition: { duration: 0.5, delay: 0.8 },
               }}
             >
               <p className="font-caveat-brush text-3xl text-white md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl">

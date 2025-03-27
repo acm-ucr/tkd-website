@@ -22,7 +22,7 @@ const Landing = ({ events }: LandingProps) => {
           animate={{
             opacity: 1,
             filter: "blur(0px)",
-            transition: { duration: 2 },
+            transition: { duration: 1 },
           }}
           style={{
             width: "100%",
@@ -42,7 +42,7 @@ const Landing = ({ events }: LandingProps) => {
           }}
           animate={{
             opacity: 1,
-            transition: { duration: 2 },
+            transition: { duration: 1 },
           }}
         >
           <p className="absolute left-1/2 top-[40%] z-20 -translate-x-1/2 font-caveat-brush text-4xl text-white md:text-6xl lg:text-9xl">
