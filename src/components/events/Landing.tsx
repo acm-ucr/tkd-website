@@ -24,13 +24,11 @@ const Landing = ({ events }: LandingProps) => {
             filter: "blur(0px)",
             transition: { duration: 1 },
           }}
-          style={{
-            width: "100%",
-            height: "100%",
-          }}
         >
           <Image
             src={landingEvent}
+            width={800}
+            height={800}
             alt="Landing image"
             className="z-10 h-full w-auto"
           />

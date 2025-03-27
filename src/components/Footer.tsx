@@ -34,16 +34,21 @@ const Footer = () => {
     {
       name: "facebook",
       icon: <SiFacebook size={48} className="mr-[3%] text-tkd-blue-300" />,
+      icon_mobile: (
+        <SiFacebook size={24} className="mr-[3%] text-tkd-blue-300" />
+      ),
       link: "https://www.facebook.com/groups/592125317872837/",
     },
     {
       name: "instagram",
       icon: <SiInstagram size={48} className="text-tkd-blue-300" />,
+      icon_mobile: <SiInstagram size={24} className="text-tkd-blue-300" />,
       link: "https://www.instagram.com/tkdatucr/",
     },
     {
       name: "discord",
       icon: <SiDiscord size={48} className="text-tkd-blue-300" />,
+      icon_mobile: <SiDiscord size={24} className="text-tkd-blue-300" />,
       link: "https://discord.gg/ungzmJyVyY",
     },
   ];
@@ -95,7 +100,7 @@ const Footer = () => {
         <div className="mb-[5%] flex w-full justify-center gap-2">
           {icons.map((icon, index) => (
             <IconCircle link={icon.link} key={index}>
-              {icon.icon}
+              {icon.icon_mobile}
             </IconCircle>
           ))}
         </div>
