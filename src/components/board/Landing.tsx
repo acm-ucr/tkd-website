@@ -7,17 +7,6 @@ import BoardImage from "@/public/Board/boardLanding.webp";
 import { Link as Scroll } from "react-scroll";
 
 const Landing = () => {
-  // const scrollToSection = (sectionId: string) => {
-  //   const section = document.getElementById(sectionId);
-  //   const headerHeight = 56;
-  //   if (section) {
-  //     window.scrollTo({
-  //       top: section.offsetTop - headerHeight,
-  //       behavior: "smooth",
-  //     });
-  //   }
-  // };
-
   return (
     <>
       <div className="m-0 flex flex-col p-0 lg:hidden">
@@ -126,11 +115,7 @@ const Landing = () => {
                 transition: { duration: 0.5, delay: 1 },
               }}
             >
-              <ArrowDown
-                className="mt-4 cursor-pointer"
-                // onClick={() => scrollToSection("board")}
-                size={80}
-              />
+              <ArrowDown className="mt-4 cursor-pointer" size={80} />
             </motion.div>
           </Scroll>
         </div>
