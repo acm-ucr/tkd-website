@@ -40,13 +40,11 @@ const Card: React.FC<CardProps> = ({
         }}
       >
         <Button
-          txt={title}
-          link=""
-          customStyle="bg-tkd-red-100 border-tkd-red-200"
-          target=""
-          textSize="text-2xl lg:text-5xl"
-          padding="lg:py-[5%] px-8 py-2"
-        />
+          className="px-8 py-2 text-2xl lg:py-[5%] lg:text-5xl"
+          variant="red"
+        >
+          {title}
+        </Button>
       </motion.div>
 
       <motion.div

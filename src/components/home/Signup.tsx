@@ -44,20 +44,22 @@ const Signup = () => {
 
           <div className="mb-[4%] mt-[8%] flex flex-row justify-center gap-[8%]">
             <Button
-              txt="Higlander Link"
               link="https://highlanderlink.ucr.edu/organization/tkd"
-              textSize="sm:text-lg lg:text-xl"
-              padding="p-[4%]"
-              customStyle="border-2 border-tkd-blue-300 bg-tkd-blue-200 transition-transform duration-200 hover:scale-105 active:scale-95"
-            />
+              target="_blank"
+              variant="blue"
+              className="transition-transform duration-200 hover:scale-105 active:scale-95 sm:text-lg lg:text-xl"
+            >
+              Highlander Link
+            </Button>
 
             <Button
-              txt="DoSportsEasy Form"
               link="https://recreation.ucr.edu/competitive-sports/sport-clubs"
-              textSize="sm:text-lg lg:text-xl"
-              padding="p-[4%]"
-              customStyle="border-2 border-tkd-blue-300 bg-tkd-blue-200 transition-transform duration-200 hover:scale-105 active:scale-95"
-            />
+              target="_blank"
+              variant="blue"
+              className="transition-transform duration-200 hover:scale-105 active:scale-95 sm:text-lg lg:text-xl"
+            >
+              DoSportsEasy Form
+            </Button>
           </div>
         </div>
 

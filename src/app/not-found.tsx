@@ -25,12 +25,12 @@ const NotFound = () => {
 
         <div className="flex justify-center">
           <Button
-            txt="Back To Home"
+            className="px-[16%] py-[5%] text-[4vw] sm:text-[3vw] md:text-[2.5vw] lg:text-[2.5vw]"
             link="/"
-            padding="px-[16%] py-[5%]"
-            textSize="text-[4vw] sm:text-[3vw] md:text-[2.5vw] lg:text-[2.5vw]"
-            customStyle="border-tkd-red-200 bg-tkd-red-100"
-          />
+            variant="red"
+          >
+            Back To Home
+          </Button>
         </div>
       </div>
     </div>
