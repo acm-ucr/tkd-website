@@ -1,11 +1,16 @@
+"use client";
+
 import Members from "@/components/board/Members";
 import Landing from "../../components/board/Landing";
+import { Element } from "react-scroll";
 
 const Board = () => {
   return (
     <div className="bg-tkd-black">
       <Landing />
-      <Members />
+      <Element name="members">
+        <Members />
+      </Element>
     </div>
   );
 };
