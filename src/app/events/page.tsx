@@ -39,14 +39,23 @@ const Events = () => {
           title: summary,
         }),
       );
-
+      // console.log(events)
       return events;
     },
   });
 
+  const recent_events: EventProps[] = [];
+  data?.forEach((event) => {
+    if (event.start && event.start < new Date().toDateString())
+      recent_events.push(event);
+  });
+
+  // console.log(recent_events)
+
   return (
     <>
-      <Landing events={data?.slice(-2) || []} />
+      <Landing events={recent_events?.slice(-2) || []} />
+
       {
         <Dialog
           open={Object.keys(current).length > 0}
